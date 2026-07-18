@@ -13,6 +13,26 @@ from pydantic import field_validator
 from dotenv import load_dotenv
 
 
+# Environment loading
+# # Resolve candidate .env locations relative to THIS FILE so behaviour is
+# identical no matter what the current working directory is (bare `uvicorn`
+# from backend/, Docker with WORKDIR=/app, or PYTHONPATH tricks).
+#
+# backend/app/core/config.py -> parents[0]=core [1]=app [2]=backend [3]=repo root
+_THIS_FILE = Path(__file__).resolve()
+_BACKEND_DIR = _THIS_FILE.parents[2]
+_REPO_ROOT = _THIS_FILE.parents[3] if len(_THIS_FILE.parents) > 3 else _BACKEND_DIR
+
+for _candidate in (
+    _BACKEND_DIR / ".env",
+    _REPO_ROOT / ".env",
+    Path.cwd() / ".env",
+):
+    if _candidate.exists():
+        load_dotenv(_candidate, override=False)
+        break
+
+
 
 # The idea is to first establish some sort of states which will help track the submission status.
 class SubmissionStatus(str, Enum):

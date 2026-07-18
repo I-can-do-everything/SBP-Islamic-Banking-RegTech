@@ -99,3 +99,99 @@ class ValidationStatus(str, Enum):
     WARNING = "WARNING"
 
 
+# Application settings.
+class Settings(BaseSettings):
+    """
+    Application settings loaded for env variables.
+
+    Security Architecture:
+    - all secrets are optional with empty defaults for failsafe mechanism
+    - Production deployments MUST set these via environment
+    - Settings are cached via @lru_cache for performance
+
+    Extensibility:
+    - add new settings for external integrations (for example, I might connect it to DAP4 API)
+    - add feature flags for progressive rollout of new calculations.
+    """
+
+    # Application
+    APP_NAME: str = "SBP Islamic Regulatory Reporting System"
+    APP_VERSION: str = "0.1.0"
+    DEBUG: bool = False
+    ENVIRONMENT : str = "development"
+
+    # DBs : Supabase PostgreSQL
+    # pre-populated in the hosted env
+    DATABASE_URL: str = ""
+    DB_ECHO: bool = False
+
+
+
+
+    # Supabase (alternatively use direct connection)
+    SUPABASE_URL: str = ""
+    SUPABASE_ANON_KEY: str = "" 
+
+
+    # Security
+    SECRET_KEY: str = "change-this-in-production-use-openssl-rand-hex-32"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    REFRESH_TOKEN_EXPIRE_HOURS: int = 24
+
+
+    # File storage
+    RAW_UPLOAD_DIR: str = "uploads/raw"
+    REPORT_DIR: str = "uploads/reports"
+    MAX_FILE_SIZE_MB: int = 50
+
+    # Download Tokens
+    DOWNLOAD_TOKEN_EXPIRE_MINUTES: int = 30
+
+    # Default accounts seeded on first startup if the users table is empty.
+    # Change these (or the seeded accounts' passwords, after login) before
+    # any real deployment: they are intentionally obvious placeholders.
+    DEFAULT_ADMIN_USERNAME: str = "admin"
+    DEFAULT_ADMIN_PASSWORD: str = "ChangeMe123!"
+    DEFAULT_DEMO_USERNAME: str = "meezan_officer"
+    DEFAULT_DEMO_PASSWORD: str = "ChangeMe123!"
+    DEFAULT_DEMO_INSTITUTION: str = "MEEZ"
+    REPORT_RETENTION_HOURS: int = 24
+
+
+    # Ollama Configuration
+    # Local-only for data sovereignty compliance
+    OLLAMA_HOST: str = "http://localhost:11434"
+    OLLAMA_MODEL: str = "llama3.1:8b"
+    OLLAMA_TEMPERATURE: float = 0.0  # MUST be 0.0 for deterministic output
+    OLLAMA_KEEP_ALIVE: str = "-1"  # Keep model loaded in memory
+
+
+    # SBP Circular monitor
+    CIRCULAR_CHECK_INTERVAL: int = 6
+    SBP_BPRD_URL: str = "https://www.sbp.org.pk/bprd/"
+    SBP_IFPD_URL: str = "https://www.sbp.org.pk/ifpd/"
+
+
+    # Rate Limiting
+    MAX_UPLOADS_PER_HOUR: int = 10
+    MAX_DOWNLOADS_PER_HOUR: int = 20
+    MAX_AUTH_ATTEMPTS_PER_10MIN: int = 5
+
+
+    @field_validator("SECRET_KEY")
+    @classmethod
+    def validate_secret_key(cls, v: str) -> str:
+        """Ensure that the secret key is changed from default in production"""
+        if v == "change-this-in-production-use-openssl-rand-hex-32":
+            import warnings
+            warnings.warn("Using default SECRET_KEY. MUST change in production!")
+        return v
+    
+
+
+
+
+
+
+
+

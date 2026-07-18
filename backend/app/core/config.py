@@ -187,6 +187,21 @@ class Settings(BaseSettings):
             warnings.warn("Using default SECRET_KEY. MUST change in production!")
         return v
     
+@lru_cache()
+def get_settings() -> Settings:
+    """
+    Cached settings accessor.
+
+    USAGE:
+        from app.core.config import get_settings
+        settings = get_settings()
+
+    WHY CACHE:
+    - Settings are read from environment on first call
+    - Subsequent calls return cached instance
+    - Prevents repeated file I/O and env parsing
+    """
+    return Settings()
 
 
 

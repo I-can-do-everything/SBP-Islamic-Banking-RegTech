@@ -55,4 +55,47 @@ class CBSFormat(str, Enum):
     GENERIC_CSV = "GENERIC_CSV"
     UNKNOWN = "UNKNOWN"
 
-    
+
+# The banks perform certain validation checks on normalised data.
+# My knowledge and the code for this needs updating as I sense some unclarity.
+
+class ValidationCheckType(str, Enum):
+    """
+    Each type corresponds to a different regulatory requirement:
+    - CROSS_RETURN: Numbers appearing in multiple places must match.
+    - DFS_FORMAT: Regulatory submission file structure/format compliance
+    - SHARIAH: Islamic banking specific compliance checks.
+    - BREACH: Regulatory threshold violations.
+    - IFRS9: ECL stage consistency (expected credit loss staging)
+    """
+    CROSS_RETURN = "CROSS_RETURN"
+    DFS_FORMAT = "DFS_FORMAT"
+    IFRS9 = "IFRS9"
+    SHARIAH = "SHARIAH"
+    BREACH = "BREACH"
+
+# Just like the submission states, it would be a consistent practise if the validations had states too.
+
+class ValidationStatus(str, Enum):
+    """
+    Semantics:
+    - PASS: Check Succeeded, no action needed.
+    - FAIL: Check failed, submission cannot proceed.
+    - WARNING: Check passed but got flagged for attention.
+
+    When to use WARNING:
+    - CAR ratio at exactly 11.5% (min threshold)
+    - NPF approaching 7% limit
+    - PER approaching 20% cap
+
+    One drastic thing to note is that this information is surface level,
+    meaning I got it from sources that could be verified further just for the
+    sake of building the system and getting the logics down.
+    That goes for pretty much everything. These will be verified and tweaked as per
+    up to date information.
+    """
+    PASS = "PASS"
+    FAIL = "FAIL"
+    WARNING = "WARNING"
+
+

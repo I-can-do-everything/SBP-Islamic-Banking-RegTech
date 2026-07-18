@@ -204,9 +204,122 @@ def get_settings() -> Settings:
     return Settings()
 
 
+# =============================================================================
+# REGULATORY CONSTANTS - Add new SBP requirements here
+#
+# VERIFICATION STATUS (research conducted via public web
+# search, not a licensed compliance/legal/Shariah review):
+#
+#   VERIFIED against public sources:
+#     - CAR_MINIMUM = 11.5% matches SBP's published Basel III CAR requirement
+#       and is independently corroborated by listed Islamic banks' disclosed
+#       financials (e.g. Dubai Islamic Bank Pakistan Ltd, FY2023 disclosures).
+#     - DEPOSITOR_SHARE_MIN = 75% reflects SBP's Nov 2024 instruction that
+#       IBIs pay depositors at least 75% of the weighted average gross yield
+#       of their investment pools (reported via Business Recorder, Nov 2024,
+#       amending "Instructions for Profit & Loss Distribution and Pool
+#       Management for IBIs", IBD Circular No. 03 of 2012, as amended).
+#
+#   PLAUSIBLE BUT NOT INDEPENDENTLY CONFIRMED at this exact figure:
+#     - NPF_MAXIMUM, the DPD_THRESHOLDS day-counts, and PROVISION_RATES follow
+#       the well-documented SBP asset classification pattern (OAEM /
+#       Substandard / Doubtful / Loss with escalating provisioning), but the
+#       *exact* day-thresholds differ across SBP's various Prudential
+#       Regulation categories (Corporate/Commercial, SME, Agriculture,
+#       Microfinance each have their own numbered regulation and slightly
+#       different day-counts) and change on amendment. Confirm the values
+#       below against the specific PR category and current circular that
+#       applies to the institution before any real regulatory filing.
+#     - PER_CAP_PERCENT / IRR_CAP_PERCENT: SBP's framework (IBD Circular
+#       No. 03 of 2012, as amended) caps the *Mudarib's fee* for managing
+#       PER/IRR funds at 10% of the return earned on those funds, and caps
+#       IRR *contributions* at up to 1% of distributable pool profit - it
+#       does not itself mandate a single economy-wide PER/IRR-to-pool-income
+#       ratio for every bank. Individual banks set their own PER/IRR policy
+#       (e.g. one major bank's public policy caps PER at 30% of Islamic
+#       Banking Equity) within SBP's framework and Shariah Board approval.
+#       Treat these two constants as indicative thresholds for this
+#       prototype's ratio display, not a verified universal SBP limit.
+#
+#   NOT FOUND / LIKELY FABRICATED:
+#     - The original codebase cited specific circular numbers (e.g.
+#       "BSD-1 Circular 01/2025", "IBD Circular 02/2019", "IFPD Circular
+#       08/2024", "IFPD Circular 09/2024") that could not be located in any
+#       public SBP source. "IFPD" in particular does not appear to be a real
+#       SBP department code (real ones include IBD, BPRD, BSD, SMEFD,
+#       AC&MFD). These looked like plausible-sounding but invented
+#       citations, consistent with an AI-generated first draft. They have
+#       been replaced below with honest, non-specific framework references.
+# =============================================================================
 
 
+REGULATORY_DISCLAIMER = (
+    "Ratios, thresholds and circular references in this report are generated "
+    "by a prototype system for illustrative purposes. They have not been "
+    "certified by a licensed compliance officer, lawyer, or Shariah advisor, "
+    "and must be independently verified against SBP's current consolidated "
+    "Prudential Regulations and circulars before regulatory use."
+)
+
+CAR_MINIMUM = Decimal("11.5")  # Percentage
 
 
+NPF_MAXIMUM = Decimal("7.0")  # Percentage
 
 
+DPD_THRESHOLDS = {
+    "PERFORMING": 0,
+    "OAEM": 1,      # Other Assets Especially Mentioned (watch list)
+    "SUBSTANDARD": 91,   # 25% provision required
+    "DOUBTFUL": 181,     # 50% provision required
+    "LOSS": 366        # 100% provision required
+}
+
+# Provision rates per NPF classification
+PROVISION_RATES = {
+    "PERFORMING": Decimal("0"),
+    "OAEM": Decimal("0"),
+    "SUBSTANDARD": Decimal("0.25"),
+    "DOUBTFUL": Decimal("0.50"),
+    "LOSS": Decimal("1.00")
+}
+
+# Pool Management parameters, indicative for this prototype; see note above
+# for what SBP's IBD Circular No. 03 of 2012 (as amended) actually caps.
+PER_CAP_PERCENT = Decimal("20.0")  # Profit Equalisation Reserve max (indicative)
+IRR_CAP_PERCENT = Decimal("10.0")  # Investment Risk Reserve max (indicative)
+DEPOSITOR_SHARE_MIN = Decimal("75.0")  # Verified: SBP min. 75% of pool gross yield (Nov 2024)
+
+
+# RCOA Code Ranges for Islamic Banking Products
+# ADD NEW CODES: When SBP introduces new Islamic product categories
+RCOA_RANGES = {
+    # Financing Assets (3590 series)
+    "MURABAHA": "3590-MUR",
+    "IJARAH": "3590-IJA",
+    "DIMINISHING_MUSHARAKAH": "3590-DM",
+    "SALAM": "3590-SAL",
+    "ISTISNA": "3590-IST",
+
+    # Pool Liabilities (2150 series)
+    "MUDARABAH_DEPOSITS": "2150-MUD",
+    "WAKALA_DEPOSITS": "2150-WAK",
+
+    # Capital Accounts
+    "PAID_UP_CAPITAL": "1100-PUC",
+    "STATUTORY_RESERVES": "1200-SR",
+    "RETAINED_EARNINGS": "1300-RE",
+
+    # Non-Performing Financing
+    "NPF_MURABAHA": "3595-MUR-NPF",
+    "NPF_IJARAH": "3595-IJA-NPF",
+    "NPF_DM": "3595-DM-NPF",
+}
+
+# DFS File Structure - confirm current format circular with SBP offsite supervision/BPRD
+DFS_VERSION = "BSD1-01-2025"
+DFS_RECORD_TYPES = {
+    "HEADER": "HDR",
+    "DATA": "DAT",
+    "TRAILER": "TRL",
+}

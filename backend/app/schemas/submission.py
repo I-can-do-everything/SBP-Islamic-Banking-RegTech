@@ -101,4 +101,49 @@ class CommentaryResponse(BaseModel):
 
 
 
+# Processing result schema
+class ProcessingResult(BaseModel):
+    """result returned immediately after running the pipeline"""
+    submission_id: str
+    status: str
+    records_read: int
+    detected_format: str
+    accounts_normalised: int
+    ratios_calculated: int
+    validation_summary: Dict[str, int]
+    reports: Dict[str, str]
+    commentary_source: str
+    warnings: List[str]
+    processing_time_seconds: float
+
+
+# Audit log schemas
+class AuditLogEntry(BaseModel):
+    """A single audit log record"""
+    id: str
+    occured_at: datetime
+    username: Optional[str] = None
+    role: Optional[str] = None
+    action: str
+    resource_type: Optional[str] = None
+    resource_id: Optional[str] = None
+    institution_code: Optional[str] = None
+    success: bool
+    details: Optional[str] = None
+
+class AuditLogList(BaseModel):
+    """paginated audit log"""
+    items: List[AuditLogEntry]
+    total: int
+    page: int
+    page_size: int
+
+    
+    
+
+
+
+
+
+
     

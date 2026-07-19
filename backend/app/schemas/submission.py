@@ -138,7 +138,26 @@ class AuditLogList(BaseModel):
     page: int
     page_size: int
 
-    
+
+# ratio schemas
+class RatioResponse(BaseModel):
+    "response for a calculated ratio"
+    ratio_name: str
+    ratio_value: str
+    numerator: str
+    denominator: str
+    formula_applied: str
+    breach_flag: bool
+    regulatory_minimum: Optional[str] = None
+    regulatory_maximum: Optional[str] = None
+    sbp_circular_reference: Optional[str] = None
+
+class RatiosList(BaseModel):
+    """list of calculated ratios"""
+    submission_id: str
+    ratios: List[RatioResponse]
+
+
     
 
 

@@ -141,7 +141,7 @@ class AuditLogList(BaseModel):
 
 # ratio schemas
 class RatioResponse(BaseModel):
-    "response for a calculated ratio"
+    """response for a calculated ratio"""
     ratio_name: str
     ratio_value: str
     numerator: str
@@ -207,7 +207,7 @@ class DownloadResponse(BaseModel):
 
 # pipleline progress schemas
 class PipelineProgress(BaseModel):
-    "progress event from processing pipeline"
+    """progress event from processing pipeline"""
     stage: str
     status: str
     message: Optional[str] = None
@@ -246,7 +246,7 @@ class TokenResponse(BaseModel):
     expires_in: int
 
 class UserResponse(BaseModel):
-    "user info response"
+    """user info response"""
     id: str
     username: str
     email: str
@@ -258,6 +258,14 @@ class UserResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
+# health check schema
+class HealthResponse(BaseModel):
+    status: str
+    version: str
+    database_connected: bool
+    database_mode: str = "local_sqlite"
+    ollama_connected: bool
+    timestamp: datetime
 
 
 

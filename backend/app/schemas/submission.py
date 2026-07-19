@@ -181,6 +181,51 @@ class ValidationSummary(BaseModel):
     checks: List[ValidationCheckResponse]
 
     
+# report schemas
+class ReportInfo(BaseModel):
+    """info about a generated report"""
+    id: str
+    report_format: str
+    file_hash: str
+    file_size_bytes: int
+    generated_at: datetime
+    download_expires_at: datetime
+    download_url: Optional[str] = None
+
+class ReportList(BaseModel):
+    """available reports"""
+    submission_id: str
+    reports: List[ReportInfo]
+
+class DownloadResponse(BaseModel):
+    """response for download request"""
+    download_url: str
+    expires_at: datetime
+    report_id: str
+
+
+
+# pipleline progress schemas
+class PipelineProgress(BaseModel):
+    "progress event from processing pipeline"
+    stage: str
+    status: str
+    message: Optional[str] = None
+    details: Optional[dict] = None
+
+
+class PipelineResult(BaseModel):
+    """final result of the pipleline execution"""
+    submission_id: str
+    status: str
+    reports: Dict[str, str]
+    processing_time_seconds: float
+    errors: List[str]
+    warnings: List[str]
+
+    
+
+
 
 
     

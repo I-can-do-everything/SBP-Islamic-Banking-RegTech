@@ -158,6 +158,31 @@ class RatiosList(BaseModel):
     ratios: List[RatioResponse]
 
 
+# validation schemas
+class ValidationCheckResponse(BaseModel):
+    """Response for a validation check"""
+    validation_type: str
+    check_name: str
+    status: str
+    field_path: Optional[str] = None
+    expected_value: Optional[str] = None
+    actual_value: Optional[str] = None
+    details: Optional[str] = None
+    sbp_circular_reference: Optional[str] = None
+
+
+class ValidationSummary(BaseModel):
+    """summary of validation results"""
+    submission_id: str
+    overall_status: str
+    failed_count: int
+    warning_count: int
+    passed_count: int
+    checks: List[ValidationCheckResponse]
+
+    
+
+
     
 
 

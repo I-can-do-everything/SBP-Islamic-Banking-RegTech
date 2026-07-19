@@ -72,3 +72,23 @@ class SubmissionStats(BaseModel):
 
 
 
+# Normalised balance schemas
+
+class NormalisedBalanceResponse(BaseModel):
+    """A single aggregated RCOA balance for a submission"""
+    rcoa_account_code: str
+    rcoa_account_description: Optional[str] = None
+    balance: str
+    currency: str = "PKR"
+    mapping_rule: Optional[str] = None
+    source_codes: Optional[str] = None
+
+class BalancesList(BaseModel):
+    """List of normalised balances for a submission"""
+    submission_id: str
+    balances: List[NormalisedBalanceResponse]
+
+    
+
+
+    

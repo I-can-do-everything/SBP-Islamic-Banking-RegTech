@@ -88,7 +88,17 @@ class BalancesList(BaseModel):
     submission_id: str
     balances: List[NormalisedBalanceResponse]
 
-    
+
+# AI commentary schema
+
+class CommentaryResponse(BaseModel):
+    submission_id: str
+    commentary: str
+    confidence_score: str
+    hallucination_flags: List[str] = []
+    source: str # ollama or fallback template
+    generated_at: datetime
+
 
 
     

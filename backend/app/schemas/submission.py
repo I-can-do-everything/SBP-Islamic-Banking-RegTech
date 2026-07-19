@@ -223,7 +223,42 @@ class PipelineResult(BaseModel):
     errors: List[str]
     warnings: List[str]
 
-    
+# user schemas
+class UserCreate(BaseModel):
+    """create a new user"""
+    username: str = Field(..., min_length=3, max_length=100)
+    email: str = Field(..., description="Valid email address")
+    password: str = Field(..., min_length=8, max_length=15, description="Password minimum 8 characters")
+    institution_code: str = Field(..., min_length=2, max_length=10)
+    role: str = Field(default="UPLOADER", description="UPLOADER, REVIEWER, or ADMIN")
+
+
+class UserLogin(BaseModel):
+    """login req"""
+    username: str
+    password: str
+
+class TokenResponse(BaseModel):
+    """response for auth token"""
+    access_token: str
+    refresh_token: str
+    token_type: str = "bearer"
+    expires_in: int
+
+class UserResponse(BaseModel):
+    "user info response"
+    id: str
+    username: str
+    email: str
+    role: str
+    institution_code: str
+    is_active: bool
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+
 
 
 

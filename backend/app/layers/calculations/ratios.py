@@ -76,3 +76,73 @@ class CalculationResult:
             "sbp_circular_reference": self.sbp_circular_reference
         }
     
+# NPF ratio calculation
+
+def calculate_npf_ratio(balances: Dict[str, Decimal]) -> CalculationResult:
+    """
+    Calculate Non-Performing Financing Ratio.
+
+    FORMULA:
+    NPF Ratio = (Total NPF Balances / Total Gross Financing) × 100
+
+    NPF includes:
+    - NPF Murabaha
+    - NPF Ijarah
+    - NPF Diminishing Musharakah
+    - NPF Salam
+    - NPF Istisna
+
+    Total Financing includes all financing products (performing + non-performing).
+
+    REGULATORY THRESHOLD:
+    Maximum 7% per SBP CAELS guidelines.
+    Above this threshold triggers enhanced supervision.
+
+    REFERENCE:
+    SBP Prudential Regulations R-8, Classification & Provisioning (confirm exact PR category)
+    """
+
+    # NPF account codes
+    npf_codes = [
+        "3595-MUR-NPF",  # NPF Murabaha
+        "3595-IJA-NPF",  # NPF Ijarah
+        "3595-DM-NPF",   # NPF Diminishing Musharakah
+        "3595-SAL-NPF",  # NPF Salam (if applicable)
+        "3595-IST-NPF",  # NPF Istisna (if applicable)
+    ]
+
+    # gross financing account codes (performing + non-performing)
+    financing_codes = [
+        "3590-MUR",  # Murabaha Financing
+        "3590-IJA",  # Ijarah Financing
+        "3590-DM",   # Diminishing Musharakah
+        "3590-SAL",  # Salam
+        "3590-IST",  # Istisna
+    ]
+
+    # calculate total NPF
+    total_npf = sum(
+        get_balance(balances, code)for code in npf_codes
+    )
+
+    # calculate total gorss financing (inlcuding NPF)
+    total_financing = sum(
+        get_balance(balances, code) for code in financing_codes
+    )
+
+    # calculate ratio with division by 0 handled
+    if total_financing == 0:
+        ratio_value = Decimal('0')
+    else:
+        ratio_value = (total_npf / total_financing) * Decimal("100")
+
+
+    # check breach
+    breach = ratio_value > NPF_MAXIMUM
+
+    # build formula for audit
+    formula = f"({ ' + '.join(npf_codes[:3]) }...) / ({ ' + '.join(financing_codes[:3]) }...) × 100"
+
+    return CalculationResult(
+        ratio_name="NPF_RATIO"
+    )

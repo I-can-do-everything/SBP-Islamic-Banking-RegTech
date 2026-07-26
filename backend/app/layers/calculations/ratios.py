@@ -249,3 +249,118 @@ def calculate_car(balances: Dict[str, Decimal]) ->CalculationResult:
         breach_flag=breach,
         sbp_circular_reference="SBP BPRD Basel III Capital Adequacy framework", # need to confirm current BPRD circular number
     )
+
+
+
+# Pool Management Calculations
+
+def calculate_pool_ratios(balances: Dict[str, Decimal]) -> List[CalculationResult]:
+    """
+    Calculate Pool Management ratios for Islamic banks.
+
+    POOL STRUCTURE:
+    - Depositors provide funds via Mudarabah/Wakala deposits
+    - Bank deploys funds into Shariah-compliant financing
+    - Profit is distributed between depositors and bank
+
+    KEY RATIOS:
+    1. Gross Pool Income
+    2. PER (Profit Equalisation Reserve) - max 20% of gross
+    3. IRR (Investment Risk Reserve) - max 10% of depositor share
+    4. Depositor Share Ratio - min 50%
+    5. Declared Profit Rate
+
+    REFERENCES:
+    IBD Circular No. 03 of 2012, Pool Management Instructions, as amended
+    """
+    results = []
+
+    # pool income components
+    murabaha_income = get_balance(balances, "4100-MUR-INC")
+    ijarah_income = get_balance(balances, "4100-IJA-INC")
+    dm_income = get_balance(balances, "4100-DM-INC", Decimal("0"))
+
+    gross_pool_income = murabaha_income + ijarah_income + dm_income
+
+    # Depositor funds
+    mudarabah_deposits = get_balance(balances, "2150-MUD")
+    wakala_deposits = get_balance(balances, "2150-WAK")
+    total_deposits = mudarabah_deposits + wakala_deposits
+
+    # PER (Profit Equalisation Reserve)
+    per_balance = get_balance(balances, "2500-PER", Decimal("0"))
+    per_ratio = (per_balance / gross_pool_income * 100) if gross_pool_income > 0 else Decimal("0")
+
+    results.append(CalculationResult(
+        ratio_name="PER_RATIO",
+        ratio_value=per_ratio.quantize(Decimal("0.00000001")),
+        numerator=per_balance,
+        denominator=gross_pool_income,
+        formula_applied="PER Balance / Gross Pool Income × 100",
+        input_accounts=["2500-PER", "4100-MUR-INC", "4100-IJA-INC"],
+        regulatory_minimum=None,
+        regulatory_maximum=PER_CAP_PERCENT,
+        breach_flag=per_ratio > PER_CAP_PERCENT,
+        sbp_circular_reference="IBD Circular No. 03 of 2012, Pool Management Instructions, as amended",
+    ))
+
+    # IRR (Investment Risk Reserve)
+    irr_balance = get_balance(balances, "2501-IRR", Decimal("0"))
+    depositor_share = gross_pool_income * Decimal("0.50")  # Minimum 50% to depositors
+    irr_ratio = (irr_balance / depositor_share * 100) if depositor_share > 0 else Decimal("0")
+
+    results.append(CalculationResult(
+        ratio_name="IRR_RATIO",
+        ratio_value=irr_ratio.quantize(Decimal("0.00000001")),
+        numerator=irr_balance,
+        denominator=depositor_share,
+        formula_applied="IRR Balance / Depositor Share × 100",
+        input_accounts=["2501-IRR", "2150-MUD", "2150-WAK"],
+        regulatory_minimum=None,
+        regulatory_maximum=IRR_CAP_PERCENT,
+        breach_flag=irr_ratio > IRR_CAP_PERCENT,
+        sbp_circular_reference="IBD Circular No. 03 of 2012, Pool Management Instructions, as amended",
+    ))
+
+    # Depositor Share Ratio
+    # Net distributable income = Gross - PER - IRR
+    net_distributable_income = gross_pool_income - per_balance - irr_balance
+    actual_depositor_share = net_distributable_income * Decimal("0.55")  # Example: 55% to depositors
+
+    depositor_share_ratio = (actual_depositor_share / net_distributable_income * 100) if net_distributable_income > 0 else Decimal("0")
+
+    results.append(CalculationResult(
+        ratio_name="DEPOSITOR_SHARE_RATIO",
+        ratio_value=depositor_share_ratio.quantize(Decimal("0.00000001")),
+        numerator=actual_depositor_share,
+        denominator=net_distributable_income,
+        formula_applied="Depositor Share / Net Distributable Income × 100",
+        input_accounts=["2150-MUD", "2150-WAK", "2500-PER", "2501-IRR"],
+        regulatory_minimum=DEPOSITOR_SHARE_MIN,
+        regulatory_maximum=None,
+        breach_flag=depositor_share_ratio < DEPOSITOR_SHARE_MIN,
+        sbp_circular_reference="IBD Circular No. 03 of 2012, Pool Management Instructions, as amended",
+    ))
+
+    # Declared Profit Rate (annualized)
+    # DPR = (Depositor Share / Average Deposits) × (365/days in period) × 100
+    # Simplified: assume monthly period (30 days)
+    if total_deposits > 0:
+        dpr = (actual_depositor_share / total_deposits) * Decimal("12") * Decimal("100")
+    else:
+        dpr = Decimal("0")
+
+    results.append(CalculationResult(
+        ratio_name="DECLARED_PROFIT_RATE",
+        ratio_value=dpr.quantize(Decimal("0.00000001")),
+        numerator=actual_depositor_share,
+        denominator=total_deposits,
+        formula_applied="(Depositor Share / Average Deposits) × 12 × 100 (Annualized)",
+        input_accounts=["2150-MUD", "2150-WAK", "4100-MUR-INC", "4100-IJA-INC"],
+        regulatory_minimum=None,
+        regulatory_maximum=None,
+        breach_flag=False,  # No threshold, but should not be negative
+        sbp_circular_reference="IBD Circular No. 03 of 2012, Pool Management Instructions, as amended",
+    ))
+
+    return results

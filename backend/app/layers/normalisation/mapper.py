@@ -53,7 +53,7 @@ class MappingRule:
         self.rcoa_code = rcoa_code
         self.rcoa_description = rcoa_description
         self.mapping_type = mapping_type
-        self.allocation_percentages = allocation_percentages
+        self.allocation_percentages = allocation_percentages or {}
         self._compiled_pattern = re.compile(cbs_pattern)
 
     def matches(self, cbs_code: str) -> bool:
@@ -219,6 +219,96 @@ class RCOAMapper:
                 return rule
 
         return None
+    
+    def map_account(
+            self,
+            cbs_code: str,
+            balance: Decimal,
+            description: str = ""
+    ) -> List[Dict]:
+        """
+        Map a CBS account to RCOA code(s).
+
+        Args:
+            cbs_code: CBS account code
+            balance: Account balance (Decimal)
+            description: CBS account description
+
+        Returns:
+            List of mapping results, each containing:
+            - cbs_account_code: Original CBS code
+            - cbs_account_description: Original description
+            - rcoa_account_code: Target RCOA code
+            - rcoa_account_description: RCOA description
+            - balance: Allocated balance
+            - mapping_rule: Type of mapping applied
+        """
+        rule = self.find_rule(cbs_code)
+
+        if not rule:
+            # No mapping found. Return as unmapped
+            return[{
+                "cbs_account_code": cbs_code,
+                "cbs_account_description": description,
+                "rcoa_account_code": "UNMAPPED",
+                "rcoa_account_description": "Unmapped CBS Code",
+                "balance": balance,
+                "mapping_rule": "UNMAPPED",
+            }]
+        
+        mappings = rule.apply(cbs_code, balance)
+        results = []
+
+        for rcoa_code, rcoa_desc, mapping_type, allocated_balance in mappings:
+            results.append({
+                "cbs_account_code": cbs_code,
+                "cbs_account_description": description,
+                "rcoa_account_code": rcoa_code,
+                "rcoa_account_description": rcoa_desc,
+                "balance": allocated_balance,
+                "mapping_rule": mapping_type,
+            })
+
+        return results
+    
+def aggregate_by_rcoa(mapped_records: List[Dict]) -> Dict[str, Dict]:
+    """
+    Aggregate balances by RCOA code.
+
+    AGGREGATION:
+    When multiple CBS codes map to the same RCOA code (AGGREGATION type),
+    we sum their balances to get the RCOA total.
+
+    Args:
+        mapped_records: List from RCOAMapper.map_account()
+
+    Returns:
+        Dictionary keyed by RCOA code with:
+        - rcoa_account_code
+        - rcoa_account_description
+        - balance (summed)
+        - source_codes (list of CBS codes that contributed)
+    """
+    aggregated: Dict[str, Dict] = {}
+
+    
+
+    for record in mapped_records:
+        rcoa_code = record["rcoa_account_code"]
+        if rcoa_code not in aggregated:
+            aggregated[rcoa_code] = {
+                "rcoa_account_code": rcoa_code,
+                "rcoa_account_description": record["rcoa_account_description"],
+                "balance": Decimal("0"),
+                "source_codes": []
+            }
+
+        aggregated[rcoa_code]["balance"] += record["balance"]
+        source_list: List[str] = aggregated[rcoa_code]["source_codes"]
+        source_list.append(record["cbs_account_code"])
+
+    return aggregated
+
 
 
 

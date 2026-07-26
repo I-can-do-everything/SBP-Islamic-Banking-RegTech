@@ -99,7 +99,7 @@ class RCOAMapper:
         print(f"{rcoa_code}: {amount}")
     """
     
-    def __init_(
+    def __init__(
             self, 
             institution_code: str,
             mapping_rules: List[MappingRule], 
@@ -108,7 +108,7 @@ class RCOAMapper:
         self.institution_code = institution_code
         self.mapping_rules = mapping_rules
         self.version = version
-        self._cache: Dict[str, MappingRule] = []
+        self._cache: Dict[str, MappingRule] = {}
 
     @classmethod
     def load(cls, institution_code: str, config_dir: str = None) -> RCOAMapper:
@@ -179,11 +179,12 @@ class RCOAMapper:
             )
         
         with open(config_path, 'r') as f:
-            config = json.load(f)
+            config: dict = json.load(f)
         
         # parse mapping rules
         rules = []
-        for mapping in config.get("mappings", []):
+        mappings: list[dict] = config.get("mappings", [])
+        for mapping in mappings:
             rule = MappingRule(
                 cbs_pattern=mapping["cbs_code_pattern"],
                 rcoa_code=mapping["rcoa_code"],
@@ -212,7 +213,7 @@ class RCOAMapper:
             return self._cache[cbs_code]
 
         # Find first matching rule
-        for rule in self.rules:
+        for rule in self.mapping_rules:
             if rule.matches(cbs_code):
                 self._cache[cbs_code] = rule
                 return rule

@@ -86,19 +86,19 @@ class MappingRule:
         
 
 
-    class RCOAMapper:
-        """
+class RCOAMapper:
+    """
     Manages CBS to RCOA mappings for an institution.
 
     USAGE:
-        from app.layers.normalization.mapper import RCOAMapper
+    from app.layers.normalization.mapper import RCOAMapper
 
-        mapper = RCOAMapper.load("MEEZ")
-        results = mapper.map_account("3590-MUR-001", Decimal("1000000"))
-        for rcoa_code, desc, mapping_type, amount in results:
-            print(f"{rcoa_code}: {amount}")
+    mapper = RCOAMapper.load("MEEZ")
+    results = mapper.map_account("3590-MUR-001", Decimal("1000000"))
+    for rcoa_code, desc, mapping_type, amount in results:
+        print(f"{rcoa_code}: {amount}")
     """
-        
+    
     def __init_(
             self, 
             institution_code: str,
@@ -120,17 +120,17 @@ class MappingRule:
 
         Structure:
         {
-          "version": "v1.0",
-          "institution_code": "MEEZ",
-          "mappings": [
+            "version": "v1.0",
+            "institution_code": "MEEZ",
+            "mappings": [
             {
-              "cbs_code_pattern": "3590-MUR-.*",
-              "rcoa_code": "3590-MUR",
-              "rcoa_description": "Murabaha Financing",
-              "mapping_type": "DIRECT"
+                "cbs_code_pattern": "3590-MUR-.*",
+                "rcoa_code": "3590-MUR",
+                "rcoa_description": "Murabaha Financing",
+                "mapping_type": "DIRECT"
             },
             ...
-          ]
+            ]
         }
         """
         settings = get_settings()
@@ -185,7 +185,7 @@ class MappingRule:
         rules = []
         for mapping in config.get("mappings", []):
             rule = MappingRule(
-                cbs_pattern=mappin["cbs_code_pattern"],
+                cbs_pattern=mapping["cbs_code_pattern"],
                 rcoa_code=mapping["rcoa_code"],
                 rcoa_description=mapping["rcoa_description"],
                 mapping_type=mapping.get("mapping_type", "DIRECT"),
@@ -198,8 +198,26 @@ class MappingRule:
             mapping_rules=rules,
             version=config.get("version", "v1.0")
         )
-    
 
+    def find_rule(self, cbs_code: str) -> Optional[MappingRule]:
+        """
+        Find the first matching rule for a CBS code.
+
+        RULE ORDER MATTERS:
+        Rules are checked in order. More specific patterns should come first.
+        A catch-all pattern (e.g., ".*") should be last for unmapped accounts.
+        """
+        # Check cache first
+        if cbs_code in self._cache:
+            return self._cache[cbs_code]
+
+        # Find first matching rule
+        for rule in self.rules:
+            if rule.matches(cbs_code):
+                self._cache[cbs_code] = rule
+                return rule
+
+        return None
 
 
 

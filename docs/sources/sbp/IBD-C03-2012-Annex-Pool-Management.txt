@@ -1,0 +1,399 @@
+  Instructions for Profit & Loss
+Distribution and Pool Management
+ for Islamic Banking Institutions
+               (IBIs)
+
+
+
+
+        State Bank of Pakistan
+     Islamic Banking Department
+           www.sbp.org.pk
+                       The Team
+
+
+     Name             Designation                Contact
+
+Mr. Saleem Ullah        Director         Saleem.Ullah@sbp.org.pk
+
+                                         Munir.Ahmed@sbp.org.pk
+Mr. Munir Ahmad       Joint Director
+
+                                         Aslam.Navaid@sbp.org.pk
+Mr. Aslam Navaid      Joint Director
+
+Ms. Fatima Javaid   Deputy Director      Fatima.Javaid@sbp.org.pk
+
+                                         Naveed.Ahmed@sbp.org.pk
+Mr. Naveed Ahmad    Assistant Director
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+
+
+INTRODUCTION
+
+The Mudaraba based deposits constitute a major part of Islamic banking institutions’ (IBIs) deposit mix.
+The contractual arrangement of such deposits with the IBI requires sharing of profits in financings,
+investments and placements etc. funded by such deposits between the IBI as Mudarib and the depositors as
+Rabbulmal, as per pre-agreed profit-sharing ratio. In case of loss, the same is borne by the depositors in
+proportion of their investments unless caused by the negligence and misconduct by the IBI in managing the
+depositors’ funds. Considering this peculiar relationship where income earned by the IBI through financing
+investment and placement has a direct impact on depositors’ return; there is a need to have well defined,
+transparent and standardized policies and practices for profit & loss computation and distribution across the
+Islamic banking industry.
+
+As the depositors’ funds are deployed in one or more pools, each having distinct risk and reward features,
+the IBIs’ pool management1 policies and practices significantly impact the profit and loss distribution. Each
+pool is like a virtual enterprise having explicitly demarcated sources of funds, ownership of specific assets
+and income and expenses. At present, different pool management practices are prevalent in the industry,
+which coupled with limited disclosures on the practices give rise to reputational risk for the Islamic banking
+industry. Considering the need to bring standardization and improve transparency in profit & loss
+distribution and pool management practices, the following instructions have been developed, which are
+applicable on IBIs with immediate effect.
+
+1. CREATION OF POOLS
+
+    1.1. IBIs shall have a well-defined profit and loss distribution and pool management framework for
+         creation of one or more pools of assets to be financed by different types of Mudaraba-based
+         (individual, corporate or financial institutions) deposits. The framework shall interalia specify the
+         objectives, investment strategy, and risk characteristics of each pool. It shall also explicitly define
+         the basis for (i) allocating different types of deposits to different pools (ii) assigning weightages to
+         each deposit category of a particular pool. The framework shall be approved by the Shariah Advisor
+         and Board of Directors (BOD) of the IBI and a duly approved copy of the same shall be submitted to
+         Islamic Banking Department, SBP within three months of issuance of these instructions. Further,
+         changes (if any), warranted in the framework shall also be approved by Shariah Advisor and BOD
+         under intimation to SBP within 15 days of such change(s).
+
+    1.2. All the pools to be created by the IBI shall be in conformity with the aforementioned framework and
+         shall be created through a memorandum signed by the authorized senior executive to be defined in
+         the framework documenting the objectives, investment startegy, tenor (if any), the risk and reward
+         features, Profit Sharing Ratio (PSR), weihgtages and basis thereof. Till the finalization of the
+         framework in light of these instructions, the pools may be created through the memo with the
+         approval of the president or relevant senior executive authorized by him/ her. In case of Islamic
+         Banking Division (IBD) of conventional banks, the memo may be approved by Head IBD in the
+         interim period.
+
+    1.3. The pool to which a deposit is to be allocated shall be identified at the time of accepting the deposit
+         and allocation of such deposit to the respective pool on the same day shall be ensured.
+
+
+
+
+1
+ The pool management in IBIs refers to systematic creation of one or more pools for different categories of Mudaraba deposits, as
+per risk and reward expectations of such depositors.
+                                                                                                                        Page | 1
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+  1.4. The IBIs shall have in place an adequate IT based system which interalia suitably caters to the
+       requirements of allocation of (a) deposits, (b) financing, investments and placements, (c) income and
+       expenses and (d) movement of assets to/from different pools. The system limitations, if any, shall be
+       addressed within one year of issuance of these instructions. The pools till such time shall be
+       managed through proper chart of accounts or cost centers. The relatively smaller sized IBIs may
+       however approach SBP for relaxation/extension in time frame for development of the IT system.
+
+  1.5. The Mudaraba based deposits shall be invested in earning assets like financing, investment etc. Such
+       deposits shall not be invested in non-trading fixed and other assets like land, building, furniture
+       fixtures, computers and IT systems etc. The IBI as Mudarib is responsible to finance all such
+       costs/assets from its own sources/equity.
+
+  1.6. The Cash Reserve Requirement (CRR) as prescribed by SBP from time to time shall be part of the
+       pool financed through deposits attracting CRR.
+
+  1.7. The IBIs may comingle its own equity (available in liquid/cash form) with the depositor’s funds in a
+       pool. As IBI assumes all the risks of current deposits (mobilized on Qarz basis), it can use such
+       deposits as its equity for the purpose of profit and loss computation and distribution.
+
+  1.8. The account opening form for Mudaraba based deposits or any other document for the purpose shall
+       include depositor’s explicit permission to IBI to commingle its funds or the funds of other depositors
+       including the current deposits within the Mudaraba pool as and when required.
+
+  1.9. To honor redemption/withdrawal requests, the pool(s) shall constitute at least 20% tangible/tradable
+       assets such as Ijarah assets, Ijarah Sukuk, Diminishing Musharaka assets, etc. However, this
+       benchmark may be brought down to a minimum of 10% of the pool’s assets subject to approval of
+       the Shariah Advisor of the IBI.
+
+  1.10. Each pool to be created and managed by an IBI shall be treated as a virtual enterprise having its own
+        assets, liabilities, income and expenses, which are identifiable, balanced and verifiable at all time.
+        Further, transaction records for each pool shall be maintained separately. It shall also be ensured that
+        IBI’s equity in different pools is reconciled with the total equity appearing in accounting records.
+
+  1.11. The inter pool transfers of assets shall be made through a memorandum which shall interalia include
+        the need and objective of inter pool sale/purchase of assets and shall be authorized by committee of
+        least two relevant senior executives.
+
+  1.12. IBIs may create treasury pools for interbank transactions through necessary authorization level as
+        defined in the pool management framework. These pools however need to be maintained separately
+        due to its peculiar nature i.e. liquidity management.
+
+  1.13. Subsidized financing facilities extended to IBI’s employees shall be funded from bank’s own
+        resources including current deposits. Mudaraba based deposits other then remunerative current
+        account deposits shall not be used for extending any subsidized financing to employees i.e. staff
+        loans and other funded facilities given to staff under IBIs’ HR policies.
+
+  1.14. It is preferable to create separate pools for Foreign Currency (FCY) deposits. The FCY deposits will
+        be managed as per existing instructions of SBP Foreign Exchange Manual.
+
+
+
+                                                                                                       Page | 2
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+2. IDENTIFICATION AND ALLOCATION OF POOL RELATED INCOME & EXPENSES
+
+  2.1. The allocation of income and expenses to different pools shall be made based on pre-defined basis
+       and accounting principles / standards.
+
+  2.2. The direct expenses shall be charged to respective pool, while indirect expenses including the
+       establishment cost shall be borne by IBIs as Mudarib. The direct expenses to be charged to the pool
+       may include depreciation of Ijarah assets, cost of sales of inventories, insurance / Takaful expenses
+       of pool assets, stamp fee or documentation charges, brokerage fee for purchase of
+       securities/commodities etc, impairment / losses due to physical damages to specific assets in pools
+       etc. However, this is not an exhaustive list; IBI pool management framework and the respective pool
+       creation memo may identify and specify these and any other similar expenses to be charged to the
+       pool.
+
+  2.3. Investment & Financing Losses:
+
+       2.3.1.The general and specific provisions created against non-performing financings and diminution
+             in the value of investments as under prudential regulations and other SBP directives shall be
+             borne by the IBIs as Mudarib. However, write-offs of financings and loss on sale of
+             investments shall be charged to respective pool along with other direct expenses.
+
+       2.3.2.The losses on financings and investments due to misconduct/negligence/breach of contract by
+             IBI shall not be charged to the pool; the IBI as Mudarib shall be responsible for absorbing such
+             losses. The financing approved and disbursed and investment made in contravention to the
+             prudential regulations or the IBI’s own policies, procedures and processes as determined by
+             internal auditor, external auditor and/or SBP inspection team will be treated as the negligence
+             on the part of the IBI.
+
+3. PROFIT/LOSS ALLOCATION BETWEEN DEPOSITORS’ FUND AND IBI’S EQUITY
+
+  3.1. In case of comingling of IBI’s equity with depositors’ fund in a pool, the Net Income/ loss of Pool
+       shall be allocated between IBI’s equity and the depositors’ fund in proportion to their respective
+       share in pool.
+
+  3.2. Profit and loss on the Mudaraba based deposits shall be computed and distributed on the basis of
+       average balance in the depositor’s account during the profit computation period.
+
+4. PROFIT SHARING RATIO & WEIGHTAGES
+
+  4.1. Profit Sharing Ratio (PSR)
+
+   4.1.1.   The Profit Sharing Ratio (PSR) between depositors (Rabbulmal) and IBIs (Mudarib) shall be
+            decided and announced at least 3 working days before the beginning of period concerned.
+            Further, no downward revision in the PSR agreed with the depositors (particularly the term
+            depositors) at the time of acceptance of deposit shall be made during the deposit tenor. In case
+            such a revision is necessary the depositors shall be allowed to withdraw their investments
+            without any deduction / forfeiture of profits /penalties etc.
+
+   4.1.2.   The Mudarib share shall be admissible only on profit allocated to depositors’ funds from the
+            pool’s net income (please see the Profit Computation and Distribution Process Flow at
+            Annexure-I). Further, the Mudarib share shall not exceed 50% of the Distributable Profit.
+                                                                                                    Page | 3
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+
+
+    4.2. Weightages
+
+     4.2.1.   The weightages to different categories of deposits in a pool shall be assigned based on
+              parameters / criteria defined in the pool management framework.
+
+     4.2.2.   The weightages shall be announced at least 3 working days before the beginning of period
+              concerned and shall not be changed during the period.
+
+     4.2.3.   The maximum weightage to the Mudaraba based deposit of any nature, tenor and amount shall
+              not exceed 3 times of the weightages assigned to saving deposits.2 The remunerative current
+              accounts shall not form part of Mudaraba based deposits for the purpose of this clause.
+
+     4.2.4.   IBIs shall explicitly mention in their profit distribution and pool management framework, the
+              treatment and remuneration basis for premature / early encashment of term deposits during the
+              period concerned. This shall however be ensured that the profits distributed and allocated as a
+              result of constructive liquidation of the pool shall not be called back / forfeited in any situation.
+
+5. PROFIT SMOOTHENING
+
+    5.1. Profit Equalization Reserve (PER):
+
+     5.1.1.   IBIs may maintain Profit Equalization Reserve (PER) from Net Income of Pool i.e. the gross
+              income less direct expenses and losses if any.
+
+     5.1.2.   The monthly contribution into PER will not exceed 2% of Net Income, and the accumulated
+              balance of PER shall not exceed 30% of Islamic Bank’s Equity or Islamic Banking Fund (IBF)
+              of Islamic Banking Division of Conventional banks
+
+     5.1.3.   50% of the balance available in PER shall be reflected as liability and remaining 50 % as reserve
+              in the books of the IBI.
+
+     5.1.4.   The funds of PER shall only be invested in Shariah compliant SLR eligible securities and the
+              returns earned on these funds will also be credited into the PER account. The profit sharing ratio
+              for IBI as Mudarib shall not be more than 10% for managing PER.
+
+     5.1.5.   The IBIs may fully or partly utilize/the amount of PER to improve the returns to the depositors
+              during periods when the pool’s profits are below market expectations.
+
+     5.1.6.   The clauses related to PER (if any) shall be made part of account opening form or any other
+              document for this purpose.
+
+    5.2. Transfers from Mudarib Share:
+
+     5.2.1.   IBI may forego up to 60 percent of its Mudarib share as Hiba to meet the market expectation in
+              case of lower than expected/market returns earned by the pool. However, the IBIs maintaining
+              PER will reduce their Mudarib share only if the PER is insufficient to improve the profit payouts
+              to the depositors.
+
+
+2
+    The deposits that used to attract SBP instructions for payment of minimum returns
+                                                                                                          Page | 4
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+   5.2.2.   This Hiba by the IBI shall however, be distributed across the board to all the deposit categories
+            in a pool.
+
+  5.3. IBIs will gradually phase-out the practice of offering special or individual Hiba to the priority
+       customers. Therefore, special or individual Hiba for CY 2012 will be frozen to previous year’s level
+       in absolute terms i.e. upto the actual amount of special or individual Hiba during CY 2011, upto 50%
+       in 2013, upto 25% in 2014 and 0% in 2015. Further, special Hiba if any, to be offered shall not be
+       more than 2% over and above the actual return earned by the depositor based on performance of the
+       pool and respective weightages and the reasons for allowing such special Hiba shall be documented,
+       and shall be subject to specific and explicit approval of the Shariah Advisor . The actual amount of
+       special or individual Hiba given during CY 2011 shall be submitted to Islamic Banking Department
+       along with the Shariah Advisor and BoD approved Framework as required in clause (1.1).
+
+6. INVESTMENT RISK RESERVE (IRR)
+
+  6.1. As the credit and market risk of the financing and investment portfolio is to be borne by depositors
+       being Rabbulmal in the Mudaraba arrangement with the IBI, there may be scenarios where the pool
+       may incur losses primarily due to unusually large write-offs and/or significant losses on sale of the
+       pool’s investments. Thus to absorb/off-set such losses IBIs may create the Investment Risk Reserve
+       (IRR) to cover the future investment losses and develop models and basis to determine the size of
+       the IRR and the periodic contributions to be made to build up the IRR. Till the development of the
+       model, IBIs may contribute towards IRR an amount up to 1.0 percent of the profit available for
+       distribution amongst the pool’s depositors after deduction of mudarib share in every profit period.
+
+  6.2. The IRR, if any created and maintained shall be reflected as liability by IBIs.
+
+  6.3. The funds of IRR shall only be invested in Shariah compliant SLR eligible securities and the returns
+       earned on these funds will also be credited in the IRR account. The profit sharing ratio for IBI as
+       Mudarib shall not be more than 10% for managing IRR.
+
+  6.4. The losses, if any, incurred by the pool shall be covered from the balance available in IRR.
+
+  6.5. The clauses related to IRR shall be made part of account opening form or any other document for
+       this purpose.
+
+7. VERIFICATION/AUDIT
+
+    The distribution of profit and loss to the depositors on the basis of these instructions shall be subject to
+    verification/audit jointly by the Shariah Advisor and External Auditor.
+
+
+8. DISCLOSURES
+
+  8.1. Disclosures in Notes to Financial Statements:
+   8.1.1.   The number and nature of pools maintained by the IBI along with their key features and risk &
+            reward characteristics.
+
+   8.1.2.   Avenues/sectors of economy/business where Mudaraba based deposits have been deployed.
+
+
+
+                                                                                                       Page | 5
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+   8.1.3.   Parameters used for allocation of profit, charging expenses and provisions etc. along with a brief
+            description of their major components.
+
+   8.1.4.   Mudarib Share (in amount and Percentage of Distributable income).
+
+   8.1.5.   Amount and percentage of Mudarib share transferred to the depositors through Hiba (if any).
+
+   8.1.6.   Profit rate earned vs. profit rate distributed to the depositors during the year.
+
+
+  8.2. Disclosures on IBI’s website and notice board of each branch:
+   8.2.1.   Percentage of Mudarib Share for period concerned and at least two previous periods in each
+            category of deposits.
+
+   8.2.2.   Weightages assigned to each category of deposits for period concerned and at least two previous
+            periods.
+
+   8.2.3.   The actual monthly/periodic profit/loss distributed to each category of deposits during last 2
+            years.
+
+   8.2.4.   PER and IRR policies (if in place).
+
+                                                    Xxxxxxxx
+
+
+
+
+                                                                                                     Page | 6
+Instructions For Profit & Loss Distribution and Pool Management for Islamic Banking Institutions (IBIs)
+
+Profit Computation and Distrirbution Process Flow:                                                                    Appendix-I
+
+
+
+
+                            Gross Income of Pool (GIP)
+
+
+
+                                  Less Direct Expenses
+                           Write-offs & losses of Investments
+
+                                                                                  Deduct/write back: PER
+                                                                                (if any) before distributing profit
+                                                                                     between IBI’s equity and
+                                                                                         Depositors Fund
+                            Net Income of Pool (NIP)
+
+
+
+
+             IBI’s Profit in proportion to      Distributable Profit
+               comingled funds/equity          (profit earned on depositors
+                                                           funds)
+
+
+
+
+                            Mudarib Share                 Depositors’ Profit
+
+
+
+
+                                                   Investment Risk Reserve
+                                                      (if any, upto 1% of
+                                                       depositor’s profit)
+
+
+
+                                                 Depositors’ Profit after IRR
+
+
+
+
+                                                  Utilize PER (fully or partly)
+                                                       Or distribute Hiba
+                                                (Maximum upto 60% of Mudarib
+                                                        Share) if needed
+
+
+
+                                               Amount distributable amongst
+                                                       depositors
+
+
+
+                                                 Payment to depositors as per
+                                                        weightages
+
+
+
+
+                                                                                                                              Page | 7
+

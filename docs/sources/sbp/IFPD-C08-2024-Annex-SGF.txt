@@ -1,0 +1,1305 @@
+SHARIAH GOVERNANCE FRAMEWORK
+              FOR
+  ISLAMIC BANKING INSTITUTIONS
+        (Effective from: January 01, 2025)
+
+
+
+
+   ISLAMIC FINANCE POLICY DEPARTMENT
+         STATE BANK OF PAKISTAN
+                            TEAM
+
+
+Syed Samar Hasnain           Executive Director
+                             Islamic Finance Group
+
+Mr. Ghulam Muhammad          Director
+                             Banking Policy & Regulations Department
+
+Ms. Nighat Tanveer           Director
+                             Islamic Finance Development Department
+
+Mr. Zulfiqar Ali Khokhar     Additional Director
+                             Islamic Finance Policy Department
+
+Mr. Muhammad Usman Abbasi    Senior Joint Director
+                             Islamic Finance Development Department
+
+Mr. Arish Usmani             Joint Director
+                             Islamic Finance Development Department
+
+Ms. Hina Noor                Assistant Director
+                             Islamic Finance Policy Department
+
+
+
+
+                                   i
+                                   ACRONYMS
+
+AAOIFI   Accounting and Auditing Organization for Islamic Financial Institutions
+AGM      Annual General Meeting
+BAC      Board Audit Committee
+BOD      Board of Directors
+CEO      Chief Executive Officer
+EM       Executive Management
+FAPC     Fit and Proper Criteria (for appointment of Shariah Scholar members of
+         Shariah Board of an IBI)
+FAQs     Frequently Asked Questions
+IAH      Investment Account Holder
+IBI      Islamic Banking Institution (includes full-fledged Islamic bank, Islamic
+         banking subsidiary, and Islamic banking division of a conventional bank)
+IBD      Islamic Banking Department (of SBP)
+ICAP     Institute of Chartered Accountants of Pakistan
+IIFM     International Islamic Financial Market
+IFI      Islamic Financial Institution (includes IBI, Takaful Company, Islamic Mutual
+         Fund and Collective Investment Scheme, Modaraba, and any other
+         institution declared or notified as such)
+IAD      Internal Audit Department
+ISAU     Internal Shariah Audit Unit
+IsDB     Islamic Development Bank
+PD       Product Development
+PLS      Profit and Loss Sharing
+RSBM     Resident Shariah Board Member
+SAC      Shariah Advisory Committee (of SBP)
+SB       Shariah Board (of IBI)
+SBP      State Bank of Pakistan
+SCD      Shariah Compliance Department (of IBI)
+SECP     Securities and Exchange Commission of Pakistan
+SGF      Shariah Governance Framework
+SOP      Standard Operating Procedure
+TOR      Terms of Reference
+
+
+
+                                          ii
+                                                    Table of Contents
+
+
+       Introduction ..................................................................................................................... 1
+
+ 1. Role of Board of Directors (BOD) .....................................................................................2
+
+ 2. Role of Executive Management (EM) ..............................................................................3
+
+ 3. Shariah Board (SB) ...........................................................................................................4
+
+ 4. Resident Shariah Board Member (RSBM)........................................................................8
+
+ 5. Shariah Compliance Department (SCD) ...........................................................................9
+
+ 6. Product Development (PD) ............................................................................................ 11
+
+ 7. Internal Shariah Audit (ISA)…......................................................................................... 11
+
+ 8. External Shariah Audit (ESA) .......................................................................................... 12
+
+ 9. Conflict Resolution ......................................................................................................... 13
+
+10. Competence of the Organs dealing with Shariah Governance Framework ..................13
+
+       Annexure-A: Fit and Proper Criteria (FAPC).................................................................. 15
+
+       Annexure-B: Report of Shariah Board ........................................................................... 25
+
+       Annexure-C: Format For External Shariah Audit Report ............................................... 26
+
+
+
+
+                                                                   iii
+                         SHARIAH GOVERNANCE FRAMEWORK FOR
+                             ISLAMIC BANKING INSTITUTIONS
+
+Introduction
+Complying with the principles of Shariah as enshrined in the Holy Quran and the Sunnah of
+the Prophet (peace be upon him) is the essence and raison d’être of Islamic banking industry.
+A sound and effective Shariah compliance framework is thus critically important to give
+confidence to the general public about Shariah conformity of Islamic Banking Institutions’
+(IBIs’) products and services. State Bank of Pakistan (SBP) endeavors to ensure that the
+operations of IBIs remain in conformity with the rules and principles of Shariah. Accordingly,
+it has been issuing regulations, instructions and guidelines on Shariah compliance since the
+re-launch of Islamic banking in 2001.
+In 2008, SBP issued detailed set of instructions and guidelines for Shariah compliance vide IBD
+Circular No. 02 of 2008. In the years 2015 and 2018, a comprehensive Shariah Governance
+Framework (SGF) was introduced. However, keeping in view the developments taking place
+in the Islamic banking industry and to remain abreast with the international best practices,
+SGF has now been further strengthened. The SGF shall be applicable to all IBIs i.e. full-fledged
+Islamic banks, Islamic banking subsidiaries and Islamic banking divisions of conventional
+banks. The primary objective of the SGF is to strengthen the overall Shariah compliance
+environment of IBIs and explicitly define the roles and responsibilities of various organs of IBIs
+including the Board of Directors (BOD), Executive Management (EM), Shariah Board (SB),
+Shariah Compliance Department (SCD), Product Development (PD), Internal Audit and
+External Audit towards Shariah compliance.
+The SGF of an IBI shall, at the minimum, cover the following:
+   i.    An effective mechanism for the BOD’s oversight of the IBI’s Shariah compliance
+         environment.
+   ii.   Accountability of management and staff of the IBI in implementation of the SGF.
+  iii.   An independent and effective SB appointed as per Fit and Proper Criteria (FAPC) set
+         out in Annexure-A of the SGF, with one of its Shariah scholar members working as
+         Resident Shariah Board Member (RSBM) to oversee the procedures and processes to
+         be adopted for implementation of the SB’s fatawa, resolutions and guidelines and
+         provide clarification thereon.
+  iv.    A SCD to assist SB and to serve as a conduit between the SB and the management of
+         an IBI.
+   v.    Shariah compliance review mechanism to assess operative effectiveness of Shariah
+         governance and compliance framework devised by the SB and BOD of the IBI.
+  vi.    An independent Internal Shariah Audit Unit (ISAU) which may be part of Internal Audit
+         Department (IAD) or an independent unit depending on the size of the IBI.
+ vii.    A Product Development (PD) department/unit responsible for development of new
+                                               1
+       and innovative products and services.
+ viii. External Shariah Audit to be undertaken along with the annual audit of the IBI.
+
+1. Role of Board of Directors (BOD)
+      i.   The BOD shall be ultimately responsible and accountable for ensuring full
+           conformity of the IBI’s operations with Shariah principles. Like other risks faced by
+           an IBI, the BOD needs to be fully cognizant of the risk of Shariah non-compliance
+           and its potential implications on the reputation and business of the IBI. Towards this
+           end, the BOD shall introduce an effective mechanism including diligent oversight
+           on functioning of the SGF and compliance with the fatawa, instructions, and
+           guidelines of the SB.
+      ii. The BOD should also be fully aware of its fiduciary responsibility, particularly,
+          towards Investment Account Holders (IAHs)/Profit and Loss Sharing depositors (PLS
+          depositors) who accept risks that are almost similar to those of the shareholders
+          but without having any voting rights and fora like Annual General Meetings (AGMs)
+          to express their concerns on the IBI’s performance. The IAHs expect IBIs to not only
+          exercise prudence in deployment of their funds in different avenues but to also
+          ensure Shariah conformity of returns to be earned and distributed to them. The
+          BOD is thus expected to introduce the necessary mechanisms and risk
+          management systems to safeguard the interests of IAHs/PLS depositors.
+      iii. The BOD shall appoint a SB and designate one of the SB members as Chairperson
+           and another as RSBM to perform such functions as stipulated under para 3(B) & 4
+           respectively of the SGF and shall cause to take appropriate measures for
+           introducing and implementing an effective Shariah compliance framework. The
+           Shariah        compliance        framework         shall      contain        scope,
+           duties/responsibilities/accountability and communication channels between
+           different functions to ensure across the board Shariah compliance in its operations.
+      iv. The BOD shall also approve the Terms of Reference (TOR) of the SB and fix
+          remuneration of the SB members, based on fair and transparent remuneration
+          mechanism. In case of foreign banks having Islamic Banking Branches, the
+          appointing authority shall be the Country Manager/CEO in Pakistan.
+      v. IBIs are encouraged to diversify their SB by engaging renowned Shariah Scholars,
+         who have an adequate experience of serving at Shariah Boards/Committees of
+         internationally reputed organizations.
+      vi. The BOD shall meet the SB at least on a half yearly basis to a) have a detailed
+          briefing on the Shariah compliance environment, the issues/weaknesses (if any),
+          and recommendations to improve Shariah compliance environment, and b) ensure
+          timely and effective enforcement of the SB’s decisions, fatawa, observations and
+          recommendations. The meetings may be held in person, virtual/online or hybrid
+          mode (physical and through video conferencing). However, at least one of the
+          meetings in a year should be held physically.
+
+                                               2
+     vii. The BOD in consultation with SB shall devise a mechanism for self-assessment of
+          SB and SB members individually (including the Chairperson) within 3 months from
+          the applicability date of these instructions. The SB members and BOD members
+          involved in the process of devising such assessment mechanism may be given
+          training on evaluation techniques to achieve the desired results. Further, annual
+          self-assessment shall be done by SB and made available to the BOD and SBP. The
+          mechanism is to be reviewed and revised as appropriate.
+    viii. The BOD is encouraged to diversify SB by appointing Shariah scholars from different
+          schools of thought in the country for promotion of the Islamic Financial Industry.
+          From January 01, 2028, this diversity clause shall become binding.
+     ix. The BOD is encouraged to appoint prominent Shariah Scholars who have not yet
+         served on SB of any IBI. Further, SB may encourage to provide opportunity to IBI’s
+         senior Shariah qualified officer(s) to attend SB meetings for their professional
+         development.
+     x. The BOD shall ensure that from January 01, 2028, the IBI’s all SB members,
+        including the chairperson, are not serving on any other IBI.
+     xi. The deliberations of the meeting between SB and BOD shall be properly recorded
+         and consent of SB shall be obtained before confirmation of relevant portion of
+         minutes of the meeting held between SB and BOD. A copy of the same shall be
+         submitted to SBP within 15 days of the confirmation of minutes.
+
+2. Role of Executive Management (EM)
+     i.   The EM of an IBI shall be responsible for implementation of the SGF. Every
+          concerned executive and staff shall ensure that all procedure manuals, product
+          programs and structures, process flows, related agreements and contracts, etc. as
+          approved by the SB are made available to and understood by everyone working in
+          his/her group or functional area. Moreover, every executive shall be responsible
+          for arranging adequate training to his/her group employees in coordination with
+          Training Department and SCD of the IBI.
+     ii. Every group head and executive shall also be accountable and responsible for
+         implementation of decisions, rulings, fatawa and guidelines given by SB relating to
+         his/her group or functional area. The EM needs to show zero tolerance on Shariah
+         non-compliance and take appropriate action against employees who have failed to
+         ensure compliance with the Shariah rules and principles in their respective areas of
+         responsibility. Instances of Shariah non-compliance shall also have a strong bearing
+         on their performance appraisals, promotions, increments, bonuses, etc.
+     iii. Whenever the management refers a matter to the SB for a decision, ruling or fatwa,
+          it shall ensure that complete and relevant information is submitted to the SB for its
+          proper understanding of proposal(s) and product(s).
+      iv. The decisions, rulings, fatawa of the SB shall be binding on the IBI.
+     v. The EM shall take appropriate measures to address the operational and human
+
+                                              3
+            resource issues that may result in Shariah non-compliance risk.
+     vi. IBIs should arrange trainings and/or orientation programs on Islamic banking and
+         finance for members of the BOD and appropriate training programs for senior
+         executives to improve their understanding and general acumen in Islamic finance.
+     vii. The management is also expected to arrange programs on a regular basis for
+          orienting and sensitizing the BOD and key executives about the business utility and
+          importance of an enabling Shariah compliance environment and the key
+          distinguishing features of Islamic finance products vis- à -vis conventional banking
+          products.
+    viii. IBI shall provide exposure to the SB members with regard to developments in
+          Islamic banking and finance. A yearly statement on the actions taken by the IBI shall
+          be submitted to SBP by 15th of January every following year.
+
+3. Shariah Board (SB)
+   A. Constitution of the SB and Appointment of SB Members
+      i.    Every IBI shall have a SB comprising at least three (3) Shariah scholars appointed by
+            the BOD as per the FAPC prescribed in Annexure-A of the SGF.
+      ii. The appointment of the SB members shall be subject to prior written clearance of
+          SBP. The IBI shall apply for SBP’s clearance after obtaining BOD’s approval. Further,
+          the IBI shall use no other nomenclature for the SB members except Chairperson,
+          member SB and RSBM.
+      iii. IBIs may, in consultation with the SB, also seek services of or engage lawyers,
+           accountants, economists and such other professionals to assist and advise the SB
+           on banking, legal, financial, economic and other relevant matters. The engagement
+           of such members shall however be of advisory nature and they shall not have any
+           voting rights in the meetings of SB.
+      iv.      a.   The SB members shall be appointed for a term of three (3) years. The SB
+            members are eligible for reappointment with the approval of SBP for another
+            consecutive term of three (3) years. The three (3) years’ term of SB shall commence
+            from the date of SBP’s clearance for appointment/reappointment.
+                b. The appointment on the same SB after serving two consecutive terms
+            may be considered after a cooling off period of at least 3 years and the instructions
+            given in clause 3A(iv)(a) above shall be applicable.
+                c.    However, to ensure smooth implementation of clause 3A(iv)(b) above,
+            the existing SB member(s) are allowed to complete their existing term and may also
+            be reappointed for two more consecutive terms. The reappointment for each term
+            shall be subject to clearance of SBP.
+      v. The SB members, except RSBM, may serve on the SBs of up to three (3) IBIs in
+         Pakistan. However, the IBI must ensure that its SB has at least 2 members (other
+         than RSBM), who are not on the SB of any other IBI. Hence, each IBI shall have at
+         least three (3) SB members, including RSBM, who are not serving on SB of any other
+                                               4
+       IBI. With effect from January 01, 2028, all SB members of an IBI (including the
+       chairperson, member(s) and RSBM) shall not serve on any other IBI.
+  vi. IBIs shall include a confidentiality clause in the contract or terms of appointment of
+      SB members for maintaining secrecy and confidentiality of IBI’s non-public
+      information and matters.
+  vii. At least two months prior to the expiry of the term of the SB members (including
+       the Chairperson), the SB member(s) may be reappointed for another term by the
+       BOD, subject to afresh prior written clearance of SBP pursuant to FAPC and para
+       3A(iv).
+  viii. If an IBI decides not to offer another term to any member(s) of the SB, it shall also
+        inform SBP about its decision, along with the rationale, at least three (3) months
+        before the expiry of the term.
+  ix. No member of a SB shall be terminated before the expiry of his/her term except
+      under any of the circumstances or on any of the grounds stipulated in paragraphs
+      3 to 6 of the FAPC given in Annexure-A of the SGF. The IBI shall submit detailed
+      rationale to the SBP along with documentary evidence, if any, to support its
+      decision. The decision to terminate any member of SB shall be subject to prior
+      approval from SBP on sufficient cause being shown by the IBI and upon giving such
+      member due opportunity of being heard by the BOD of the IBI.
+  x. In case any SB member resigns before the expiry of his/her term, such member
+     shall submit the resignation, together with reasons thereof, to the BOD in case of
+     domestic banks and Country Manager in case of foreign banks along with a copy to
+     SBP.
+  xi. A casual vacancy arising on the SB caused by resignation, removal or termination
+      or death of a member shall be filled by the BOD within three (3) months from the
+      date on which such vacancy was caused. The term of such appointment on casual
+      vacancy of any SB member shall also be for a term of three (3) years.
+
+B. Role of Shariah Board
+  i.   The SB shall be empowered to consider, decide and supervise all Shariah related
+       matters of the IBI. All decisions, rulings, fatawa of the SB shall be binding on the IBI
+       whereas SB shall be responsible and accountable for all its Shariah related
+       decisions.
+  ii. The SB shall cause to develop a comprehensive Shariah compliance framework for
+      all areas of operations of the IBI. All products or services to be offered and/or
+      launched by the IBI shall have prior approval of the SB.
+  iii. The SB shall review and approve all the procedure manuals, product
+       programs/structures, process flows, related agreements, broader parameters
+       pertaining to sales/marketing so that they are in conformity with the rules and
+       principles of Shariah. The EM while seeking the SB’s decision on any proposal shall
+       ensure provision of all necessary information, details and documents so as to
+                                           5
+        enable the SB to have proper understanding of the product, its process flows,
+        business and economic outcomes and Shariah permissibility or impermissibility.
+   iv. The SB shall have, at all reasonable times, unhindered access to all books of
+       accounts, records, documents and information from all sources including
+       professional advisors and IBI’s employees in the due discharge of its duties.
+   v. Considering the importance and binding nature of decisions, rulings and fatawa
+      given by SB, it shall rigorously deliberate on the issue placed before it for
+      consideration before giving any decision/fatwa. All such deliberations and
+      rationale for allowing or disallowing a particular product or service shall be duly
+      recorded and documented.
+   vi. Summaries/key findings of the reports of Internal Shariah Audit and Shariah
+       compliance reviews and complete report of External Shariah Audit and SBP Shariah
+       compliance assessment shall be submitted to SB for consideration and prescribing
+       appropriate corrective/enforcement action. The SB shall take up the unresolved
+       issues with management and shall include all significant outstanding issues in its
+       annual report on the Shariah compliance environment of the IBI. Moreover, the
+       Head of SCD and RSBM shall discuss both the significant and unresolved issues with
+       SBP assessment team during their on-site assessment.
+  vii. The SB shall specify the process/procedures to be adopted for changing, modifying
+       or revisiting fatawa, rulings and guidelines already issued by it.
+ viii. The SB shall not delegate any of its roles and responsibilities prescribed in the SGF
+       to any other person or any of its members.
+Notwithstanding anything contained herein, all decisions and rulings of the SB of the IBI
+shall be in conformity with the directives, regulations, instructions and guidelines issued
+by SBP in accordance with the rulings of Shariah Advisory Committee (SAC) of SBP.
+
+C. Shariah Board Meetings, Quorum and Minutes
+   i.   The SB shall, in addition to its meetings with the BOD, pursuant to paragraph 1(vi)
+        of the SGF, meet at least on a quarterly basis and each member of the SB shall
+        attend at least two thirds of the meetings held during a calendar year. Further, in
+        addition to the mandatory quarterly meeting, the Chairperson of the SB may
+        convene SB’s meetings as and when required.
+   ii. The quorum of the SB meetings, including that with BOD of the IBI, shall be at least
+       two thirds of Shariah scholar members.
+   iii. The SB decisions should preferably be made through consensus of the Shariah
+        scholar members; however, in case of difference of opinion, the decisions may be
+        made by a majority vote of the Shariah scholar members. In the event of equality
+        of votes, the Chairperson shall have a second or casting vote.
+   iv. All meetings shall be chaired by the Chairperson of the SB and in his/her absence
+       one of the Shariah scholar members, other than the RSBM, shall preside over the
+
+                                          6
+        meeting.
+   v. The agenda of the SB meeting along with sufficient details and documents shall be
+      sent to SB members well in advance enabling them to come prepared to the
+      meeting; the specific timelines for submission of the agenda shall be set by the SB
+      itself.
+   vi. The meetings of the SB may be held in person, virtual/online or hybrid mode
+       (physical and through video conferencing) as determined by the Chairperson of the
+       SB.
+  vii. All SB approvals taken through circulation shall be placed for ratification of the SB
+       at its next meeting. A resolution in writing signed by all SB members for the time
+       being and shall be as valid and effective as if it had been ratified at a SB meeting.
+       Proper documentary evidence of the SB approvals taken through circulation must
+       be kept in record for audit & SBP assessment.
+ viii. The SB shall ensure to cause that minutes of its meetings are properly recorded
+       incorporating necessary details of all deliberations, decisions, rulings and fatawa
+       issued along with the rationale and difference of opinion or dissenting note, if any.
+       Further, the minutes shall be signed by all the SB members who attended the
+       meeting and a copy thereof be provided to each member of the SB.
+   ix. For implementation of the decisions of SB meeting prior to the confirmation of the
+       minutes of the meeting, the approval/confirmation of the relevant
+       resolution/decision for the specific agenda must be obtained from SB through
+       written consent duly singed by the SB members or through email by the SB
+       members. However, the same shall be ratified in the subsequent meeting of SB.
+   x. The approved/confirmed minutes of meetings of the SB shall be submitted to SBP
+      within 15 days of its approval/confirmation for information and record. Further, the
+      minutes shall be made available to the BOD, SBP, internal auditors and external
+      auditors on request, enabling them to appreciate and understand the rationale and
+      background of the SB rulings, decisions and fatawa. Further, the secretary SB shall
+      circulate minutes of the SB meeting prior to the next SB meeting for timely
+      approval of the same.
+D. Independence of Shariah Board (SB)
+The SB shall discharge its duties independently and objectively. The members of the SB
+shall continuously assess their relationships with their respective IBIs to identify any
+situation where any issue related to independence may actually or potentially arise or can
+reasonably be inferred. The BOD shall ensure that the SB is not subject to any undue
+influence or pressure from the management and/or its own members. The IBI shall inter
+alia comply with the following:
+  i.    The appointment letter of each SB member shall clearly state the role and
+        responsibilities of the SB and shall be duly accepted by him/her.
+  ii.   The members of SB shall neither involve nor be responsible in any manner for the
+        operational activities or management functions of the IBI.
+                                          7
+    iii.   Clause G-15 of Corporate Governance Regulatory Framework issued by SBP shall
+           also be applicable on the members of the SB. However, the BOD of the IBI may
+           approve employee related facilities for the SB members and the same shall be
+           stipulated in their appointment letter.
+   E. Report of Shariah Board
+   The SB shall, based on the findings and reports of internal Shariah audit, external Shariah
+   audit and Shariah compliance review, prepare a report on the IBI’s Shariah compliance
+   environment and conditions. The minimum requirements for the report are given in
+   Annexure-B of the SGF. The report shall be signed by all the members of the SB. Further,
+   the report shall also be placed before the BOD meeting for discussion and shall be
+   published in English with Urdu translation in the IBI’s annual report.
+
+4. Resident Shariah Board Member (RSBM)
+   The RSBM shall oversee the procedures to be adopted for implementation of the
+   resolutions, pronouncements and fatawa of the SB and provide guidance thereon. In
+   principle, RSBM shall be appointed on a full time basis; however, SB having regard to
+   specific circumstances of the IBI may, at its own discretion, allow RSBM to devote some
+   time to academic activities related to the Shariah. Further, RSBM of an IBI shall not serve
+   in any capacity whatsoever in any other IBI in Pakistan. However, he may with prior
+   approval of the SB of IBI serve as a SB member of maximum two other IFIs.
+   Moreover, RSBM shall not hold any administrative and/or full time position with any
+   organization/institution other than the IBI where he is appointed as RSBM. SB shall ensure
+   that engagements of the RSBM other than at IBI, shall not hinder their activities at the IBI.
+   Without prejudice to the generality of the aforesaid provision, the RSBM shall have the
+   following role:
+     i.    Provide explanation/clarification to management and staff of IBI on products,
+           documents, process flows and on other operational Shariah related matters, in the
+           light of decisions, rulings, fatawa already issued by the SB.
+     ii.   The management while seeking explanation/clarification from RSBM on any matter
+           shall ensure provision of all necessary information, details and documents so as to
+           enable him/her to have proper understanding of the product, its process flows,
+           business and economic outcomes and Shariah permissibility or impermissibility.
+    iii.   Guide the SCD in conducting Shariah compliance reviews of key business areas on
+           a test check basis.
+    iv.    Review responses to Shariah related queries of IBI’s clients regarding IBI’s products
+           and services as submitted by SCD.
+     v.    Facilitate the SCD and Training Department in designing and conducting training
+           activities.
+    vi.    Submit at least a quarterly report to the SB, for ratification, of all the material
+           explanations/clarifications provided by him/her on products, services, documents,
+           process flows and other operational Shariah related issues, in the light of decisions,
+           rulings, and fatawa already issued by SB.
+
+                                               8
+   The explanation or clarification given by RSBM shall be binding on IBI.
+
+5. Shariah Compliance Department (SCD)
+   Every IBI shall have a SCD which may be headed by a RSBM or a suitably qualified, trained
+   and experienced officer recommended by the SB. The SCD shall have dedicated and
+   adequate staff as per the advice of the SB, so as to enable it to discharge its due
+   responsibilities in a proper and timely manner. The SCD shall have at least two qualified
+   Shariah experts (other than RSBM) from different schools of thought, who shall meet the
+   criteria of “Academic Qualifications” as prescribed in Annexure-A of the SGF. Moreover,
+   IBIs are encouraged to depute individuals with expertise and/or qualification in Shariah,
+   Risk Management, Legal and Accounting to strengthen its Shariah compliance function.
+   The SCD shall work under the overall guidance and supervision of the SB and its Head shall
+   functionally report to the SB and his/her performance appraisal shall be finalized by SB.
+   However, administrative reporting of Head SCD shall be to the Chief Executive Officer of
+   Islamic Bank and Chief Compliance Officer in case of Islamic Banking Branches of
+   Conventional Bank. The SCD shall be responsible for the following:
+   A. Secretariat of Shariah Board
+   It shall serve as the Secretariat to the SB with the responsibility to provide all the necessary
+   secretarial support to the SB including timely provision of meetings’ agenda, proposals,
+   and working papers. It shall also maintain proper record of agenda items, minutes of the
+   SB meetings and fatawa issued by the SB along with their rationale. Further, training
+   related to secretarial functions shall be provided to SCD employees to ensure smooth
+   secretarial functions of SB.
+   B. Conduit between Management and the Shariah Board
+   The SCD shall act as a conduit between the SB and management of the IBI. It shall review
+   all the product proposals and related agreements, contracts, manuals, process flows,
+   checklists submitted by management before presenting these to the SB for approval. The
+   RSBM shall also help and advise the SCD in its review of the proposals to be submitted to
+   the SB.
+      i.   The SCD shall not involve in any operational/business related functions/activity
+           including product development.
+     ii.   The SCD shall perform research and analysis on Shariah issues under the guidance
+           of the RSBM/SB.
+    iii.   The SCD shall be responsible to verify distribution of profit and loss to the
+           depositors prior to its disbursement.
+    iv.    The SCD shall prepare responses to Shariah related queries of IBI’s clients regarding
+           IBI’s products and services after discussion with the relevant stakeholders and
+           submit the same to RSBM for his/her advice/review/confirmation.
+   C. Shariah Compliance Review
+   The SCD shall keep a continuous watch on the IBI’s Shariah compliance environment and
+   shall ensure that all organs of Shariah Governance including the BOD oversight
+
+                                               9
+mechanism, internal Shariah audit, and enforcement of the SB’s directives by EM are
+operative and are effectively discharging their respective functions and responsibilities as
+defined in the SGF. In order to monitor and ensure compliance of IBI’s operations on an
+ongoing basis with the rules and principles of Shariah, the SCD under the supervision of
+RSBM shall, on sample basis, conduct an internal Shariah control review of the IBI’s
+business units, branches, and other Head Office departments.
+The Shariah compliance review shall be conducted to ensure that the IBI’s operations are
+in conformity with fatawa/guidelines issued by SB of the IBI and directives, regulation,
+instructions and guidelines issued by SBP in accordance with the rulings of SAC of SBP.
+Based on these reviews and other mechanisms as may be introduced by the SCD for
+assessing conformity of the IBI’s operations with the principles and rules of the Shariah,
+the Head SCD shall periodically submit a report to the SB on the overall Shariah compliance
+environment of the IBI, the ownership and commitment of the BOD and EM in building the
+necessary infrastructure for Shariah compliance together with identifying key areas of
+improvement. The frequency of this report shall be decided by the SB.
+D. Enforcement of Shariah Audit Reports
+All the reports of internal Shariah audit, external Shariah audit, internal Shariah review,
+and SBP Shariah compliance assessment shall be sent to SB for information and for
+determining appropriate corrective/enforcement actions. The Board Audit Committee
+(BAC) shall ensure compliance of the corrective actions determined by SB on the reports
+of ‘Internal Shariah Audit’ and ‘External Shariah Audit’. The SCD shall, however, be
+responsible for enforcement of corrective actions directed by the SB on the reports of
+‘internal Shariah review’ and ‘SBP Shariah compliance assessment’. The BAC and SCD shall
+also keep record of all unresolved issues requiring compliance and shall apprise the SB of
+their status at least on a half yearly basis. The SB shall take up the unresolved issues with
+the management and shall include all significant outstanding issues in its annual Shariah
+Report to be published in the Annual Report of the IBI. Moreover, SB/Head of SCD shall
+discuss all the significant and unresolved issues with SBP assessment team during their on-
+site assessment.
+E. Training on Shariah Compliance
+The SCD shall facilitate Training Unit of Human Resources Department of IBI to develop
+training material and to organize Shariah training activities as per training plan approved
+by the management and the SB. Moreover, the SCD shall be responsible for ensuring that
+necessary training has been imparted to all the Islamic banking staff and that periodic
+refresher courses are also organized by HRD to keep the staff abreast with the latest
+developments in the field. The management shall provide all required facilities for this
+purpose and the SCD shall report its concerns, if any, in this regard to the SB.
+F. Other Functions
+  i.    The SCD shall prepare a comprehensive procedure manual including checklists and
+        standard operating procedures (SOPs) to assist its staff in discharging their duties.
+  ii.   The SCD shall ensure that the IBI’s website gives a brief introduction of the SB
+
+                                           10
+            members, disclosures required by SBP, key features of all the products offered and
+            their difference with conventional products, frequently asked questions (FAQs) and
+            the contact details of the SCD personnel.
+6. Product Development
+   Every IBI shall have a Product Development (PD) Department/Unit which may be part of
+   the Business units or an independent department/unit. PD shall be responsible for
+   research and development of new and innovative products and services keeping in view
+   the business needs of the IBI and considering international developments/practices. The
+   IBI shall ensure providing of adequate qualified and trained staff to PD to perform its
+   duties.
+7. Internal Shariah Audit
+      i.    Every IBI shall have an Internal Shariah Audit Unit (ISAU) which may be a part of
+            the IAD or an independent unit, depending on the size of the IBI. Moreover, Head
+            of ISAU shall report to Head of Internal Audit in case it is part of IAD, whereas in
+            cases where ISAU is independent, it shall report directly to Board Audit Committee
+            (BAC).
+     ii.    The IAD or ISAU shall have dedicated and adequate staff as per the advice of the SB
+            keeping in view the size of operations of the IBI, so as to enable it to discharge its
+            due responsibilities in a proper and timely manner. The IBI shall ensure that staff of
+            ISAU are adequately qualified (preferably having Shariah qualification) and trained
+            to perform their duties. Internal Shariah audit staff shall be dedicated to Shariah
+            audit only; however, Internal Shariah audit and regular audit of a branch or a
+            function can be performed simultaneously. The IBI shall ensure to provide
+            adequate, qualified and trained staff in the IAD or ISAU.
+     iii.   The scope, methodology, internal Shariah audit manual and format of Internal
+            Shariah Audit Report shall be reviewed and approved by the SB. Furthermore, the
+            SB shall review the methodology and Internal Shariah audit manual at regular
+            intervals.
+     iv.    The IAD or ISAU, as the case may be, shall prepare Internal Shariah audit plan
+            which, after review by the SB, shall be approved by the BAC.
+      v.    The IAD or ISAU of the IBI shall conduct a post disbursement audit of profit and loss
+            distribution on quarterly basis. Accordingly, the report of internal Shariah audit on
+            profit and loss distribution shall be submitted to SB of the IBI.
+     vi.    The final Internal Shariah audit report shall be submitted to SB for consideration
+            and for determining appropriate corrective action(s).
+    vii.    The final report along with the enforcement/corrective actions determined by the
+            SB shall be sent to the BAC for information and ensuring compliance with
+            the SB directives on the report. The SCD shall submit a report regarding the
+            status of compliance of audit observations to the SB for information on a periodic
+            basis.
+
+                                               11
+8. External Shariah Audit
+     i. In order to have an independent assessment of the Shariah governance and
+         compliance environment of an IBI, the scope of external audit of IBIs shall also
+         include an independent and objective assessment of the conformity of IBI’s
+         operations with Shariah rules and principles. The audit firms would need to take
+         appropriate measures to have the capacity in relation to resources and
+         methodology to conduct the Shariah audit of an IBI.
+    ii. For the purposes of the SGF, the scope of external Shariah audit shall be limited to
+         assessing compliance of an IBI’s financial arrangements, contracts, and
+         transactions with Shariah rules and principles. The Shariah rules and principles for
+         the purpose of the external Shariah audit shall mean the following, in the sequence
+         provided below:
+              a. Essentials, Regulations, Instructions and Guidelines issued by the SBP
+                 including the Shariah Standards issued by Accounting and Auditing
+                 Organization for Islamic Financial Institutions (AAOIFI), as adopted by SBP
+                 with suitable modifications, if any;
+              b. The rulings of SAC of SBP as notified by SBP;
+              c. Requirements of the applicable Islamic Financial Accounting Standards as
+                 notified by the Securities and Exchange Commission of Pakistan (SECP) and
+                 as circulated by SBP;
+              d. Approvals and rulings given by the SB of an IBI in line with the SBP directives,
+                 regulations, instructions and guidelines issued in accordance with the
+                 rulings of SAC of SBP.
+    iii.   The external auditors shall prepare a report for the BOD giving their opinion on the
+           above and shall also report on a) the overall Shariah compliance environment, b)
+           the risks associated with Shariah non-compliance, c) the capacity and quality of the
+           risk management system to measure, manage and mitigate these risks, d) the level
+           of awareness and sensitization of the EM and the BOD in addressing the said risks
+           and e) any other issues deemed significant by the external auditors.
+    iv.    The following instructions shall be adhered to while conducting external Shariah
+           audit of the IBIs:
+              a. SB members of IBI shall not be allowed to be engaged with any external
+                 audit firms.
+              b. It shall be the responsibility of the external Audit firms to take measures for
+                 capacity building of their staff for conducting Shariah audit and provide
+                 them with appropriate trainings. Moreover, external Audit firms shall
+                 prescribe a FAPC for Shariah scholars to be engaged for external Shariah
+                 audit of IBIs. In this regard, FAPC for SB members as prescribed in Annexure-
+                 A of the SGF may be used as a guiding principle for engagement of Shariah
+                 auditor.
+              c. External Audit shall also include review and provide opinion on bank’s pool
+                                              12
+                  management practices & IT based system; specially computation and
+                  distribution of profit & loss to the depositors, tagging and movement of
+                  assets and allocation of income & expenses, etc.
+              d. The format of External Shariah Audit Report (ESAR) for submission to BOD
+                 of an IBI and to SBP is enclosed as Annexure-C.
+              e. Institute of Chartered Accountants of Pakistan (ICAP) may develop
+                 comprehensive guidelines to conduct external Shariah Audit in consultation
+                 with external Audit firms.
+              f. A copy of ESAR shall be submitted to SBP within 45 days of the date of
+                 finalization/signing of IBI’s Audited Accounts by the External Auditor. The
+                 IBIs shall not publish the ESARs till further instructions.
+
+9. Conflict Resolution
+      i.   In case of any difference of opinion between an IBI and the SBP assessment team
+           or any other department of SBP regarding Shariah conformity of IBI’s products,
+           services, contracts and transactions, the matter shall be referred to SBP. If deemed
+           appropriate by SBP, it may escalate the case to the SAC of SBP for consideration
+           and decision.
+      ii. Similarly, in case of a difference of opinion between SBP and IBI on Shariah
+          conformity of IBI’s products, services, contracts and transactions, SBP shall refer
+          the case to SAC of SBP for consideration and decision on the issue of Shariah
+          permissibility of such matters.
+     iii. The SB of the IBI may also refer Shariah issues to SBP for seeking opinion of SAC of
+          SBP. The case shall be sent to SBP along with all relevant documents and the related
+          Shariah arguments. The SAC of SBP shall consider and give its decision or provide
+          guidance, as the case may be, on such issues at its earliest convenience.
+10. Competence of the Organs Dealing with Shariah Governance Framework
+      i.   The BOD and EM of an IBI are expected to have a reasonable knowledge of Shariah
+           principles and their broad application in the context of the Islamic finance. It shall
+           be ensured that the members of the BOD and the EM are provided orientation
+           sessions/training in Islamic banking on a regular basis which, apart from their
+           professional development, would also facilitate an effective implementation of the
+           SGF.
+      ii. Similarly, members of the SB of an IBI shall also be provided opportunity to attend
+          trainings/conferences etc. to enhance/update their knowledge and understanding
+          of banking & finance.
+      iii. An IBI shall also ensure that all its key executives including heads of credit,
+           marketing, operations, treasury and risk management and other employees
+           including branch managers, relationship managers etc. and other front line staff
+           have adequate understanding of Islamic banking and finance and are able to
+           appreciate and understand inherent and reputational risks of Shariah non-
+           compliance. The IBIs shall also ensure to require such officials to undergo and
+                                              13
+attend various training sessions, seminars, and workshops for their continuing
+professional development. This would provide confidence to the public that the IBI
+they are dealing with is manned by professionals having adequate experience and
+expertise in Islamic banking.
+                                x…x…x
+
+
+
+
+                                 14
+                                                                                       Annexure-A
+
+
+                  FIT & PROPER CRITERIA FOR THE APPOINTMENT OF SHARIAH
+                        SCHOLAR MEMBER OF SHARIAH BOARD OF AN IBI
+
+1. Academic Qualification:
+Shahadat ul Aalamiyyah (‫ )شھادۃ العالمیۃ‬Degree (Dars e Nizami) or similar other degree from any
+recognized institution/Board of Madaris and Bachelor’s Degree (which is other than the Madaris
+Degree).
+
+                                               OR
+
+Post Graduate Degree in Kuliyyatush Shariah ( ‫ )کلیۃ رالشیعۃ‬or Kuliyyah Usooluddin (‫)کلیۃ اصول الدین‬,
+L.L.M. (Shariah) or equivalent from any recognized University.
+
+                                              OR
+
+Shariah Scholar members of Shariah Board/Committees of internationally reputed
+organizations operating in other jurisdictions.
+
+2. Experience and Exposure:
+
+   i.    The Shariah scholar members must have at least four (4) years’ experience of giving
+         Shariah rulings including the period of Takhassus fil Ifta; or at least five (5) years post
+         qualification experience in teaching or Research and Development in Islamic Banking
+         and Finance. Preference shall be given to those who have certificate in Takhassus fil
+         Fiqh/Takhassus fil Ifta.
+
+   ii.   Majority of Shariah scholar members of Shariah Board (SB) of an IBI, including RSBM,
+         shall have at least three (3) years’ experience as Shariah Advisor or Member of SB of
+         an Islamic Financial Institution (IFI) or deputy to a Shariah Advisor or member of the
+         Shariah team of an IFI.
+  iii.   Each Shariah scholar member of the SB must be able to demonstrate:
+         a) Adequate understanding of banking and finance in general and Islamic finance in
+            particular;
+         b) Strong skills in Islamic jurisprudence (Usul Al-Fiqh), as he must know the
+            appropriate Fiqh methodologies for deriving juristic opinion
+         c) Good comprehension of Arabic language
+         d) Good communication skills in English Language
+    On a sufficient cause being shown by an IBI and an application made by it to the effect,
+    the SBP may, at its discretion, allow relaxation from one or more of the aforesaid
+    requirements of the FAPC, for such period and on such condition(s), as the SBP may deem
+    appropriate in the specific circumstances of each case.
+
+                                                15
+3. Track Record:
+   Each member of SB must have an impeccable track record of professional conduct and
+   in social, economic and financial dealings.
+4. Solvency & Financial Integrity:
+   Each member of the SB shall, at the time of acceptance of their appointment thereon,
+   declare in writing that s/he:
+     i.        has not been associated with any illegal activity.
+    ii.        has not been in default of payment of dues owed to any financial institution and/or
+               default in payment of any taxes in an individual capacity or as a proprietary concern
+               or as a partner of any partnership firm or as a director or CEO or major shareholder
+               of a company or any other corporate body in Pakistan or aboard.
+    iii. has not been declared bankrupt/insolvent, or entered into any compromise with
+         creditors related to insolvency or bankruptcy or is not currently subject to any
+         bankruptcy proceedings.
+5. Integrity, Honesty and Reputation:
+   Each member of the SB shall, at the time of acceptance of his/her appointment thereon,
+   declare in writing that he:
+          i.    has not been convicted of any criminal offence involving financial impropriety or
+                moral turpitude.
+      ii.       has not been subject to any adverse findings or any settlement in civil or criminal
+                proceedings with regard to investments, financial or business misconduct or fraud.
+     iii.       has not contravened any of the requirements and standards of financial, banking or
+                corporate regulatory regime.
+6. Conflict of Interest:
+     i.        The Resident Shariah Board Member (RSBM) of an Islamic Banking Institution (IBI)
+               shall not work or be employed in any other IBI in any capacity whatsoever. He may,
+               however, with prior approval of the SB of IBI serve as a SB member of maximum two
+               other IFIs. Further, RSBM shall not hold any administrative and/or permanent
+               position with any organization/institution other than the IBI where he is appointed
+               as RSBM.
+      ii. The SB members, except RSBM, may serve on the SBs of up to three (3) IBIs in
+          Pakistan. However, the IBI must ensure that its SB has at least 2 members (other
+          than RSBM), who are not on the SB of any other IBI. Hence, each IBI shall have at
+          least three (3) SB members, including RSBM, who are not serving on SB of any other
+          IBI, subject to compliance with paras 1(x) and 3A(v) respectively of the SGF.
+     iii. No SB member including RSBM can serve as advisor/consultant/auditor of an IBI.
+     iv. Members of a SB shall neither own nor have any direct or beneficial equity or
+         proprietary interest in the business of: (a) the IFI in which they are being
+         appointed/working as member SB, (b) Exchange Company (c) Member of Stock
+         Exchange, and (d) Corporate Brokerage House nor he should be an employee of any
+                                                   16
+         of the aforementioned entities. Any person, on being appointed as a member of SB
+         of an IBI and is exposed to any of the aforesaid restriction(s), shall within sixty (60)
+         days of assuming his/her office as a member, divest himself from ownership or
+         holding of equity or proprietorial interest in any of the companies or undertakings
+         stipulated above. Failure to do so shall, ipso facto, render such person as disqualified
+         from being a member of the SB.
+
+    v.   Each SB member (including RSBM) shall provide statement of changes in his/her
+         engagements to Secretary of the IBI’s SB on half yearly basis. In case of no change in
+         engagement NIL statement shall be provided.
+7. Declaration of Fidelity and Secrecy as per Section 33A of BCO 1962:
+   Each member of the SB shall sign a declaration of fidelity and secrecy, before assuming
+   office, as per provisions of Sub-section (2) of Section 33A of the Banking Companies
+   Ordinance 1962 or any other statutory modification thereof, the format of which is
+   provided as set out below. The Declaration shall be kept in safe custody by the IBI.
+
+                                            x…x…x
+
+
+
+
+                                              17
+                  PROFORMA - PARTICULARS OF SHARIAH BOARD MEMEBRS
+                    TO BE SUBMITTED BY ISLAMIC BANKING INSTITUTION
+                                                                                       Photo
+1. Full Name:                                                                        2 x 2.5 cm
+2. Father’s Name:
+3. Date of Birth (dd/mm/yyyy):                    Place of Birth:
+4. Religion:                                       Nationality(ies):
+5. C.N.I.C. Number/Passport No.:                         N.T.N.
+6. Present residential address in full:
+
+
+7. Permanent residential address in full:
+
+
+8. Present Job/Status:
+  Institution/Official address:
+
+9. Contact Details:
+Residential Phone No.                             Office Phone No.
+Mobile Phone No.                                  E-mail:
+10. Education:
+    a) Details of Shahadat-ul-Aalamiyyah/Post Graduate Degree:
+
+                                      Board/                 Date of   Percentage      Grade/
+  S. No.       Degree Name           University              passing     Marks          GPA
+
+   b) Major Subjects studied in Bachelors/Master’s degree:
+        i)
+        ii)
+        iii)
+        iv)
+    c) Courses/Trainings attended related to Banking and Finance, if any:
+        i)
+        ii)
+        iii)
+   d) Language Skills in English and Arabic (Excellent/Good/Fair/Poor)
+
+ Proficiency in                              English                        Arabic
+ Writing
+ Reading
+ Speaking
+                                              18
+   e) Courses/Certifications in English/Arabic, if any:
+          i)
+          ii)
+          iii)
+   f) Computer Knowledge (Courses/certifications or skills acquired)
+          i)
+          ii)
+          ii)
+11. Experience/Appointments/Positions held during the last five years:
+   a) Fatwa Experience:
+i) Experience of giving Shariah rulings:
+
+                                                                    From               To
+   S. No.         Name of Institution      Field(s) of Fatwa
+                                                                (dd/mm/yyyy)      (dd/mm/yyyy)
+
+ii) No. of Fatawa Issued
+
+   S. No.              Name of Institution              Field(s) of Fatwa       No. of Fatawa
+
+iii) No. of Fatawa Published
+
+                                                                                     Year of
+   S. No.         Name of Publication           Subject        Publisher Name
+                                                                                   Publication
+
+   b) Research Experience:              Years
+
+i) Total No. of Publications/Articles Published in Research Journals:
+
+                                                          Name of Journal/         Date of
+   S. No.         Subject of Publication or Article          Magazine             Publication
+
+ii) No. of Books Authored/Compiled:
+
+                                                                                     Year of
+   S. No.            Name of book               Subject        Publisher Name
+                                                                                   Publication
+
+   c) Teaching Experience:
+
+                                                       Level of Teaching
+                  Name of        Subjects             (Under Graduation         From       To
+ S. No.
+                 Institution    and Books              /Graduation/Post      (dd/mm/yy (dd/mm/yy
+                                  Taught                 Graduation)             yy)       yy)
+
+   d) Banking Experience (including current positions held)
+
+
+                                                 19
+                                                                   From                 To
+   S. No.       Name of Institution        Designation
+                                                               (dd/mm/yyyy)        (dd/mm/yyyy)
+
+   e) Financial Institutions (excluding Banks)/Other Institutions Experience (including current
+      positions held)
+
+                                                                  From                 To
+   S. No.       Name of Institution        Designation
+                                                              (dd/mm/yyyy)        (dd/mm/yyyy)
+
+
+12. Name(s) & designation(s) of the supervisor (one grade up) under whom Shariah scholar
+member of SB has served during the last five years:
+
+   S. No.        Name of Supervisor           Designation of Supervisor      Name of Institution
+
+13. Has he ever been terminated or dismissed in the capacity of employee
+director/chairperson from any institution, firm or a company?
+
+       Yes              No
+
+If yes, provide details in the following format:
+
+                                                                          Reason of Termination/
+   S. No.      Year          Designation           Name of Institution
+                                                                                Dismissal
+
+14. Has he ever been convicted of any offence?
+
+       Yes              No
+
+If yes, provide details in the following format:
+
+                                                   Authority by whom        Penalty/Sentence
+   S. No.      Year       Nature of offence
+                                                       convicted                Imposed
+
+15. Has he ever been censured and/or penalized by any financial/tax authority (local or foreign)?
+
+       Yes              No
+
+If yes, provide details in the following format:
+
+                                                   Authority by whom
+   S. No.      Year       Nature of findings                                  Penalty Imposed
+                                                       penalized
+
+ 16. Has he ever been dismissed from employment?
+
+       Yes              No
+
+If yes, provide details in the following format:
+
+   S. No.      Year                Employer by whom dismissed                 Reason of Dismissal
+                                               20
+17. Does he hold/has held any executive/non-executive position in any other financial institution?
+
+       Yes                  No
+
+If yes, provide details in the following format:
+
+               Designation and Nature of Name of Financial           From                 To
+   S. No.               Position            Institution          (dd/mm/yyyy)        (dd/mm/yyyy)
+
+18. Does he hold any direct or beneficial equity or proprietary interest in the business of: (a)
+the IFI in which he is being appointed as member SB, (b) Exchange Company (c) Member of
+Stock Exchange, and (d) Corporate Brokerage House or he is employee of any of the
+aforementioned entities.
+
+       Yes                 No
+
+If having equity or proprietary interest, provide details in the following format:
+
+                                              Percentage            From              To
+    S. No.            Name of Institution    Interest Held      (dd/mm/yyyy)     (dd/mm/yyyy)
+
+If employee of any of the aforementioned entities, provide details in the following format:
+
+                                                                    From              To
+    S. No.            Name of Institution     Designation       (dd/mm/yyyy)     (dd/mm/yyyy)
+
+19. Shareholding in the IBI
+
+                        Number of shares held as of
+
+20. Does he hold any direct or beneficial equity interest in the business of any other Islamic
+banking or Islamic financial institution? If yes, provide details in the following format:
+
+                                              Percentage            From              To
+    S. No.            Name of Institution    Interest Held      (dd/mm/yyyy)     (dd/mm/yyyy)
+
+21. Names & addresses of three (3) respectable persons (not relatives) who have been closely
+acquainted with the member SB of the IBI during the last five years.
+
+             S. No.                   Name                   Address             Contact No.
+                1
+                2
+                3
+
+
+
+
+                                                      (Signature of the proposed member
+                                                           of Shariah Board of the IBI)
+
+
+                                                21
+                                           Affidavit
+
+                                 (On Non-Judicial Stamp Paper)
+
+I,                        son/daughter/wife of                                 adult, resident
+of
+and holding CNIC No./Passport No.                                          do hereby state on
+solemn affirmation as under: -
+
+
+     a. that the deponent hereby confirms that the statements made and the information
+        provided in the attached proforma and the answers thereof are correct and that there
+        are no other facts that are relevant for “Fit and Proper Criteria” which I have not
+        disclosed;
+
+     b. that the deponent undertakes that the State Bank of Pakistan may seek additional
+        information from any third party it deems necessary in view of assessing “Fit and
+        Proper Criteria”
+
+     c. that the deponent undertakes to bring to the attention of the State Bank of Pakistan
+        any matter which may potentially affect my status of eligibility as being someone fit
+        and proper as and when it arises; and
+
+     d. that whatever is stated above is true and correct to the best of my knowledge and
+        belief and nothing has been concealed therefrom.
+
+                                                       DEPONENT
+
+The Deponent is identified by me
+
+                                                       Signature
+
+
+                                                       ADVOCATE
+                                                       (Name and Seal)
+
+Solemnly affirmed before me on this        day of                     at                  by
+the Deponent above named who is identified to me by                         , Advocate, who is
+known to me personally.
+
+
+
+
+                                                       Signature
+                                                       OATH COMMISSIONER FOR TAKING
+                                                       AFFIDAVIT
+                                                       (Name and Seal)
+
+
+
+                                             22
+                          DECLARATION OF FIDELITY AND SECRECY
+
+                         (To be signed by the Shariah Board Member)
+In terms of Clause 7 of Fit and Proper Criteria for the appointment as a Shariah Board Member,
+I, (insert name) on becoming Shariah Board Member of the (insert name of bank), in terms of
+Section 33-A of the Banking Companies Ordinance, 1962 do hereby solemnly & sincerely
+confirm/declare that I shall observe strict fidelity, secrecy and usage customary among
+bankers and all matters relating thereto and in particular shall not divulge or communicate
+any information relating to the affairs of its customers, which may come to my knowledge in
+discharging my duties directly or indirectly, except in circumstances in which it is in accordance
+with law, practice and usage customary among bankers.
+
+
+
+
+Dated:
+
+
+
+Signature:
+
+
+
+Stamp:
+
+
+
+
+                                              23
+                                DECLARATION BY PROPOSING BANK
+
+
+After in-depth assessment of Mr./Ms.______________________ for the proposed position
+_______________, I, _________________ (name & designation i.e. Company Secretary or Head of
+Human Resources), on behalf of_________________ ("the proposing IBI”) submit the above FAPC
+Proforma and declare that Information & credentials submitted to SBP are accurate and verified by the
+IBI.
+
+It is further confirmed that the IBI has obtained copies of educational degrees/certificates
+and verified the same from relevant institutions/universities directly or obtained certified
+copies of verification from previous employer (if verified during last five years).
+
+                                     OR
+
+The IBI undertakes that educational degrees/certificates shall be verified within a period of
+four months of FAPC clearance/appointment. The evidence of the same shall be provided to
+SBP.
+
+
+        Dated this                                   day of            20
+
+        Name:                                       Signature:
+
+        Position:
+
+        For and on behalf of (name of IBI):
+
+
+
+
+                                               24
+                                                                                         Annexure-B
+
+                                            Report of Shariah Board
+                                                    (Period)
+
+                               In the name of Allah, the Beneficent, the Merciful
+
+1.   While the Board of Directors and Executive Management are solely responsible to ensure that the
+     operations of (name of the bank) are conducted in a manner that comply with Shariah principles at
+     all times, we are required to submit a report on the overall Shariah compliance environment of (name
+     of the bank).
+
+2.   To form our opinion as expressed in this report, the Shariah Compliance Department of the bank
+     carried out reviews, on test check basis, of each class of transactions, the relevant documentation
+     and process flows. Further, we have also reviewed the reports of the internal Shariah audit and
+     external Shariah audit. Based on above, we are of the view that:
+
+     (SB’s opinion at least on the following may be given)
+
+        i.   Whether or not IBI has complied with Shariah rules and principles in the light of fatawa,
+             rulings and guidelines issued by its SB.
+        ii. Whether or not IBI has complied with directives, regulations, instructions and guidelines
+             related to Shariah compliance issued by SBP in accordance with the rulings of SBP’s SB.
+        iii. Whether or not the bank has a comprehensive mechanism in place to ensure Shariah
+             compliance in their overall operations.
+        iv. Whether or not the bank has a well-defined system in place which is sound enough to ensure
+             that any earnings realized from sources or by means prohibited by Shariah have been credited
+             to charity account and are being properly utilized.
+        v. Whether or not the bank has complied with the SBP instructions on profit and loss distribution
+             and pool management.
+        vi. The level of awareness, capacity and sensitization of the staff, management and the BOD in
+             appreciating the importance of Shariah compliance in the products and processes of the bank.
+        vii. Whether or not the Shariah Board has been provided adequate resources enabling it to
+             discharge its duties effectively.
+
+3.   Further, the following are the significant Shariah related issues of the bank which have been taken
+     up with its management; however, these are still outstanding.
+
+                                                      Signature
+                                                        Name
+                                             Chairperson Shariah Board
+
+                 Signature                                                     Signature
+                   Name                                                           Name
+             Member Shariah Board                                          Member Shariah Board
+
+       Date of Report:
+
+
+                                                       25
+                                                                                   Annexure-C
+
+                                       DRAFT SAMPLE
+
+Independent Assurance Report on Compliance with the Shariah Rules and Principles
+
+To the Board of Directors of [                /               - Islamic Banking Institution]
+
+1.         Introduction
+       We have undertaken a reasonable assurance engagement that the State Bank of
+       Pakistan has required in terms of its Shariah Governance Framework – External
+       Shariah Audit of [                    /                    – [IBI] (the Islamic Banking
+       Institution) for assessing compliance of the IBI’s financial arrangements, contracts, and
+       transactions having Shariah implications with Shariah rules and principles for the year
+       ended                     . This engagement was conducted by a multidisciplinary team
+       including assurance practitioners and independent Shariah scholar(s).
+
+2.         Applicable Criteria
+       The criteria for the assurance engagement, against which the underlying subject
+       matter (financial arrangements, contracts, and transactions having Shariah
+       implications for the year ended                  ) is assessed, comprise of the Shariah
+       rules and principles that for the purpose of External Shariah Audit, mean the following,
+       in the sequence provided below:
+
+       i)     Essentials, Regulations, Instructions and Guidelines issued by the State Bank of
+              Pakistan (SBP) including the Shariah Standards issued by Accounting and
+              Auditing Organization for Islamic Financial Institutions (AAOIFI), as adopted by
+              SBP with modifications, if any;
+       ii)    The rulings of SBP’s Shariah Advisory Committee (SAC) as notified by SBP;
+       iii)   Requirements of the applicable Islamic Financial Accounting Standards as
+              notified by the Securities and Exchange Commission of Pakistan (SECP) and as
+              circulated by SBP;
+       iv)    Approvals and rulings given by the SB of the IBI in line with the SBP directives,
+              regulations, instructions and guidelines issued in accordance with the rulings
+              of SBP’s SAC.
+
+       The above criteria were evaluated for their implications on the financial statements of
+       IBI for the year ended               , which are annexed.
+
+3.          Management’s Responsibility for Shariah Compliance
+       IBI’s management is responsible to ensure that the financial arrangements, contracts
+       and transactions having Shariah implications, entered into by the IBI with its
+       customers, other financial institutions and stakeholders and related policies and
+       procedures are, in substance and in their legal form, in compliance with the
+       requirements of Shariah rules and principles. The management is also responsible for
+       design, implementation and maintenance of appropriate internal control procedures
+       with respect to such compliance and maintenance of relevant accounting records.
+
+                                             26
+4.       Our Independence and Quality Control
+     We have complied with the independence and other ethical requirements of the Code
+     of Ethics for Chartered Accountants issued by the Institute of Chartered Accountants
+     of Pakistan, which is founded on fundamental principles of integrity, objectivity,
+     professional competence and due care, confidentiality and professional behavior.
+
+     The firm applies International Standard on Quality Control 1 “Quality Control for Firms
+     That Perform Audits and Reviews of Historical Financial Information, And Other
+     Assurance and Related Services Engagements” and accordingly maintains a
+     comprehensive system of quality control including documented policies and
+     procedures regarding compliance with ethical requirements, professional standards
+     and applicable legal and regulatory requirements.
+
+5.       Our responsibility and summary of the work performed
+     Our responsibility in connection with this engagement is to express an opinion on
+     compliance of the IBI’s financial arrangements, contracts, and transactions having
+     Shariah implications with Shariah rules and principles, in all material respects, for the
+     year ended                 based on the evidence we have obtained. We conducted our
+     reasonable assurance engagement in accordance with International Standard on
+     Assurance Engagements 3000, ‘Assurance Engagements other than audits or reviews
+     of historical financial statements’, issued by the International Auditing and Assurance
+     Standards Board. That standard requires that we plan and perform this engagement
+     to obtain reasonable assurance about whether the compliance of the IBI’s financial
+     arrangements, contracts, and transactions having Shariah implications with Shariah
+     rules and principles is free from material misstatement.
+
+     The procedures selected by us for the engagement depended on our judgement,
+     including the assessment of the risks of material non-compliance with the Shariah
+     rules and principles. In making those risk assessments, we considered and tested the
+     internal control relevant to the IBI’s compliance with the Shariah rules and principles
+     in order to design procedures that are appropriate in the circumstances, but not for
+     the purpose of expressing an opinion on the effectiveness of the IBI’s internal control.
+     In this connection, we have also reviewed the work carried out by the IAD/ISAU and the
+     Shariah reviews carried out by the Shariah Compliance Department. We have designed
+     and performed necessary verification procedures on various financial arrangements,
+     contracts, classes of transactions and related policies and procedures based on
+     judgmental and systematic samples with regard to the compliance with Shariah rules
+     and principles. In performing our audit procedures necessary guidance on Shariah
+     matters was provided by independent Shariah scholar(s) referred above.
+
+     We believe that the evidences we have obtained through performing our procedures
+     were sufficient and appropriate to provide a basis for our opinion [or modified
+     opinion].
+
+
+
+
+                                           27
+6.            Description of the matter(s) giving rise to the modified conclusion (if any)
+         a)                                              ;
+         b)                                              ; [insert material modifications to
+                 report, if any]
+
+7.           Conclusion
+         Based on our reasonable assurance engagement, we report that in our opinion,
+         [except for the effect of the matters reported in paragraph(s) a) to x) above], the IBI’s
+         financial arrangements, contracts and transactions for the year ended
+         are in compliance with the Shariah rules and principles, in all material respects.
+
+A long form report highlighting key matters noted during the course of engagement is issued
+separately to the Board of Director of IBI of date.
+
+
+
+
+ Date:                                                                Name of firm
+                                                                      Chartered Accountants
+ [Place/City]
+
+
+                                                                      Name of Engagement Partner
+
+
+
+
+                                                28
+Long Form Report
+
+The long form auditors’ report under the SBP Shariah Governance Framework shall include
+the following aspects, as a minimum:
+
+      Objective and scope of the engagement:
+       The report shall include key findings including those related to the following:
+
+         a)   the overall Shariah compliance environment,
+
+         b)   the risks associated with Shariah non-compliance,
+
+         c)   the capacity and quality of the risk management system to measure, manage
+              and mitigate these risks,
+
+         d)   the level of awareness and sensitization of the EM and the BOD in addressing
+              the said risks,
+
+         e)   pool management practices and IT based system specifically computation
+              and distribution of profit & loss to the depositors, tagging and movement of
+              assets and allocation of income & expenses, etc. and,
+
+         f)   any other issues deemed significant by the external auditors.
+
+      Management’s and auditors’ responsibilities and other important terms of
+       engagement
+      Description of the procedures performed
+      Limitations with respect to the engagement involving performance of the
+       procedures
+      Detailed description of the factual findings resulting from the auditors' work
+       identifying the gap/issue identified and the recommendation to address the same
+      Statement that the procedures performed do not constitute either an audit or
+       a review under the applicable standards and, as such, no assurance is expressed
+      To give the name of the Shariah Consultant appointed by the firm for the said
+       engagement.
+

@@ -1,0 +1,1911 @@
+           Instructions for
+Basel III Implementation in Pakistan
+  Issued under BPRD circular # 06 dated August 15, 2013
+
+
+
+
+Banking Policy & Regulations Department
+                   BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+This page is left blank intentionally
+                                                 BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+                                     The Team
+
+
+           Name                                     Designation
+Muhammad Ashraf Khan                 Executive Director
+                                     Banking Policy and Regulation Group
+Shaukat Zaman                        Director
+                                     Banking Policy & Regulations Department
+Syed Jahangir Shah                   Senior Joint Director
+                                     Banking Policy & Regulations Department
+Ahsin Waqas                          Joint Director
+                                     Banking Policy & Regulations Department
+
+
+
+
+ For queries please contact syed.jahangir@sbp.org.pk or ahsin.waqas@sbp.org.pk
+                     BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+This page is left blank intentionally
+                                                                                       BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+                                                                    Contents
+Preamble ................................................................................................................................................. 1
+A.     An Overview of Capital Instructions .............................................................................................. 2
+B.     Minimum Capital Requirement (MCR) ......................................................................................... 3
+     Chapter – 1:          General instructions on Capital Adequacy Framework ............................................. 4
+       1.1.        Introduction: ....................................................................................................................... 4
+       1.2.        Measurement of Risk Weighted Assets .............................................................................. 4
+       1.3.        Scope of Application .......................................................................................................... 4
+       1.4.        Reporting Requirements ..................................................................................................... 5
+       1.5.        Notification Requirements.................................................................................................. 6
+       1.6.        Reductions in Capital ......................................................................................................... 6
+       1.7.        Penalty for Non-Compliance .............................................................................................. 6
+     Chapter – 2:             Regulatory Capital .................................................................................................. 7
+       2.1         Components of Capital ....................................................................................................... 7
+       2.2.        Limits (Minima & Maxima) ............................................................................................... 8
+       2.3.        Eligibility Criteria – Other Elements of Capital ................................................................. 9
+       2.4.        Regulatory Capital Deductions ......................................................................................... 10
+     Chapter – 3:             Leverage Ratio...................................................................................................... 16
+       3.1         Introduction & Objective .................................................................................................. 16
+       3.2         Definition and Calculation ............................................................................................... 16
+       3.3         Capital Measure ................................................................................................................ 16
+       3.4         Exposure Measure ............................................................................................................ 17
+       3.5         Parallel Run Reporting ..................................................................................................... 18
+     Chapter – 4:             Investment in the units of Mutual Fund/ Collective Investment Scheme ............. 19
+       4.1         Introduction ...................................................................................................................... 19
+       4.2         Look-through Approach ................................................................................................... 19
+       4.3         Capital Treatment ............................................................................................................. 19
+       4.4         Significant investment in the capital of Asset Management Company (AMC): .............. 20
+Annexure-1:               Minority Interest (For Consolidated Reporting only) ............................................... 21
+Annexure-2:               Criteria for Additional Tier-1 Capital Instrument .................................................... 23
+Annexure-3:               Criteria for inclusion of Debt Instruments as Tier 2 Capital .................................... 26
+                                                                    BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+Annexure-4:   Capital Conservation Buffer .................................................................................... 28
+Annexure-5:   Minimum Requirements to Ensure Loss Absorbency ............................................. 31
+Appendix 1:   Minority Interest (illustrative Example)................................................................... 34
+Appendix 2:   Investment less than 10% (illustration) .................................................................... 36
+Appendix 3:   Significant Investment (illustrative example) .......................................................... 38
+Appendix 4:   The 15% of common equity limit on specified items .............................................. 40
+                                                       BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+                                         Preamble
+
+State Bank of Pakistan issued instructions for the Implementation of Basel II capital accord
+under BSD Circular No. 8 of 2006. However, the existing instructions are being revised and
+updated in the light of recent developments on the capital requirement as published by the Basel
+Committee on Banking Supervision (BCBS) under the Basel III capital reforms and clarifications
+issued by SBP from 2006 onward while implementing capital related instructions.
+
+These instructions will further strengthen the existing capital framework under which certain
+provisions of existing Basel II instructions will be amended and some new requirements will be
+introduced.
+
+Keeping in view of the volume of instructions, SBP will issue these revisions in the following
+two parts;
+
+   i.   Reforms/ amendments mainly pertaining to regulatory capital and related deductions;
+  ii.   Revision of Basel II instructions to cover remaining aspects of Basel III reforms;
+
+
+
+These instructions address the first part mainly pertaining to eligible capital and
+related deductions.
+                                                      BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+                    A.     An Overview of Capital Instructions
+All banks/ DFIs are required to comply with the capital adequacy framework which comprises
+the following three capital standards:
+
+  i.   Minimum Capital Requirement (MCR):
+
+       The MCR standard sets the nominal amount of capital banks/ DFIs are required to hold.
+       No bank/ DFI shall commence and carry on its business in Pakistan unless it meets the
+       nominal capital requirements prescribed by SBP from time to time.
+
+ ii.   Capital Adequacy Ratio:
+
+       The Capital Adequacy Ratio (CAR) assesses the capital requirement based on the risks
+       faced by the banks/ DFIs. The banks/ DFIs are required to comply with the minimum
+       requirements as specified by the State Bank of Pakistan on standalone as well as
+       consolidated basis.
+
+iii.   Leverage Ratio:
+
+       The Tier-1 Leverage Ratio of 3% is being introduced in response to the recently
+       published Basel III Accord as the third capital standard (parallel run to commence from
+       December 31, 2013) which is simple, transparent and independent measure of risk. Refer
+       to Chapter-3 for details.
+
+
+
+
+                                                                                                        2
+                                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                            B.        Minimum Capital Requirement (MCR)
+
+
+The Minimum Capital Requirement (MCR) standard sets the nominal amount of capital banks/
+DFIs are required to hold. This requirement is set by SBP as per national discretion. No
+Bank/DFI incorporated in Pakistan shall commence and carry on its business unless it has a
+minimum paid up capital (net of losses) as prescribed by SBP from time to time.
+
+Similarly, no banking company incorporated outside Pakistan shall commence and carry on
+banking business in Pakistan unless it meets the minimum assigned capital1 (net of losses)
+requirements as prescribed by SBP from time to time.
+
+The current MCR instructions have been issued vide BSD Circular No. 19 of September 5, 2008
+and BSD Circular No. 7 of April 15, 2009.
+
+The MCR standard consists of sum of the following elements:
+
+            Fully Paid-up Common Shares/ Cash deposited with SBP1
+            Balance in Share Premium Account
+            Reserve for issue of Bonus Shares
+            Any other type of instrument approved by the SBP.
+    Less
+            Accumulated Losses/ Discount offered on issue of shares
+            Negative General Reserves
+
+
+
+
+1
+    In the case of foreign banks operating in branch mode in Pakistan
+
+
+
+
+                                                                                                                          3
+                                                                      BPRD Circular # 6 of 2013 dated August 15, 2013
+
+          Chapter – 1:           General instructions on Capital Adequacy Framework
+
+1.1.        Introduction:
+The Capital Adequacy Ratio (CAR) is calculated by taking the Eligible Regulatory Capital as
+numerator and the total Risk Weighted Assets (RWA) as denominator.
+
+
+
+
+Currently, banks/ DFIs are required to maintain a minimum CAR of 10 percent on an ongoing
+basis at both standalone and consolidated level which will gradually be increased in the light of
+these instructions.
+
+For the purpose of capital adequacy, the consolidated bank means an entity that is the parent of a
+                                 2
+group of financial entities , where the parent entity itself may either be a bank or a holding
+company. This consolidation is to ensure that risk of the whole banking group is captured.
+
+The term „bank‟, wherever used throughout the document, unless otherwise specified, means all
+the banks and Development Financial Institutions (DFIs) under the regulatory purview of the
+State Bank of Pakistan (SBP).
+
+The details of various components of Eligible Capital instruments are described in Chapter 2.
+
+1.2.        Measurement of Risk Weighted Assets
+Banks are required to calculate Risk Weighted Assets (RWA) in respect of credit, market and
+operational risks. The methodologies to calculate RWA for each of these risk categories are
+described in detail in relevant chapters.
+
+1.3.        Scope of Application
+The capital adequacy framework applies on all banks both at standalone as well as at
+consolidated level. As such, reporting bank shall comply with the capital requirements at two
+levels.
+
+     i.     Standalone Level:
+
+            The standalone level capital adequacy ratio measures the capital adequacy of a reporting
+            bank based on its standalone capital strength and risk profile; and
+
+    ii.     Group/ Consolidated Level:
+
+            The consolidated (“Group”) level capital adequacy ratio measures the capital adequacy
+            of a bank based on its capital strength and risk profile after consolidating the assets and
+
+
+2
+ Financial entities mean banks, DFIs, Exchange Companies, Investment banks, leasing companies, Modarabas, Discount houses,
+brokerage firms, Mutual funds & Asset Management Companies and Insurance but do not include Commercial entities.
+
+
+
+                                                                                                                             4
+                                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+         liabilities of all its banking group entities, except the subsidiaries which are engaged in
+         insurance and commercial business.
+
+All banking and other relevant financial activities (both regulated and unregulated) conducted
+within a group containing a bank is to be captured through consolidation. Thus, majority-owned
+or controlled (defined under applicable accounting standard) financial entities will be fully
+consolidated.
+
+If any majority-owned or controlled financial subsidiaries are not consolidated for capital
+purposes, all equity and other regulatory capital investments in those entities attributable to the
+group will be deducted, and the assets and liabilities, as well as third-party capital investments in
+the subsidiary will be removed from the bank‟s balance sheet.
+
+Since insurance & commercial subsidiaries of the bank are not required to be consolidated, hence
+when measuring capital adequacy for banks, the equity and other regulatory capital investment
+shall be required to be deducted from common equity tier 1. Under this approach the bank will
+remove from its balance sheet assets and liabilities, as well as third party capital investments in
+an insurance/ commercial subsidiary. In case of any shortfall in the regulatory capital
+requirement of unconsolidated financial subsidiary (e.g. insurance), the shortfall shall be fully
+deducted from the Common Equity Tier 1 capital (at standalone as well as consolidated level).
+
+All investments (which are outside the scope of regulatory consolidation) in the capital
+instruments issued by banking, financial and insurance entities are to be treated as per paragraph
+2.4.9 of Chapter 2.
+
+All significant equity investments in commercial entities (which exceeds 10% of the issued
+common share capital of the issuing entity) or where the entity is an unconsolidated affiliate3 will
+receive a 1000% risk weight. The equity investment which is equal to or below 10% of paid-up
+capital of investee company will attract risk weight depending on the bank‟s classification in the
+banking book or trading book.
+
+1.4.     Reporting Requirements
+Banks are required to submit CAR statements on the reporting formats provided by SBP within
+prescribed timelines. In addition to the periodic unaudited statements, banks/DFIs are also
+required to submit an annual CAR statement duly certified by the external auditors.
+
+As per the timeframe specified by SBP, vide BSD circular letter No. 3 of February 6, 2010,
+banks/ DFIs are required to submit quarterly CAR statement within 18 working days from the
+end of each calendar quarter. Whereas the annual CAR statement, duly certified by the external
+auditor, is required to be submitted within three months from the close of the year as per BSD
+Circular No. 1 of January 6, 2009.
+
+Further, to supplement risk based requirements, banks are required to calculate monthly
+Leverage Ratio on standalone as well as on consolidated level and report to SBP their quarterly
+
+3
+  An affiliate of a bank is defined as a company that controls, or is controlled by, or is under common control with, the bank.
+Control of a company is defined as (1) ownership, control, or holding with power to vote 20% or more of a class of voting
+securities of the company; or (2) consolidation of the company for financial reporting purposes
+
+
+                                                                                                                                  5
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+ratio based on average of monthly calculated ratios as per timeline prescribed above. For further
+details, refer to Chapter-3 on Leverage Ratio.
+
+1.5.   Notification Requirements
+A bank must inform SBP immediately of:
+
+  i.   Any breach of the minimum capital requirement, capital adequacy ratio or leverage ratio
+       as set out in these instructions and the remedial measures it has taken to address those
+       breaches.
+
+ ii.   Any concern it has about its MCR, CAR or leverage ratio, along with proposed measures
+       to address these concerns.
+
+1.6.   Reductions in Capital
+Where a bank intends to reduce its paid-up/ assigned capital, it must obtain SBP‟s prior written
+consent.
+
+1.7.   Penalty for Non-Compliance
+Any bank that fails to meet the above mentioned regulatory capital requirement within the
+stipulated period shall render itself liable to the following actions:
+
+    i. Imposition of penalties and/ or such restrictions on its business including restrictions on
+       acceptance of deposits and lending as may be deemed fit by SBP.
+
+    ii. De-scheduling of the bank, thereby converting it into a non-scheduled bank.
+
+    iii. Cancellation of the banking license if SBP believes that the bank is not in a position to
+         meet the MCR, CAR or Leverage Ratio requirements.
+
+
+
+
+                                                                                                          6
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                          Chapter – 2:            Regulatory Capital
+
+
+2.1    Components of Capital
+For the purpose of calculating capital under capital adequacy framework, the capital of banks
+shall be classified into two tiers. The total regulatory capital will consist of sum of the following
+categories:
+
+      1.      Tier 1 Capital (going-concern capital)
+                 i.   Common Equity Tier 1
+                ii. Additional Tier 1
+      2.      Tier 2 Capital (gone-concern capital)
+
+2.1.1. Common Equity Tier 1 (CET1)
+
+       Common Equity Tier 1 shall consist of sum of the following items:
+
+         i. Fully paid up (common shares) capital / assigned capital
+        ii. Balance in share premium account
+       iii. Reserve for Issue of Bonus Shares
+       iv.  General/ Statutory Reserves as disclosed on the balance-sheet
+        v.  Minority Interest (in case of CAR calculated on a consolidated basis) i.e. common
+            shares issued by consolidated subsidiaries of the bank and held by third parties
+            meeting eligibility criteria, as mentioned under paragraph A-1-1 of Annexure-1.
+        vi. Un-appropriated / un-remitted profits (net of accumulated losses, if any)
+       vii. Less regulatory adjustments applicable on CET1 as mentioned in paragraph 2.4.
+
+2.1.2. Additional Tier 1 Capital (AT1)
+
+       Additional Tier 1 capital shall consist of the following items:
+
+         i. Instruments issued by the banks that meet the qualifying criteria for AT1 as specified
+            at Annexure-2.
+        ii. Share premium resulting from the issuance of AT1 instruments.
+       iii. Minority Interest i.e. AT1 issued by consolidated subsidiaries to third parties (for
+            consolidated reporting only); Refer to paragraph A-1-2 of Annexure-1 for further
+            details.
+       iv. Less regulatory adjustments applicable on AT1 Capital as mentioned in paragraph
+            2.4.
+
+2.1.3. Tier 2 Capital (Gone Concern Capital or Supplementary Capital)
+
+       The Tier 2 capital (or gone concern capital) shall include the following elements:
+
+         i. Subordinated debt/ Instruments (meeting eligibility criteria as specified in Annexure-
+            3).
+        ii. Share premium resulting from the issue of instruments included in Tier 2.
+
+
+
+                                                                                                            7
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+        iii. Minority Interest i.e. Tier-2 issued by consolidated subsidiaries to third parties as
+             specified at A-1-3 Annexure-1.
+         iv. Revaluation Reserves (net of deficits, if any) – for details refer to point 2.3.1.
+          v. General Provisions or General Reserves for loan losses – details at 2.3.2.
+         vi. Foreign Exchange Translation Reserves.
+        vii. Undisclosed Reserves – details at 2.3.3.
+       viii. Less regulatory adjustments applicable on Tier-2 capital as mentioned at paragraph
+             2.4.
+
+
+2.2.    Limits (Minima & Maxima)
+        These instructions/ rules will be adopted in a phased manner starting from the end year
+        2013, with full implementation of capital ratios by the year-end 2019, as per table 2.2.1
+        below. All banks will be required to maintain the following ratios on an ongoing basis:
+
+         i.   Common Equity Tier 1 of at least 6.0% of the total RWA.
+        ii.   Tier-1 capital will be at least 7.5% of the total RWA which means that Additional
+              Tier 1 capital can be admitted maximum up to 1.5% of the total RWA.
+       iii.   Minimum Capital Adequacy Ratio (CAR) of 10% of the total RWA i.e. Tier 2
+              capital can be admitted maximum up to 2.5% of the total RWA.
+       iv.    Additionally, Capital Conservation Buffer (CCB) of 2.5% of the total RWA is being
+              introduced which will be maintained in the form of CET1. Details regarding CCB
+              framework and transitional arrangements are appended in Annexure-4.
+        v.    The excess additional Tier 1 capital and Tier-2 capital can only be recognized if the
+              bank has CET1 ratio in excess of the minimum requirement of 8.5% (i.e. 6.0% plus
+              capital conservation buffer of 2.5%).
+       vi.    For the purpose of calculating Tier 1 capital and CAR, the bank can recognize
+              excess Additional Tier 1 and Tier 2 provided the bank has excess CET1 over and
+              above 8.5%. Further, any excess Additional Tier 1 and Tier 2 capital will be
+              recognized in the same proportion as stipulated above i.e. the recognition of excess
+              Additional Tier 1 (above 1.5%) is limited to the extent of 25% (1.5/6.0) of the CET1
+              in excess of 8.5% requirement. Similarly, the excess Tier 2 capital (above 2.5%)
+              shall be recognized to the extent of 41.67% (2.5/6.0) of the CET1 in excess of 8.5%
+              requirement.
+       vii.   SBP has prescribed CAR level higher than the BCBS requirements. A part of the
+              cushion may be utilized for meeting the countercyclical capital buffer. Instructions
+              on operational aspects for the implementation of the countercyclical capital buffer
+              will be issued separately.
+
+
+
+
+                                                                                                            8
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+2.2.1. Phase-in Arrangement and full implementation of the minimum capital requirements:
+
+                                                   Year End                                     As of
+
+                                                                                               Dec 31
+
+Sr. #       Ratio         2013       2014       2015        2016        2017        2018        2019
+
+ 1.         CET1          5.0%       5.5%       6.0%       6.0%         6.0%        6.0%        6.0%
+
+ 2.        ADT-1          1.5%       1.5%       1.5%       1.5%         1.5%        1.5%        1.5%
+
+ 3.         Tier 1        6.5%       7.0%       7.5%       7.5%         7.5%        7.5%        7.5%
+
+ 4.     Total Capital     10.0%     10.0%       10.0%      10.0%       10.0%       10.0%        10.0%
+
+ 5.         CCB             -          -        0.25%      0.65%       1.275%     1.900%        2.5%
+
+         (Consisting of
+          CET1 only)
+
+
+ 6.     Total Capital     10.0%     10.0%      10.25%     10.65%      11.275%     11.90%        12.5%
+         plus CCB
+
+
+
+
+2.3.    Eligibility Criteria – Other Elements of Capital
+2.3.1   Revaluation Reserves
+
+        Revaluation Reserves will form part of Tier-2 capital. Revaluation Reserves may be
+        created by revaluation of fixed assets and available for sale (AFS) securities held by the
+        bank. The assets and investments must be prudently valued fully taking into account the
+        possibility of price fluctuations and forced sale value.
+
+        The net surplus / (deficit) on Available for Sale instruments and revaluation of fixed
+        assets will be calculated on portfolio basis. If net amount (after tax) is surplus it will be
+        included in Tier-2 capital, and if the net amount is deficit (after tax) it will be deducted
+        from the CET1.
+
+2.3.2 General Provisions or General Reserves for Loan Losses
+
+        General Provisions or General Reserves for loan losses will be limited up to 1.25 percent
+        of the credit risk-weighted assets under standardized approach. Under IRB approach,
+        where the total expected loss amount is less than the total provisions held, banks can
+        recognize this difference in tier-2 capital up to maximum of 0.6% of the credit risk
+        weighted assets.
+
+
+
+
+                                                                                                            9
+                                                                             BPRD Circular # 6 of 2013 dated August 15, 2013
+
+2.3.3 Undisclosed Reserves
+
+          Undisclosed Reserves may be included in Tier-2 despite being unpublished, provided
+          they appear in the internal accounts of the bank. Only those reserves can be included that
+          have been passed through the profit and loss account of the bank. The undisclosed
+          reserves should satisfy the following:
+            a. Undisclosed reserves should be set aside from the institution‟s earnings duly
+               certified by the External Auditors. Undisclosed Reserves should not be encumbered
+               by any provision or known liability and should be freely available to meet
+               unforeseen losses.
+            b. SBP will express in writing appropriateness of undisclosed reserves for inclusion in
+               Tier-2 capital.
+
+2.4.      Regulatory Capital Deductions
+In order to arrive at the eligible regulatory capital for the purpose of calculating CAR, banks are
+required to make the following deductions from CET1.
+
+2.4.1 Book value of Goodwill and all other Intangible Assets
+
+          The book value of goodwill and other intangible assets like software, brand value etc.,
+          will be deducted net of any associated deferred tax liabilities which will be extinguished
+          if the intangible assets become impaired or derecognized under the relevant accounting
+          standards. This includes any goodwill in the valuation of significant investments in the
+          capital of banking, financial and insurance entities that are outside the scope of regulatory
+          consolidation4.
+
+2.4.2 Shortfall in provisions required against classified assets
+
+          Shortfall in provisions against classified assets will be deducted from CET1. Under IRB
+          approach, shortfall in provisions from expected losses will also be deducted from CET1.
+          The full shortfall amount will be deducted without considering/netting any tax effects that
+          could be expected to occur if provisions were to rise.
+
+2.4.3 Deficit on account of revaluation
+
+          The net deficit (after tax) on account of revaluation (i.e. Available for Sale category and
+          on fixed assets) shall be deducted from CET1. Refer to explanation provided in section
+          2.3.1 above.
+
+2.4.4 Deferred tax assets (DTA)
+
+                   Deferred tax assets (DTA), which rely on future profitability of the bank to be
+                    realized, will be deducted from CET1. DTAs may be netted with associated
+
+
+4
+ Investments in entities that are outside of the scope of regulatory consolidation refers to investments in entities that have not
+been consolidated at all or have not been consolidated in such a way as to result in their assets being included in the calculation of
+consolidated risk-weighted assets of the group.
+
+
+                                                                                                                                         10
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+              deferred tax liabilities (DTLs) if both relate to tax levied by the same taxation
+              authority and offsetting is permitted by the relevant tax authority.
+             For DTA pertaining to temporary differences (e.g. allowance for credit losses),
+              the amount to be deducted is explained in the “threshold deductions” section
+              2.4.10 below.
+             All other DTAs (e.g. assets relating to operating losses, such as the carry forward
+              of unused tax losses, or unused tax credits) will be deducted in full net of DTL as
+              described above.
+
+       The DTLs permitted to be netted against DTAs will exclude the amounts that have been
+       netted against the deduction of goodwill, intangibles and defined benefit pension assets,
+       and will be allocated on a pro rata basis between DTAs subject to the threshold deduction
+       treatment and DTAs that will be deducted in full.
+
+       An over-installment of tax or any receivable from the local tax authority which is
+       classified as current tax assets for accounting purposes and recovery of such receivable
+       do not rely on the future profitability of the bank will be assigned the relevant sovereign
+       risk weighting.
+
+2.4.5. Defined benefit pension fund assets
+
+       Defined benefit pension fund liabilities, as included on the balance sheet, must be fully
+       recognized in the calculation of CET1 (i.e. CET1 cannot be increased through
+       derecognizing these liabilities). For each defined benefit pension fund that is an asset on
+       the balance sheet, the asset will be deducted from CET1 net of any associated deferred
+       tax liability which would extinguish if the asset becomes impaired or derecognized under
+       the relevant accounting standards. However, where the bank has unrestricted/ free access
+       to these assets of the fund, with supervisory approval, offset the deduction. Such
+       offsetting assets will be given the risk weight as if they were owned directly by the bank.
+
+2.4.6 Gain on sale related to securitization transactions
+
+       Bank will derecognize in the calculation of CET1, any increase in equity capital resulting
+       from securitization transactions, such as that associated with expected future margin
+       income resulting in a gain on sale.
+
+2.4.7 Cash flow hedge reserve
+
+       The cash flow hedge reserve only reflects one half of the picture, the fair value of the
+       derivative but not the changes in fair value of hedged future cash flow. Therefore the
+       amount of cash flow hedge reserve that relates to the hedging of items that are not fair
+       valued on the balance sheet (including projected cash flows), if positive will be deducted.
+       However, negative amount under cash flow hedge will be added back to calculate CET1
+       (in case a bank adds gain to tier-2 capital then the tier-2 will be adjusted accordingly).
+
+
+
+
+                                                                                                          11
+                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+2.4.8 Investment in own shares
+
+      All of a bank‟s investment in its own common shares, held directly or indirectly will be
+      deducted from CET1 to avoid the double counting of a bank‟s own capital. The treatment
+      described will apply irrespective of the location of the exposure in the banking book or
+      the trading book. Moreover, banks should look through holdings of index/ mutual fund
+      securities to deduct exposures to own shares. Following the same approach, bank must
+      deduct any investment in their own additional tier 1 or tier 2 instruments.
+
+2.4.9 Investments in the Capital of Banking, Financial and Insurance Entities
+
+      Corresponding Deduction Approach
+
+      Under the corresponding deduction approach, banks will deduct investments in the
+      capital of other banks, financial institutions and insurance entities from the respective tier
+      of their own capital. This means the deduction will be applied to the same component of
+      capital for which the capital will qualify if it was issued by the bank itself.
+
+      If, under the corresponding deduction approach, a bank is required to make a deduction
+      from a particular tier of capital and it does not have enough of that tier of capital to
+      satisfy the deduction, the shortfall will be deducted from the next higher tier of capital
+      (e.g. if a bank does not have enough additional tier-1 capital to satisfy the deduction, the
+      shortfall will be deducted from CET1.
+
+      Banks will make the following corresponding deductions:
+
+      2.4.9.1        Reciprocal crossholdings of capital designed to artificially inflate the
+                     capital position of banks will be deducted. For this purpose, a holding is
+                     considered to be a reciprocal crossholding if the investee entity has also
+                     invested in any type of bank‟s capital instrument which may necessarily
+                     not be the same instrument as the bank is holding.
+
+      2.4.9.2        Investments in the capital of Banking, Financial & Insurance Entities
+                     (outside the scope of regulatory consolidation): [where the bank does
+                     not own more than 10% of the issued common share capital of the
+                     entity]
+
+                     The regulatory adjustments described in this paragraph applies to investment
+                     in the capital of banking, financial and insurance entities that are outside the
+                     scope of regulatory consolidation and where the bank does not own more
+                     than 10% of the issued common share capital of the entity. In addition:
+
+                       a. Investments include all holdings i.e. direct, indirect, synthetic holdings
+                          of capital instruments (e.g. bank will look through holdings of mutual
+                          fund/ index securities to determine their underlying holdings of
+                          capital). Holdings in both the banking book and the trading book are to
+                          be included. Capital includes common stock and all other types of cash
+                          and synthetic capital instruments (e.g. subordinated debt). Moreover,
+
+
+                                                                                                           12
+                                                                               BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                                        investments also include underwriting positions held for longer than
+                                        three months (as stipulated in prudential regulations). SBP may
+                                        consider requests to exclude temporarily certain investments where
+                                        these investments are made in the context of resolving or providing
+                                        support to a distressed institution.
+                                   b.   If the total of all holdings (mentioned at point-a) in aggregate exceed
+                                        10% of the bank‟s common equity (paid-up capital plus reserves
+                                        mentioned under CET1 less all regulatory adjustments mentioned up to
+                                        point 2.4.9.1 above) then the amount above 10% of a bank‟s common
+                                        equity will be deducted under the corresponding deduction approach.
+                                   c.   The amount to be deducted from common equity will be calculated
+                                        as the total of all holdings which in aggregate exceed 10% of a
+                                        bank‟s common equity multiplied by the common equity holdings as
+                                        a percentage of the total capital holdings. This would result in a
+                                        common equity deduction which corresponds to the proportion of
+                                        total capital holdings held in common equity. Similarly, the amount
+                                        to be deducted from Additional Tier1 or Tier 2 capital will be
+                                        calculated as the total of all holdings which in aggregate exceed 10%
+                                        of the bank‟s common equity multiplied by the Additional Tier 1 or
+                                        Tier 2 capital holdings as a percentage of the total capital holdings.
+                                   d.   Amounts below the threshold, which are not deducted, will continue
+                                        to be risk weighted. Thus, instruments in the trading book will be
+                                        treated as per the market risk rules and instruments in the banking
+                                        book will be treated as per the standardized approach or internal
+                                        ratings-based approach (as applicable). For the application of risk
+                                        weighting the amount of the holdings will be allocated on a pro rata
+                                        basis between those below and those above the threshold.
+                                   e.   Detailed illustration of paragraph 2.4.9.2 is provided at Appendix-2.
+
+
+            2.4.9.3              Significant Investments in the capital of Banking, Financial &
+                                 Insurance Entities (outside the scope of regulatory consolidation)
+
+                                 The regulatory adjustments described in this paragraph applies to investment
+                                 in the capital of banking, financial and insurance entities that are outside the
+                                 scope of regulatory consolidation where the bank owns more than 10% of
+                                 the issued common share capital of the issuing entity or where the entity is
+                                 an affiliate of the bank. In addition:
+
+                                 a. Investments include all holdings i.e. direct, indirect, synthetic holdings of
+                                    capital instruments (e.g. bank will look through holdings of mutual
+                                    fund5/ index securities to determine their underlying holdings of capital).
+                                    Holdings in both the banking book and the trading book are to be
+                                    included. Capital includes common stock and all other types of cash and
+
+5
+    Refer to chapter-4 for detailed instructions on bank‟s investment in the units of mutual funds.
+
+
+                                                                                                                                 13
+                                                              BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                                synthetic capital instruments (e.g. subordinated debt). Moreover,
+                                investments also include underwriting positions held for longer than
+                                three months (as stipulated in prudential regulations). SBP may consider
+                                requests to exclude temporarily certain investments where these
+                                investments are made in the context of resolving or providing support to
+                                a distressed institution.
+                             b. All investments (mentioned at point-a) which are not common share (e.g.
+                                subordinated debt etc.) will be fully deducted following a corresponding
+                                deduction approach.
+                             c. Investments (mentioned at point-a) in common shares will be subject to
+                                “Threshold Deduction” treatment described in next paragraph.
+                             d. A detailed illustration of paragraph 2.4.9.3 is provided at Appendix- 3.
+
+
+2.4.10 Threshold Deductions
+
+        Instead of full deduction, the following items may each receive limited recognition when
+        calculating CET1, with recognition capped at 10% of the bank‟s common equity {after
+        application of all the regulatory adjustments mentioned up to 2.4.9.3 (b)}.
+
+                    Significant investments in the common shares of unconsolidated financial
+                     institutions (banks, insurance and other financial entities) as referred to in
+                     paragraph 2.4.9.3 (c).
+                    DTAs that arise from temporary differences (i.e. credit provisioning etc.)
+
+        Moreover, the amount of the above two items that remains recognized after the
+        application of all the regulatory adjustments must not exceed 15% of CET1 calculated
+        after all regulatory adjustments. Refer to Appendix-4 for an illustration.
+
+        The amount of the two items which are not deducted in the calculation of CET1 will be
+        risk weighted at 250% and are subject to full disclosure.
+
+2.4.11 Transitional Arrangements for Capital Deductions
+
+In the light of Basel III proposals, SBP has harmonized deductions from capital which will
+mostly be applied at the level of common equity tier 1. The transitional arrangement for
+implementing the new standards are intended to ensure that banking sector can meet the higher
+capital standards through reasonable earnings retention and capital raising, while still supporting
+lending to the economy. In this regard, the following transitional arrangements are prescribed:
+
+   Phase-in of                                     Year End                                 As of Dec 31
+  all deductions
+   from CET1
+                       2012          2013       2014       2015       2016        2017          2018
+    (in percentage
+        terms)
+                         -             -        20%        40%        60%         80%          100%
+
+
+
+
+                                                                                                                14
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+    Explanation:
+
+         The regulatory capital adjustment will start in a phased manner December 31, 2014 @ 20
+          percent per annum with full deduction from CET1 w.e.f. December, 2018. During the
+          transition period, the part which is not deducted from CET1/ Additional Tier 1/ Tier 2
+          will attract existing treatment.
+         In the year 2013, the banks will not apply the additional deductions proposed under the
+          Basel III rules and will apply existing treatment. For example, DTA will not be deducted
+          but risk weighted.
+         The treatment for the year 2014 (w.e.f. December 31, 2014)
+              o If an item is to be deducted under new Basel III rules and is currently risk
+                   weighted under the exiting regime then it will require 20% deduction from CET1
+                   and rest of the 80% will be subject to risk weight as applicable under the existing
+                   rules.
+              o If an item is required to be deducted under the existing framework (suppose from
+                   Tier 2) and Basel III rules prescribe deduction from CET1; in that case, 20% of
+                   the amount will be deducted from CET1 and the rest will be deducted from
+                   current tier of deduction (i.e. tier 2).
+              o In case of Minority Interest, if such capital is not eligible for inclusion in CET1
+                   but is included under the existing guidelines in Tier 1 then 20% of the amount
+                   will be deducted from the relevant component of capital (Tier 1).
+
+2.4.12 Phase out of Non Qualifying Capital Instruments:
+
+Capital instruments (e.g. subordinated debt/ TFCs) issued before January 1, 2013 which meets
+the Basel III criteria, except that they do not meet the loss absorbency clause requirements, will
+be considered non-qualifying capital instruments and will be subject to the following phase-out
+arrangement.
+        Reporting Period                                Year End (Dec. 31)
+                                 2013   2014   2015   2016 2017 2018 2019           2020    2021 2022
+             Cap                 90%    80%    70%    60% 50% 40% 30%               20%     10% 0%
+ {% of base amount that may
+ be included in Tier-2 capital
+under phase out arrangements}
+
+The amount of these transitional instruments that may be included in regulatory capital will be
+determined by reference to the base amount. The base amount will be fixed at the outstanding
+amount which is eligible to be included in the tier-2 capital under the existing framework (Basel
+II) applicable as on December 31, 2012. The recognition will be capped at 90% (of the base
+amount) from December 31, 2013, with the cap reducing by 10 percentage points in each
+subsequent year. Where a Tier-2 instrument is subject to regulatory amortization, the individual
+instrument eligible to be included in tier-2 capital will continue to be amortized at a rate of 20%
+per year during the transition period in addition to the aggregate cap reducing at a rate of 10%
+per annum. Capital instruments issued after January 1, 2013 must meet all of the Basel III
+criteria for regulatory capital (including the loss absorbency clause requirements) to qualify as
+regulatory capital.
+
+
+
+                                                                                                             15
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+
+                             Chapter – 3:         Leverage Ratio
+
+3.1       Introduction & Objective
+In order to avoid building-up excessive on- and off-balance sheet leverage in the banking system,
+a simple, transparent and non-risk based Leverage Ratio is being introduced with the following
+objectives:
+
+         constrain the build-up of leverage in the banking sector which can damage the broader
+          financial system and the economy; and
+         reinforce the risk based requirements with an easy to understand and a non-risk based
+          measure.
+
+3.2       Definition and Calculation
+
+
+
+
+3.2.1 A minimum Tier 1 leverage ratio of 3% is being prescribed both at solo and consolidated
+      level.
+
+3.2.2 The banks will maintain leverage ratio on quarterly basis. The calculation at the end of
+      each calendar quarter will be submitted to SBP showing the average of the month end
+      leverage ratios based on the following definition of capital and total exposure.
+
+3.3       Capital Measure
+3.3.1 The capital measure for the leverage ratio will be based on the new definition of Tier 1
+      capital as specified in Chapter 2, section 2.1.
+
+3.3.2 Items which are deducted completely from capital do not contribute to leverage and will
+      therefore also be deducted from the measure of exposure. This means that deductions
+      from Tier 1 capital specified in section 2.4 (Chapter 2) will also be made from the
+      exposure measure.
+
+3.3.3 According to the treatment outlined in section 2.4.9.3, where a financial entity is included
+      in the accounting consolidation but not in the regulatory consolidation, the investments in
+      the capital of these entities will be deducted to the extent they exceed 10% of the bank‟s
+      common equity (paid-up capital plus reserves). To ensure that the capital and exposure
+      are measured consistently for the purposes of leverage ratio, the assets of such entities
+      included in the accounting consolidation will be excluded from the exposure measure in
+      proportion to the capital that is excluded under section 2.4.9.3.
+
+
+
+
+                                                                                                          16
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+3.4   Exposure Measure
+3.4.1 General Measurement Principles
+
+      The exposure measure for the leverage ratio will generally follow the accounting measure
+      of exposure. In order to measure the exposure consistently with financial accounts, the
+      following will be applied by the bank:
+
+         i.   On balance sheet, non-derivative exposures will be net of specific provisions and
+              valuation adjustments (e.g. surplus/ deficit on AFS/ HFT positions).
+       ii.    Physical or financial collateral, guarantee or credit risk mitigation purchased is
+              not allowed to reduce on-balance sheet exposure.
+       iii.   Netting of loans and deposits is not allowed.
+
+3.4.2 On-Balance Sheet Items
+
+      Banks will include items using their accounting balance sheet for the purposes of the
+      leverage ratio. In addition, the exposure measure will include the following treatments for
+      Securities Financing Transactions (e.g. repo, reverse repo etc.) and derivatives:
+
+         i.   Repurchase Agreements and Securities Financing:
+              Securities Financing Transactions (SFT) are a form of secured funding and
+              therefore an important source of balance sheet leverage that will be included in
+              the leverage ratio. Therefore banks should calculate SFT for the purposes of
+              leverage ratio by applying
+                   The accounting measure of exposure; and
+                   Without netting various long and short positions with the same
+                      counterparty
+
+       ii.    Derivatives:
+              Derivatives create two types of exposures: an on-balance sheet present value
+              reflecting the fair value of the contract (often zero at the outset but subsequently
+              positive or negative depending on the performance of the contract), and a notional
+              economic exposure representing the underlying economic interest of the contract.
+              Banks will calculate derivatives exposure, including where a bank sells protection
+              using a credit derivative, for the purposes of leverage ratio by applying:
+                   The accounting measure of exposure (positive mark to market value) plus
+                      an add-on for potential future exposure calculated according to the Current
+                      Exposure Method as per instructions prescribed in the Chapter for Credit
+                      Risk.
+                   Without netting the mark to market values and potential future exposure
+                      regarding long and short positions with the same counterparty.
+
+3.4.3 Off-Balance Sheet Items
+
+      Banks will calculate the off-balance sheet (OBS) items specified in Credit Risk chapter
+      under the section of “Risk Weights Off-Balance Sheet Exposure” by applying a uniform
+
+
+                                                                                                          17
+                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+       100% credit conversion factor (CCF). For any commitments that are unconditionally
+       cancellable at any time by the bank without prior notice, a CCF of 10% will be applied.
+
+3.5    Parallel Run Reporting
+The parallel run period for leverage ratio will commence from December 31, 2013 to December
+31, 2017. During this period, the leverage ratio and its components will be tracked to assess
+whether the design and calibration of the minimum tier 1 leverage ratio of 3% is appropriate over
+a credit cycle and for different types of business models, including its behavior relative to the
+risk based requirements.
+
+Bank level disclosure of the leverage ratio and its components will start from December 31,
+2015. However, banks will report their Tier 1 leverage ratio to the State Bank on quarterly basis
+from December 31, 2013.
+
+Based on the results of the parallel run period, any final adjustments to the definition and
+calibration of the leverage ratio will be made by SBP before the first half of 2017, with a view to
+set the leverage ratio requirements as a separate capital standard on December 31, 2018.
+
+
+
+
+                                                                                                           18
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+      Chapter – 4:          Investment in the units of Mutual Fund/ Collective
+                                  Investment Scheme
+
+
+4.1    Introduction
+This chapter provides various options/ approaches to determine capital requirement for banks‟
+investment in the units of mutual funds/ collective investment schemes. The choice of option will
+depend on the availability of information on the underlying exposure of each/ individual mutual
+fund/ collective investment scheme at all times.
+
+4.2    Look-through Approach
+The look through treatment is designed to capture the risks of an indirect holding of the
+underlying assets of the investment fund.
+
+  Full    look Where the bank is aware of the actual underlying investments of the mutual
+  through      fund on daily basis, the bank may calculate the capital charge on its
+               investment as if the underlying exposure/ asset class held by the mutual fund
+               is held by the bank itself.
+
+  Modified look In case the bank is not aware of the underlying investment on a daily basis,
+  through       the bank may determine capital charge by assuming that the mutual fund first
+                invests to the maximum extent in the most risky asset class (i.e. which
+                attracts highest risk weight under existing instructions) allowed under its
+                offering document and then continues making investments in descending
+                order (second highest risk weighted asset) until the total investment limit is
+                reached.
+
+  Conservative     If the bank is not in a position to implement the above approaches, the bank
+  Approach         may calculate capital charge based on the most risky asset (i.e. assigning the
+                   highest risk weight) category applicable to any asset the mutual fund is
+                   authorized to hold as per its offering document.
+
+
+4.3    Capital Treatment
+Banks‟/ DFIs‟ investments in the units of mutual funds will be subject to Market Risk and hence
+will be categorized in the Trading Book. The capital charge will be calculated in the following
+manner.
+
+4.3.1 Investment/ holding up to 30% in a single mutual fund:
+       If a bank‟s holding in a single fund does not exceed 30% then the bank may apply any of
+       the approaches described in section 4.2 above:
+
+4.3.2 Investment/ holding in a single fund within the range from 30% to 50%:
+
+
+
+
+                                                                                                          19
+                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+       For such investments, the capital charge will be the sum of (i) capital charge calculated
+       based on look through approach for investment up to 30%, as described in point 4.3.1
+       above, and (ii) an additional capital charge of 20% on incremental investment beyond
+       30% benchmark.
+
+4.3.3 Investment/ holding in a single fund exceeding 50% or investment subject to lock-in
+      clause:
+       In case banks‟ holding/ investment in a single mutual fund exceeds 50%; then the
+       investment up to 30% of a mutual fund will attract capital charge based on look through
+       approaches whereas the incremental amount exceeding 30% threshold will be deducted
+       from Tier-1 capital of the bank. Furthermore, where the banks‟ investment is subject to
+       any lock-in clause (irrespective of its percentage holding) under which the bank cannot
+       liquidate its position (e.g. seed capital), the entire investment will be deducted from Tier-
+       1 for CAR.
+
+4.4    Significant investment in the capital of Asset Management Company (AMC):
+Asset Management Company (AMC) is considered as a financial entity for capital adequacy
+purposes and any significant minority and/or majority investments in the capital of AMC is
+subject to the same rules as described in the Scope of Application (chapter 1) and Investments in
+the Capital of Banking, Financial and Insurance Entities (section 2.4.9).
+
+
+
+
+                                                                                                           20
+                                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+         Annexure-1:                 Minority Interest (For Consolidated Reporting only)
+
+Banks should recognize minority interests that arise from consolidation of less than wholly
+owned banks, securities or other financial entities in CAR on consolidated basis to the extent
+specified below:
+
+A-1-1: Common shares issued by consolidated subsidiaries.
+
+Minority interest arising from the issue of common shares by a fully consolidated subsidiary of a
+bank may receive recognition in CET1 only if: (1) the instrument giving rise to minority interest
+is common share, and (2) the subsidiary that issued the instrument is itself a bank6. The amount
+of minority interest recognized in CET1 capital will be calculated as follows:
+
+        Total minority interest meeting the two criteria above minus the amount of the surplus
+         CET1 of the subsidiary attributable to the minority shareholders.
+          i.   Surplus CET1 of the subsidiary is calculated as the CET1 of the subsidiary minus the
+               lower of:
+                   a)    The minimum CET1 requirement of the subsidiary plus the capital
+                         conservation buffer (i.e. 8.5% of risk weighted assets).
+                   b)    The portion of the consolidated minimum CET1 requirement plus the
+                         capital conservation buffer (i.e. 8.5% of consolidated risk weighted assets)
+                         that relates to the subsidiary.
+         ii.   The amount of the surplus CET1 that is attributable to the minority shareholders is
+               calculated by multiplying the surplus CET1 by the percentage of CET1 that is held
+               by minority shareholders.
+
+A-1-2 Tier 1 qualifying capital issued by consolidated subsidiaries
+
+Tier 1 capital instruments issued by a fully consolidated subsidiary of a bank to third party
+investors (including amounts under paragraph A-1-1) may receive recognition in Tier 1 capital
+only if the instruments, if issued by the bank, meet the criteria for classification as Tier 1 capital.
+
+The amount of capital that will be recognized in Tier 1 capital will be calculated as follows:
+
+        Total Tier 1 capital of the subsidiary issued to third parties minus the amount of surplus
+         Tier 1 capital of the subsidiary attributable to the third party investors.
+          i.    Surplus Tier 1 capital of the subsidiary is calculated as Tier 1 capital of the
+                subsidiary minus lower of:
+                    a)     The minimum Tier 1 requirement of the subsidiary plus the capital
+                           conservation buffer (i.e. 10.0% of risk weighted assets)
+                    b)     The portion of consolidated minimum Tier 1 capital requirement plus the
+                           capital conservation buffer (i.e. 10.0% of consolidated risk weighted
+                           assets) that relates to the subsidiary.
+         ii.    The amount of surplus Tier 1 capital that is attributable to third party investors is
+                calculated by multiplying the surplus Tier 1 capital by the percentage of Tier 1
+                capital that is held by third party investors.
+6
+    Here the term “bank” means all financial institutions including NBFCs regulated by SBP & SECP
+
+
+                                                                                                                            21
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+The amount of Tier 1 capital that will be recognized in Additional Tier 1 will exclude the
+amounts recognized in CET1 as mentioned in point A-1-1 above.
+
+
+
+A-1-3          Tier 1 and Tier 2 qualifying capital issued by consolidated subsidiaries
+
+Total capital instruments (i.e. Tier 1 and Tier 2 capital instruments) issued by a fully
+consolidated subsidiary of the bank to third party investors (including amounts under paragraph
+A-1-1 and A-1-2) may receive recognition in Total Capital only if the instruments would, if
+issued by the bank, meet all of the criteria for classification as Tier 1 or Tier 2 capital.
+
+        The amount of this capital that will be recognized in consolidated Total Capital will be
+        calculated as follows:
+
+    Total capital instruments of the subsidiary issued to third parties minus the amount of the
+     surplus Total Capital of the subsidiary attributable to the third party investors.
+      i.   Surplus Total Capital of the subsidiary is calculated as the Total Capital of the
+           subsidiary minus the lower of:
+                 a) the minimum Total Capital requirement of the subsidiary plus the capital
+                       conservation buffer (i.e. 12.5% of risk weighted assets)
+                 b) the portion of the consolidated minimum Total Capital requirement plus
+                       the capital conservation buffer (i.e. 12.5% of consolidated risk weighted
+                       assets) that relates to the subsidiary.
+     ii.   The amount of the surplus Total Capital that is attributable to the third party
+           investors is calculated by multiplying the surplus Total Capital by the percentage of
+           Total Capital that is held by third party investors.
+
+The amount of the Total Capital that will be recognized in Tier 2 will exclude amounts
+recognized in CET1 under paragraph A-1-1 and amounts recognized in Additional Tier under
+paragraph A-1-2 above.
+
+
+
+Note: An illustrative example for calculation of minority interest and other capital issued out of
+      consolidated subsidiaries that is held by third parties is furnished as Appendix-1
+
+
+
+
+                                                                                                          22
+                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+         Annexure-2:          Criteria for Additional Tier-1 Capital Instrument
+
+The instruments (e.g. perpetual non-cumulative preference shares - PNCPS) meeting the
+following criteria will be considered for inclusion as Additional Tier-1 Capital.
+
+    i.     The instrument is issued, fully paid-up, perpetual, unsecured and permanently
+           available to absorb losses.
+    ii.    The instrument should rank junior to all other claims except common shares.
+    iii.   Dividends/ Coupons:
+           a. Unpaid dividends/ coupons should be non-cumulative.
+           b. The issuer should have full discretion over the amount and timing of dividend/
+               coupon distribution i.e. the ability to waive any dividends/coupons and failure to
+               pay should not constitute event of default.
+           c. No compensation should be available to preference shareholders other than the
+               dividends/ coupons.
+           d. The dividend/ coupon rate or formulae should be known at the time of issuance of
+               instruments and not linked to the credit standing of the issuer.
+           e. The rate can be fixed or floating (with reference to any benchmark rupee rate but
+               spreads/margin cannot be changed during the life of instrument).
+           f. No step-up feature in instruments should be allowed.
+           g. The dividends/ coupons should only be paid from current year‟s earnings and will
+               be subject to condition that any payment on such instruments should not result in
+               breach of regulatory MCR and CAR requirements set by SBP from time to time.
+           h. All instances of non-payment of dividends/ coupons should be notified to the
+               Banking Policy & Regulations Department.
+    iv.    Optionality:
+           a. No put option should be available to the holders of the instruments.
+           b. Issuer can exercise call option but after five years from issuance date with the
+               prior approval from SBP. Bank should clearly indicate to the prospective
+               investors that bank‟s right to exercise the option is subject to written approval of
+               SBP. Banks shall not exercise a call unless they replace the called instrument with
+               capital of same or better quality. Call premium (when issue is redeemed) is not
+               allowed. Bank should also demonstrate that capital position is well above the
+               minimum capital requirement after the call is exercised.
+    v.     Redemption/ Repurchase:
+           a. No redemption shall be allowed in first five years of issuance. Any repayment of
+               principle must be with the approval of SBP and bank must not create market
+               expectation that supervisory approval will be granted.
+           b. There should not be any sinking fund requirements on issuer for retirements of the
+               instrument. Further terms and conditions of the issue should not be such as to
+               force the issuer to redeem the instruments at any point in time.
+    vi.    Neither the bank nor a related party over which the bank exercise control or
+           significant influence should purchase the instrument, nor should the bank directly or
+           indirectly have funded the purchase of the instrument. Banks are not allowed to grant
+           advances against the security of the capital instruments issued by them.
+
+
+                                                                                                           23
+                                                       BPRD Circular # 6 of 2013 dated August 15, 2013
+
+  vii. The instrument should not have any features that hinder recapitalization, such as
+         provisions that require the issuer to compensate investors if a new instrument is
+         issued at a lower price during a specified time frame.
+  viii. The features of instrument should be transparent, easily understood and publicly
+         disclosed.
+     ix. For disclosure in the Balance Sheet, Perpetual Non-cumulative preference shares
+         (PNCPS) will be classified as “Capital” under the heading of “Additional Tier 1”
+         instrument subject to SBP approval, while perpetual cumulative preference shares/
+         perpetual debt instruments will be classified as “Liabilities” in the Balance Sheet.
+ x.      Loss Absorption Features
+         a. The instrument should be able to absorb losses incurred by the issuer on a going
+             concern and gone concern (point of non-viability) basis.
+         b. Instruments must have principal loss absorption through either
+                  i. Conversion to common shares at an objective pre-specified trigger point,
+                     or
+                 ii. A write-down mechanism which allocates losses to the instrument at a
+                     pre-specified trigger point. The write-down would reduce the claim of the
+                     instrument in liquidation, reduce the amount to be re-paid when a call is
+                     exercised and partially or fully reduce dividend payments on the
+                     instrument.
+         c. A detailed criteria for loss absorption are furnished in Annexure-5. In order for an
+             instrument issued by a bank to be included in Additional Tier 1, it must meet or
+             exceed minimum requirements to ensure loss absorbency set out in the Annexure-
+             5.
+  xi. Conversion of Instruments into Ordinary Shares
+         a. The instruments issued by the banks may contain conversion feature based either
+             on a price fixed at the time of issuance or pricing formula applicable at the time of
+             conversion. However, to quantify the maximum dilution and to ensure that prior
+             shareholder approval for any future issue of the required number of shares is held,
+             the maximum conversion ratio based on 20 percent of the ordinary share price at
+             the time of issue is being prescribed. Adjustments may be made for subsequent
+             share splits, bonus issues and similar transactions.
+         b. In case of unlisted banks, the conversion price may be determined based on the
+             fair value of banks‟ common shares which may be estimated as per mutually
+             acceptable methodology
+         c. To avoid breach of any statutory ceilings, banks are required to keep all prior
+             approvals such as sufficient room in their authorized capital for the conversion of
+             additional tier 1 capital into common shares.
+         d. In case of convertible instruments, the conversion into ordinary shares will be
+             allowed subject to approval of SBP and shareholders holding 5% or more of paid-
+             up shares (ordinary or preferred) shall fulfill the fit and proper criteria of SBP.
+xii. Issuance of Additional Tier 1 Capital Instruments
+         a. Banks interested to issue these instruments should submit terms of the issue (in
+             the light of this annexure) for the in-principle approval of SBP.
+
+
+
+                                                                                                         24
+                                                     BPRD Circular # 6 of 2013 dated August 15, 2013
+
+        b. The issuing bank should submit a report to SBP giving details of the instrument
+            along with a copy of offering document within one month from the date of issue.
+        c. The proceeds of rupee denominated debt instruments offered/issued to non-
+            residents will have to be repatriated to Pakistan and converted into rupees by the
+            bank concerned and the Proceeds Realization Certificate will be furnished to SBP.
+            The bank concerned will be allowed to remit the principal amount of debt
+            instruments at maturity as well as the profit/interest thereon from the interbank
+            market. Hedging will not be available on such instruments. Banks should comply
+            with all the terms and conditions, if any set out by SECP, stock exchange or under
+            any law in the country with regard to issue of the instruments.
+xiii.   Bank‟s investment in Additional Tier 1 capital instruments issued by other banks/
+        financial institutions will be subject to following:
+        a. Attract risk weight as per Section 2.4.8 and Credit Risk/ Market Risk Chapter of
+            this document.
+        b. For the purpose of prudential regulation (R-6), investment in additional tier 1
+            capital instruments will be considered as exposure against shares.
+        c. Bank‟s investment in a single issue of such additional tier 1 capital of any other
+            bank will not at any time exceed 15% of the total size of the issue.
+
+
+
+
+                                                                                                       25
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+ Annexure-3:            Criteria for inclusion of Debt Instruments as Tier 2 Capital
+
+The subordinated debt instruments (e.g. TFCs etc.) issued by banks should meet the following
+terms and conditions to qualify for inclusion as Tier 2 Capital for capital adequacy purposes.
+Subordinated debt will also include rated and listed subordinated debt instruments i.e. TFCs etc.
+The terms of issue for these debt instruments are as under:
+
+   i.   Should be fully paid up, unsecured.
+  ii.   Subordinated to all other indebtedness of the bank including depositors, however, senior
+        to the claims of investors in instruments eligible for inclusion in Tier 1 capital.
+ iii.   Should have a minimum original fixed term maturity of five years.
+ iv.    Recognition in regulatory capital (Tier-2) in the remaining five years before maturity will
+        be amortized on a straight line basis.
+  v.    In case of staggered principal repayments, for inclusion as supplementary capital, the
+        outstanding amount less any scheduled repayment must be discounted by 20% a year as
+        indicated in the table below i.e. 20% of the original amount less any redemption) during
+        the last five years to maturity.
+              Remaining Maturity of Instrument                                Rate           of
+                                                                              Discount
+              Less than or equal to one year                                       100%
+              More than one year but less than or equal to two years                80%
+              More than two years but less than or equal to three years             60%
+              More than three years but less than or equal to four years            40%
+              More than four years but less than or equal to five years             20%
+
+ vi.    The instruments should be rated separately by a credit rating agency recognized by SBP –
+        Minimum rating should be equivalent to „2‟ as per SBP rating grid.
+ vii.   The instruments should be „vanilla‟.
+viii.   The issuer shall decide rate of profit. The rate of profit should be known at the time of
+        issuance of subordinated debt instruments and not linked to the credit standing of the
+        issuer.
+ ix.    The rate can be fixed or floating (with reference to any benchmark rupee rate), however,
+        spreads/margin cannot be changed during the life of the instrument.
+  x.    All instances of non-payment of profits should be notified to the Banking Policy &
+        Regulations Department.
+ xi.    Should not be redeemable before maturity without prior approval of SBP
+xii.    Should be subject to a lock-in clause, stipulating that neither interest nor principal may be
+        paid (even at maturity) if such payments will result in shortfall in bank‟s MCR or CAR or
+        increase any existing shortfall in MCR and CAR.
+xiii.   No put option should be allowed to investor and there should not be any step-up feature
+        in such instruments.
+xiv.    The instrument may be callable at the initiative of the issuer after a minimum period of
+        five years with prior approval of SBP.
+ xv.    Neither a bank nor a related party over which the bank exercise control or significant
+        influence can purchase the instrument, nor can the bank directly or indirectly have funded
+        the purchase of the instrument.
+
+                                                                                                            26
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+ xvi.    The banks before issuing any subordinated debt instruments for inclusion in Tier-2
+         capital will be required to obtain prior approval of SBP.
+xvii.    The issuing bank must clearly disclose in the offer documents that the instrument is
+         unsecured, subordinated as to payment of principal and profit to all other indebtedness of
+         the bank, including deposits and is not redeemable before maturity without prior approval
+         of SBP. Moreover, the investors should be intimated that they have no right to accelerate
+         the repayment of future scheduled payments (interest or principal) except in bankruptcy
+         and liquidation.
+xviii.   Banks should indicate the amount/details of subordinated debt raised as supplementary
+         capital by way of explanatory notes in their annual audited accounts and quarterly
+         Statement of Capital Adequacy Return, as submitted to SBP.
+ xix.    In order for an instrument issued by a bank to be included in Tier 2 capital, it must meet
+         or exceed minimum requirements to ensure loss absorbency set out in the Annexure-5.
+  xx.    Bank should not grant advances against the security of their own subordinated debt issue.
+         While granting loans/advances against subordinated debt instruments of other banks, the
+         margin requirement prescribed under Prudential Regulations shall be maintained,
+         however, the bank‟s total financing against subordinated debt instruments issued by a
+         bank should not exceed its total Tier-I capital less deductions. Further, the bank shall not
+         provide any accommodation to finance purchase of its subordinated debt instrument.
+ xxi.    Bank‟s investment in a single issue of such TFCs of any other bank will not at any time
+         exceed 5% of its own CET1 less deduction or 15% of the total size of the issue,
+         whichever is less. Anything in excess of these thresholds will be deducted from CET1.
+xxii.    Bank‟s investment in subordinated debt issued by other banks/ financial institutions
+             a. Will attract risk weight as per Section 2.4.8 and Credit Risk/ Market Risk Chapter
+                 of this document.
+             b. Will be treated as exposure against shares/ TFCs for the purpose of prudential
+                 regulation ceilings proposed in R-6.
+xxiii.   The issuing bank should submit a report to SBP giving details of the subordinated debt,
+         such as amount raised, maturity of the instrument, rate of profit etc. within one month
+         from the date of issue.
+xxiv.    The proceeds of rupee denominated debt instruments offered/issued to non-residents will
+         have to be repatriated to Pakistan and converted into rupees by the bank concerned and
+         the Proceeds Realization Certificate will be furnished to SBP. The bank concerned will
+         be allowed to remit the principal amount of debt instruments at maturity as well as the
+         profit/interest thereon from the interbank market. Hedging will not be available on such
+         instruments. Banks should comply with all the terms and conditions, if any set out in any
+         law in the country with regard to issue of such instruments.
+
+
+
+
+                                                                                                             27
+                                                         BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                    Annexure-4:            Capital Conservation Buffer
+
+A-4-1 Introduction & Objective
+
+  i.   The banks shall buildup capital conservation buffer (CCB) in good/ normal times which
+       can be used as losses are incurred during stressed period. The requirement is based on
+       simple capital conservation rules designed to avoid breaches of minimum capital
+       requirements.
+
+ ii.   Outside of periods of stress, banks should hold buffers of capital above the regulatory
+       minimum.
+
+iii.   When buffers have been drawn down, the banks shall limit discretionary distributions of
+       earnings. This could include reducing dividend payments, share buy-backs and staff
+       bonus payments. Banks may also choose to raise new capital from the existing or new
+       sponsors/ investors as an alternative to conserving internally generated capital.
+
+ iv.   In the absence of raising capital from the private sector, the share of earnings retained by
+       banks for the purpose of rebuilding their capital buffers should increase as their actual
+       capital levels approach near the minimum capital requirement.
+
+ v.    The capital conservation framework reduces the discretion of banks which have depleted
+       their capital buffers to further reduce them through generous distributions of earnings. In
+       doing so, the framework will strengthen their ability to withstand adverse economic
+       environments. Implementation of the framework will help increase sector resilience both
+       going into a downturn, and provide the mechanism for rebuilding capital during the early
+       stages of economic recovery. Retaining a greater proportion of earnings during a
+       downturn will help ensure that capital remains available to support the ongoing business
+       operations of banks through the period of stress. In this way the framework should help
+       reduce procyclicality.
+
+A-4-2 The Framework
+
+  i.   Banks are required to maintain a capital conservation buffer of 2.5% comprising of
+       CET1, above the regulatory minimum CAR requirement of 10%. Capital distribution
+       constraints will be imposed on a bank when capital levels fall within this range (i.e.
+       between 10% to 12.5%). Banks will be able to conduct business as normal when their
+       capital levels fall into the conservation range as they experience losses. The constraints
+       imposed only relate to distributions, not the operation of the bank.
+
+ ii.   The distribution constraints imposed on banks when their capital levels fall into the range
+       increase as the banks‟ capital levels approach the minimum requirements. The table
+       below shows the minimum capital conservation ratios a bank must meet at various levels
+       of the CET1 capital ratios.
+
+
+
+
+                                                                                                           28
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+                        Capital conservation range above the minimum requirement
+                          CET1                           Min. Capital Conservation Ratios
+                  (as a percentage of RWA)                (expressed as a percentage of earnings)
+                       <6.0% - 6.5%                                       100%
+                       >6.5% - 7.0%                                       80%
+                       >7.0% - 7.5%                                       60%
+                       >7.5% - 8.5%                                       40%
+                          > 8.5%                                           0%
+
+ iii.    For example, a bank with a CET1 ratio in the range of 6.5% to 7.0% is required to retain
+         80% of its earnings in the subsequent financial year (i.e. payout no more than 20% in
+         terms of dividends, share buybacks and discretionary bonus payments). The CET1 ratio
+         includes amounts used to meet the 6.0% minimum CET1 requirement, but excludes any
+         additional CET1 needed to meet the 7.5% Tier 1 and 10% Total Capital requirements.
+         For example, a bank with 10% CET1 and no Additional Tier 1 or Tier 2 capital will meet
+         all minimum capital requirements, but will have a zero conservation buffer and therefore
+         will be subjected to 100% constraint on capital distributions by way of cash dividends,
+         share-buybacks and discretionary bonuses.
+
+ iv.     Following are the other key aspects of the capital conservation buffer requirements:
+
+             a. Elements subject to the restriction on distributions: Cash dividends, share
+                buybacks, discretionary payments on other Tier 1 capital instruments and
+                discretionary bonus payments to staff are the items which will be considered as
+                distributable. Payments that do not result in a depletion of CET1, which may for
+                example include certain scrip dividends (bonus shares) are not considered
+                distributions.
+             b. Definition of earnings: Earnings are defined as distributable profits calculated
+                prior to the deduction of elements subject to the restriction on distributions.
+                Earnings are calculated after the tax which would have been reported had none of
+                the distributable items been paid. As such, any tax impact of making such
+                distributions are reversed out. Where a bank does not have positive earnings and
+                has a CET1 ratio less than 8.5%, it will be restricted from making positive net
+                distributions.
+
+             c. Standalone or consolidated application: CCB is to be applicable both at
+                standalone level as well as at the consolidated group level. Moreover, application
+                of CCB will be made on the lower of the CET1 ratio arrived at on a standalone or
+                consolidated basis.
+
+A-4-3 Transitional Arrangements
+
+        i.   The CCB will be phased in from December 31, 2015 to year end 2019.
+
+
+
+
+                                                                                                             29
+                                                   BPRD Circular # 6 of 2013 dated August 15, 2013
+
+ii.   Banks that already meet the minimum ratio requirement (6.0%+0.25%) from December
+      2015 (during the transition period) should maintain prudent earnings retention policies
+      so as to meet the conservation buffer as soon as reasonably possible.
+
+
+
+
+                                                                                                     30
+                                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+           Annexure-5:               Minimum Requirements to Ensure Loss Absorbency
+
+A-5-1 Introduction & Objective
+
+          1. The terms and conditions7 of all non-equity capital instruments (i.e. Additional Tier 1 and
+             Tier 2) issued by banks will have provision that requires such instruments at the option of
+             the supervisor to be either written-off8 or converted into common equity upon occurrence
+             of a certain trigger event.
+
+          2. In order for an instrument issued by a bank to be recognized in Additional Tier 1 or in
+             Tier 2 capital, it must meet the criteria mentioned in the following paragraphs in addition
+             to the criteria specified in Annexure 2 or 3.
+
+A-5-2 Loss Absorption of Additional Tier-1 Instruments at a Pre-specified Trigger:
+
+      i.     The additional Tier-1 capital instruments (classified as other than equity at issuance) must
+             have loss absorption clause whereby these instruments will be permanently converted to
+             common shares when the bank‟s CET1 ratio falls to or below 6.625% of RWA {i.e.
+             minimum CET1 of 6.0% plus 25% of capital conservation buffer of 2.5% (0.625%)}.
+             Moreover, the bank should immediately notify SBP upon reaching the trigger point.
+
+    ii.      A bank will have full discretion to determine the amount of Additional Tier-1 instruments
+             to be converted into common shares subject to following conditions:
+                 a. Where a bank‟s CET1 reaches the loss absorption trigger point, the aggregate
+                     amount of Additional Tier-1 capital to be converted must at least be the amount
+                     sufficient to immediately return the CET1 ratio to above 6.625% of total RWA (if
+                     possible).
+                 b. The converted amount should not exceed the amount needed to bring the CET1
+                     ratio to 8.5% of RWA (i.e. minimum CET1 of 6.0% plus capital conservation
+                     buffer of 2.5%).
+
+    iii.     The contractual terms and conditions of Additional Tier-1 instruments must also include
+             a clause requiring full and permanent conversion of the instrument into common shares at
+             the point of non-viability (mentioned below in Section A-5-3).
+
+    iv.      The conversion method will describe and follow the order (hierarchy of claims) in which
+             they will absorb losses in liquidation/ gone concern basis. These terms must be clearly
+             stated in the offer documents.
+
+     v.      In case, conversion of Additional Tier-1 capital instrument is not possible following the
+             trigger event, the amount of the instrument must be written off in the accounts resulting
+             in increase in CET1 of the bank.
+
+
+7
+   Under the Basel III rules (reference BIS press release dated January 13, 2011)
+8
+  The BCBS Basel III rules permit national discretion with respect to non-equity capital instruments to be written off or converted
+to common shares upon a trigger event. Accordingly, SBP will prefer the option of conversion to common shares.
+
+
+                                                                                                                                      31
+                                                        BPRD Circular # 6 of 2013 dated August 15, 2013
+
+ vi.   Where the additional tier-1 capital instrument includes write-off provisions, the
+       mechanism must state:
+          a. The claim of the instrument on liquidation of the issuer is reduced to (or below)
+             the value of the written-off instrument.
+          b. The amount of the instrument to be paid in case of a call is reduced by the
+             written-off amount of the instrument.
+          c. The distributions (dividends/ profit) payable on the instrument must be
+             permanently reduced.
+
+A-5-3 Loss Absorbency of Non-Equity Capital Instruments at the Point of Non-Viability
+
+  i.   The terms and conditions of all non-CET1 and Tier 2 instruments issued by banks must
+       have a provision in their contractual terms and conditions that the instruments, at the
+       option of the SBP, will either be fully and permanently converted into common share or
+       immediately written off upon the occurrence of a non-viability trigger event called the
+       Point of Non-Viability (PONV) as described below;
+
+ ii.   The PONV trigger event is the earlier of;
+          a. A decision made by SBP that a conversion or temporary/ permanent write-off is
+             necessary without which the bank would become non-viable.
+          b. The decision to make a public sector injection of capital, or equivalent support,
+             without which the bank would have become non-viable, as determined by SBP.
+
+iii.   The issuance of any new shares as a result of the trigger event must occur prior to any
+       public sector injection of capital so that the capital provided by the public sector is not
+       diluted.
+
+ iv.   The amount of non-equity capital to be converted/ written-off will be determined by the
+       SBP.
+
+ v.    Where an Additional Tier-1 capital instrument or Tier-2 capital instrument provides for
+       conversion into ordinary shares, the terms of the instruments should include provision
+       that upon a trigger event the investors holding 5% or more of paid-up shares (ordinary or
+       preferred) will have to fulfill fit and proper criteria (FPT) of SBP.
+
+ vi.   The conversion terms of the instruments must contain pricing formula linked to the
+       market value of common equity on or before the date of trigger event. However, to
+       quantify the maximum dilution and to ensure that prior shareholder/ regulatory approvals
+       for any future issue of the required number of shares is held, the conversion method must
+       also include a cap on the maximum number of shares to be issued upon a trigger event.
+
+vii.   The conversion method should describe and take into account the order (hierarchy of
+       claims) in which the instruments will absorb losses in liquidation/ gone concern basis.
+       These terms must be clearly stated in the offer documents. However, such hierarchy
+
+
+
+                                                                                                          32
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+        should not impede the ability of the capital instrument to be immediately converted or to
+        be written off.
+
+viii.   There should be no impediments (legal or other) to the conversion i.e. the bank should
+        have all prior authorizations (sufficient room in authorized capital etc.) including
+        regulatory approvals to issue the common shares upon conversion.
+
+ ix.    The contractual terms of all Additional Tier 1 and Tier 2 capital instruments must state
+        that SBP will have full discretion in deciding/ declaring a bank as a non-viable bank. SBP
+        will, however, form its opinion based on financial and other difficulties by which the
+        bank may no longer remain a going concern on its own unless appropriate measures are
+        taken to revive its operations and thus, enable it to continue as a going concern. The
+        difficulties faced by a bank should be such that these are likely to result in financial
+        losses and raising the CET1/ MCR of the bank should be considered as the most
+        appropriate way to prevent the bank from turning non-viable. Such measures will include
+        complete write-off/ conversion of non-equity regulatory capital into common shares in
+        combination with or without other measures as considered appropriate by the SBP.
+
+
+A-5-4 Group Treatment
+
+   i.   As the capital adequacy is applicable both on standalone and consolidated levels, the
+        minority interests in respect of (non-equity) capital instruments issued by subsidiaries of
+        the banks including overseas subsidiaries can be included in the consolidated capital of
+        the banking group only if these instruments have pre-specified triggers/loss absorbency at
+        the PONV. In addition, where a bank wishes the instrument issued by its subsidiary to be
+        included in the consolidated group‟s capital, the terms and conditions of that instrument
+        must specify an additional trigger event. The additional trigger event is the earlier of:
+            a. A decision that a conversion or temporary/permanent write-off, without which the
+               bank or the subsidiary would become non-viable, is necessary, as determined by
+               the SBP; and
+            b. The decision to make a public sector injection of capital, or equivalent support,
+               without which the bank or the subsidiary would have become nonviable, as
+               determined by the SBP. Such a decision would invariably imply that the write-off
+               or issuance of any new shares as a result of conversion or consequent upon the
+               trigger event must occur prior to any public sector injection of capital so that the
+               capital provided by the public sector is not diluted. The additional Tier 1
+               instruments with write-off clause will be permanently written-off when there is
+               public sector injection of funds.
+
+  ii.   The subsidiaries need to obtain necessary approval/ NOC from their respective regulators
+        for allowing the capital instrument to be converted/ written off at the additional trigger
+        point referred above. Moreover, the instrument may also provide for conversion or write-
+        off should the host authority of subsidiary determines a loss absorption event in respect of
+        the subsidiary.
+
+
+                                                                                                            33
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+Appendix 1:            Minority Interest (illustration)
+A banking group consists of two legal entities that are both banks. Bank P is the parent and Bank S
+is the subsidiary and their unconsolidated balance sheets are as given below.
+             Bank P Balance Sheet                              Bank S Balance Sheet
+Assets                                             Assets
+Loan to Customers                 100              Loan to Customers             150
+Investment in CET1 of Bank S      7
+Investment in AT1 of Bank S       4
+Investment in the T2 of Bank S    2
+Total                             113              Total                                 150
+Liabilities and Equity                             Liabilities and Equity
+Depositors                        70               Depositors                            127
+Tier 2                            10               Tier 2                                8
+Additional T 1                    7                Additional T 1                        5
+Common Equity                     26               Common Equity                         10
+Total                             113              Total                                 150
+
+The balance sheet of Bank P shows that in addition to loans to its customers, it owns 70% of the
+common shares of Bank S, 80% of the additional Tier 1 capital of Bank S and 25% of the Tier 2
+capital of Bank S. The ownership of the capital of Bank S is therefore as follows:
+                                    Capital Issue by Bank S
+                            Amount issued to     Amount issued to third                  Total
+                            Parent (Bank P)         parties (Minority
+                                                         Interest)
+Common Equity                      7                         3                            10
+Additional Tier 1                  4                         1                             5
+Tier 1                            11                         4                            15
+Tier 2                             2                         6                             8
+Total Capital                     13                        10                            23
+
+
+                                Consolidated Balance Sheet
+Assets
+Loan to customers                                                                                  250
+Liabilities and equity
+Depositors                                                                                         197
+Tier 2 issued by subsidiary to third party                                                          6
+Tier 2 issued by parent                                                                            10
+Additional Tier 1 issued by subsidiary to third party                                               1
+Additional Tier 1 issued by parent                                                                  7
+Common Equity issued by subsidiary to third party (i.e. minority interest)                          3
+Common equity issued by parent                                                                     26
+                                                                                                   250
+
+
+
+                                                                                                            34
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+In consolidated accounts, the CET1 of Rs. 7, AT1 of Rs. 4 and Tier-2 of Rs. 2 of Bank S issued to
+Parent P netted against similar amount of investment reflected in the asset side of Parent Ps‟ balance
+sheet.
+
+For illustrative purposes Bank S is assumed to have risk weighted assets of 100 against the assets
+valuing 150. In this example, the minimum capital requirements of Bank S and the subsidiary‟s
+contribution to the consolidated requirements are the same since Bank S does not have any loans to
+Bank P. This means that it is subject to the following minimum plus capital conservation buffer
+requirements and has the following surplus capital.
+                            Minimum and surplus capital of Bank S
+                           Minimum plus capital   Capital available                      Surplus
+                            conservation buffer                                   {Point 2a of annexure}
+CET1 (6.0+2.5=8.5)                  8.5                    10                               1.5
+                                 (=8.5% of 100)                                          (=10-8.5)
+T1                                    10                         15                          5
+                                 (=10% of 100)                (= 10+5)                    (=15-5)
+Total capital                        12.5                        23                        10.5
+                                (= 12.5% of 100)             (=10+5+8)                  (=23-12.5)
+
+The following table illustrates how to calculate the amount of capital issued by the Bank S is to be
+included in consolidated capital, following the calculation procedure set out in Annexure-1.
+     Bank S: Amount of capital issued to third parties included in consolidated capital
+              Total Amount       Amount           Surplus          Surplus         Amount
+                 issued      issued to third        (c)        attributable to   included in
+                    (a)           parties                       third parties   consolidated
+                                    (b)                         (i.e. amount       capital
+                                                               excluded from     e= (b) – (d)
+                                                                consolidated
+                                                                   capital)
+                                                                d=(c)*(b)/(a)
+CET1          10             3                1.5              0.45            2.55
+T1            15             4                5                1.33            2.67
+TC            23             10               10.5             4.56            5.44
+
+The following table summarizes the components of capital for the consolidated group based on the
+amounts calculated in the table above. Additional Tier 1 is calculated as the difference between
+CET1 and Tier 1, while Tier 2 is the difference between total capital and Tier 1.
+                           Total amount issued         Amount issued by          Total issued amount
+                          by parent (all of which     subsidiaries to third        (by parent and
+                            is to be included in     parties to be included       subsidiary) to be
+                           consolidated capital)    in consolidated capital          included in
+                                                                                 consolidated capital
+CET1                                 26                       2.55                       28.55
+Additional Tier 1                     7                       0.12                       7.12
+Tier 1                               33                       2.67                       35.67
+Tier 2                               10                       2.77                       12.77
+Total capital                        43                       5.44                       48.44
+
+
+                                                                                                             35
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+Appendix 2:             Investment less than 10% (illustration)
+
+
+Investment in the capital of banking, financial and insurance entities (that are outside the
+scope of regulatory consolidation) where the bank does not own more than 10% of the
+issued common shares of the entity
+
+Suppose;
+
+A)       Regulatory Capital Structure of a Bank (PKR in millions)
+
+         Paid-up equity                        300
+         Eligible Reserves & Profit            200
+         Total common equity                   500
+
+         Eligible Additional capital           15
+         Total Tier 1 capital                  515
+
+         Eligible Tier 2 capital               100
+         Total Eligible capital                615
+
+
+B)       Bank Investment in Entity A & B (where the bank does not own more than 10% of the
+         issued common share capital of the entity.
+
+Entity     Capital Structure of the Investee Investment of bank in the entity
+           entity
+           Common Additional Tier Total Common Additional Tier Total
+           Equity    Tier 1     2            Equity     Tier 1       2        Investment
+A          300       10         0     310    15         10           0        25
+B          400       0          50    450    25         0            10       35
+                                             40         10           10       60
+
+
+Working:
+
+Check-1:        Bank‟s total holding of capital instruments is not more than 10% of the issued
+                common share of the entity.
+                Entity A - total investment of 25 is less than 30 (10% of 300)
+                Entity B - total investment of 35 is less than 40 (10% of 400)
+
+Check-2:        The aggregate of the total investment is 60; which is more than 50 (10% of 500 -
+                total common equity of the bank). Hence the excess amount from 10% of banks
+                common equity i.e. 10 (60 minus50) is required to be deducted.
+
+In order to calculate proportional deductions, we need to calculate the following:
+
+
+                                                                                                             36
+                                                           BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+  i.   Proportion of total capital holdings held in common equity, additional tier 1 and tier 2.
+       The proportion of bank‟s investment in the common equity of these entities = 40/60 = 0.666
+       The deduction from common equity of bank = 0.666 * 10 = 6.66
+
+       Likewise,
+       The proportional deduction from Additional tier 1 = 10/60*10 = 1.67
+       The proportional deduction from tier 2 = 10/60*10 = 1.67
+
+
+
+ ii.   Proportion of investment held in the banking book and the trading book
+
+       Supposing that the bank has kept its investment into the trading book and banking book in
+       the following manner;
+                                       Common            Additional           Tier 2           Total
+                                        Equity            Tier 1
+Total investment in A & B held           30                  6                   3               39
+in the banking book
+Total investment in A & B held            10                  4                  7               21
+in the trading book
+Total                                     40                 10                 10               60
+
+Common equity investments of the bank in A & B which are to be risk weighted = 40-6.66 = 33.34
+
+               Banking book exposure subject to risk weight = (30/40)*33.34 = 25
+
+               Trading book exposure to be risk weighted = (10/40) * 33.34 = 8.34
+
+Similarly Additional tier 1 and Tier 2 capital investments would be risk weighted, i.e.
+
+               For Additional Tier 1 investment to be risk weighted = 10-1.67 = 8.33
+
+               Banking book exposure subject to risk weight = (6/10)*8.33 = 5.0
+
+               Trading book exposure to be risk weighted = (4/10) * 8.33 = 3.33
+
+
+
+               For Tier 2 investment to be risk weighted = 10-1.67 = 8.33
+
+               Banking book exposure subject to risk weight = (3/10)*8.33 = 2.5
+
+               Trading book exposure to be risk weighted = (7/10) * 8.33 = 5.83
+
+
+
+
+                                                                                                             37
+                                                              BPRD Circular # 6 of 2013 dated August 15, 2013
+
+Appendix 3:             Significant Investment (illustration)
+where the bank owns more than 10% of the issued common share capital of the issuing entity or
+where the entity is an affiliate in the capital of banking, financial and insurance entities that are
+outside the scope of regulatory consolidation
+
+
+
+Suppose;
+
+A)       Regulatory Capital Structure of a Bank (PKR in millions)
+
+         Paid-up equity                          300
+         Eligible Reserves & Profit              200
+         Total common equity                     500
+
+         Eligible Additional capital             5
+         Total Tier 1 capital                    505
+
+         Eligible Tier 2 capital                 100
+         Total Eligible capital                  605
+
+
+B)       Significant Investment in Entity A & B (where the bank owns more than 10% of the
+         issued common share capital of the entity.
+
+Entity     Capital Structure of the Investee entity       Investment of bank in the entity
+           Common Additional Tier 2 Total                 Common Additional Tier 2 Total
+           Equity     Tier 1                              Equity     Tier 1                Investment
+A          100        100          10       220           35         10           5        50
+B          200        0            20       220           35         0            5        40
+                                                          70         10           10       90
+
+Working:
+
+Check-1:        Bank‟s total holding of capital instruments is more than 10% of the issued common
+                share of both the entities.
+                Entity A - total investment of 50 is more than 10 (10% of 100)
+                Entity B - total investment of 40 is more than 20 (10% of 200)
+
+
+Deductions (other than common equity):
+
+                All investment in Additional Tier 1 (in A & B) to be deducted = 10
+
+                All investment in Tier 2 (in A& B) are to be deducted = 10
+
+
+
+                                                                                                                38
+                                                          BPRD Circular # 6 of 2013 dated August 15, 2013
+
+
+
+               Since the bank does not have adequate additional tier 1, hence the shortfall (10-5 =
+               5) will be deducted from the higher category of capital i.e. CET1.
+
+After the above deductions, the Capital Structure of a Bank will show following position:
+
+       Total common equity                    495     (less by 5, due to AT1 shortfall deduction)
+
+       Eligible Additional capital            0       (less by 5, due to AT1 deduction)
+       Total Tier 1 capital                   495
+
+       Eligible Tier 2 capital                90      (less by 10, due to T2 deduction)
+       Total Eligible capital                 585
+
+
+
+Deduction for common equity:
+
+
+
+               Banks common equity = 495
+
+               10% of banks common equity = 10% * 495 = 49.5
+
+
+
+               Hence the amount to be deducted from CET1 = 70 – 49.5 = 20.5
+
+
+
+               The exposure subject to risk weight of 250% = 49.5
+
+               (Irrespective of position held in the banking or trading book)
+
+
+
+
+                                                                                                            39
+                                                                             BPRD Circular # 6 of 2013 dated August 15, 2013
+
+Appendix 4:                     The 15% of common equity limit on specified items
+This Annex is meant to clarify the calculation of the 15% limit on significant investments in the
+common shares of unconsolidated financial institutions (banks, insurance and other financial
+entities), and deferred tax assets arising from temporary differences (collectively referred to as
+specified items).
+
+The recognition of these specified items will be limited to 15% of CET1, after application of all
+deductions. To determine the maximum amount of the specified items that can be recognized9,
+banks will multiply the amount of CET110 (after all deductions, including after the deduction of
+the specified items in full) by 17.65%. This number is derived from the proportion of 15% to
+85% (i.e. 15%/85% = 17.65%).
+
+As an example, take a bank with PKR 85 of common equity (calculated net of all deductions,
+including after the deduction of the specified items in full).
+
+The maximum amount of specified items that can be recognized by this bank in its calculation of
+CET1 capital is PKR 85 x 17.65% = PKR 15. Any excess above PKR 15 must be deducted from
+CET1. If the bank has specified items (excluding amounts deducted after applying the individual
+10% limits) that in aggregate sum up to the 15% limit, CET1 after inclusion of the specified
+items, will amount to PKR 85 + PKR 15 = PKR 100. The percentage of specified items to total
+CET1 will equal 15%.
+
+
+
+
+9
+ The actual amount that will be recognized may be lower than this maximum, either because the sum of the three specified items
+are below the 15% limit set out in this appendix, or due to the application of the 10% limit applied to each item.
+
+10
+     This is hypothetical amount of CET1 and is used only for the purposes of determining the deduction of the specified items.
+
+
+                                                                                                                                  40
+

@@ -1,9 +1,26 @@
-# Virtual environments
+# Python
 .venv/
 venv/
-env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
 
-# Environment secrets
+# Node
+node_modules/
+web/dist/
+.astro/
+
+# Secrets and local settings (never commit)
 .env
-.env.local
+.env.*
 !.env.example
+
+# Data written by the app at runtime: uploads, Parquet, reports (FIX-047).
+# Bank data must never enter git.
+backend/var/
+
+# OS and editor files
+.DS_Store
+*.log
+*.swp

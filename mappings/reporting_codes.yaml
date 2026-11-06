@@ -1,0 +1,55 @@
+# Daleel illustrative reporting codes.
+#
+# SBP's official Reporting Chart of Accounts (RCOA) is given to banks through
+# DAP4 and is not public (REG-015). This tree follows the same principles
+# (hierarchy, normal balance, return lines) but its codes are Daleel's own.
+# A bank with DAP4 access can replace this file with the official list.
+#
+# normal: the side the balance normally sits on. Presented amounts are positive
+#         on that side (DEC-008).
+# rw:     risk weight class used for credit RWA on GL based assets
+#         (financing is risk weighted contract by contract instead).
+
+codes:
+  # Assets
+  - {code: A.CASH,      label: Cash and balances with treasury banks,      normal: DEBIT,  group: ASSETS, rw: CASH}
+  - {code: A.SBP,       label: Balances with State Bank of Pakistan,        normal: DEBIT,  group: ASSETS, rw: SOVEREIGN_PKR}
+  - {code: A.DUE_FI,    label: Due from financial institutions,             normal: DEBIT,  group: ASSETS, rw: BANK}
+  - {code: A.INV_GOP,   label: Investments in GoP Ijarah Sukuk,             normal: DEBIT,  group: ASSETS, rw: SOVEREIGN_PKR}
+  - {code: A.INV_OTHER, label: Other Shariah compliant investments,         normal: DEBIT,  group: ASSETS, rw: CORPORATE}
+  - {code: A.FIN_MUR,   label: Murabaha financing,                          normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_IJA,   label: Ijarah financing,                            normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_DM,    label: Diminishing Musharakah financing,            normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_MUSH,  label: Musharakah and Running Musharakah,           normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_IST,   label: Istisna financing,                           normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_SAL,   label: Salam financing,                             normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_TIJ,   label: Tijarah financing,                           normal: DEBIT,  group: FINANCING}
+  - {code: A.FIN_OTH,   label: Other Islamic financing,                     normal: DEBIT,  group: FINANCING}
+  - {code: A.PROV,      label: Credit loss allowance against financing,     normal: CREDIT, group: ASSETS}
+  - {code: A.FIXED,     label: Fixed assets,                                normal: DEBIT,  group: ASSETS, rw: FIXED_ASSET}
+  - {code: A.INTANG,    label: Intangible assets,                           normal: DEBIT,  group: ASSETS}
+  - {code: A.OTHER,     label: Other assets,                                normal: DEBIT,  group: ASSETS, rw: OTHER_ASSET}
+  # Liabilities
+  - {code: L.DEP_CUR,   label: Current deposits (Qard),                     normal: CREDIT, group: DEPOSITS}
+  - {code: L.DEP_SAV,   label: Savings deposits (Mudarabah),                normal: CREDIT, group: DEPOSITS}
+  - {code: L.DEP_TERM,  label: Term deposits (Mudarabah),                   normal: CREDIT, group: DEPOSITS}
+  - {code: L.DUE_FI,    label: Due to financial institutions,               normal: CREDIT, group: LIABILITIES}
+  - {code: L.SUKUK_SUB, label: Subordinated Sukuk (Tier 2),                 normal: CREDIT, group: LIABILITIES}
+  - {code: L.PER,       label: Profit equalisation reserve (liability part),normal: CREDIT, group: LIABILITIES}
+  - {code: L.IRR,       label: Investment risk reserve,                     normal: CREDIT, group: LIABILITIES}
+  - {code: L.CHARITY,   label: Charity payable,                             normal: CREDIT, group: LIABILITIES}
+  - {code: L.OTHER,     label: Other liabilities,                           normal: CREDIT, group: LIABILITIES}
+  # Equity
+  - {code: E.PAIDUP,    label: Paid up capital,                             normal: CREDIT, group: EQUITY}
+  - {code: E.STAT_RES,  label: Statutory reserve,                           normal: CREDIT, group: EQUITY}
+  - {code: E.OTHER_RES, label: Other reserves,                              normal: CREDIT, group: EQUITY}
+  - {code: E.PER_RES,   label: Profit equalisation reserve (reserve part),  normal: CREDIT, group: EQUITY}
+  - {code: E.UNAPPROP,  label: Unappropriated profit,                       normal: CREDIT, group: EQUITY}
+  # Income and expense for the period
+  - {code: I.FIN,       label: Profit earned on financing,                  normal: CREDIT, group: INCOME}
+  - {code: I.INV,       label: Profit earned on investments,                normal: CREDIT, group: INCOME}
+  - {code: I.FEE,       label: Fee and commission income,                   normal: CREDIT, group: INCOME}
+  - {code: I.CHARITY,   label: Charity booked as income (should be nil),    normal: CREDIT, group: INCOME}
+  - {code: X.DEP,       label: Profit paid to depositors,                   normal: DEBIT,  group: EXPENSE}
+  - {code: X.OPEX,      label: Operating expenses,                          normal: DEBIT,  group: EXPENSE}
+  - {code: X.PROV,      label: Credit loss charge,                          normal: DEBIT,  group: EXPENSE}

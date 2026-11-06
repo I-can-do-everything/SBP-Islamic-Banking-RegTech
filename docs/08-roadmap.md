@@ -31,6 +31,8 @@ The project is built in milestones. Each milestone ends with something that work
 6. Draft the social posts for the milestone, with screenshots of synthetic data only.
 7. Commit, push, and check in with the owner.
 
-## Network access needed later
+## Network access
 
-This cloud session cannot reach `openrouter.ai` today (the research agent got a proxy refusal). Before M9 the environment needs that host allowed, and an OpenRouter API key added as a secret (not in code). This will be requested when M9 starts.
+- Done 2026-11-06: a personal environment "SBP-Islamic-Banking-RegTech" allows `www.sbp.org.pk`, `archive.sbp.org.pk` and `openrouter.ai`. OpenRouter is reachable.
+- SBP's site blocks automated clients with Cloudflare. Primary circulars come from owner downloads in `docs/sources/sbp/`.
+- Before M9, an OpenRouter API key is added as an environment secret (never in code or chat).

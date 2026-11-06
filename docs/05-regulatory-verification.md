@@ -101,7 +101,9 @@ All of these are **Secondary**: taken from SBP page snippets in search results, 
 | REG-021 | LCR and NSFR minimum 100% each | BPRD C08/2016 | Values Unverified |
 | REG-022 | No general personal data protection act in force as of Nov 2026. Banking secrecy under the Banking Companies Ordinance 1962 s.33A applies | legal guides, news | Secondary |
 
-### Priority primary checks (need network access to sbp.org.pk)
+### Priority primary checks
+
+SBP's website blocks automated access (Cloudflare), so these are read from copies the owner downloads into `docs/sources/sbp/` (file name = circular id, for example `IFPD-C09-2024.pdf`).
 
 1. IFPD C09/2024 and IFPD CL01/2025: the full WAGY method and exclusions (REG-004, REG-013)
 2. BPRD C03/2022 Annexure C: the stage backstop table (REG-011)

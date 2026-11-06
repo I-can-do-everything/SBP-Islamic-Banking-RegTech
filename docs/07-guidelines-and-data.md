@@ -8,7 +8,9 @@
 
 Three research passes were run in parallel: SBP guidelines, datasets and calibration figures, and AI models.
 
-**Important limit:** this cloud workspace's network could not open `sbp.org.pk`, bank websites or `openrouter.ai` directly. The proxy refused the connections. Every fact below therefore comes from web search results: quoted snippets of official SBP pages, news reports (Dawn, Business Recorder) and banks' own published disclosures. None is yet marked "Verified (primary)". Before any rule value goes into the rulebook as verified, the primary page must be read. That needs network access to `www.sbp.org.pk` and `archive.sbp.org.pk` (see [08-roadmap.md](08-roadmap.md)).
+**Important limit:** this cloud workspace's network could not open `sbp.org.pk`, bank websites or `openrouter.ai` directly. The proxy refused the connections. Every fact below therefore comes from web search results: quoted snippets of official SBP pages, news reports (Dawn, Business Recorder) and banks' own published disclosures. None is yet marked "Verified (primary)". Before any rule value goes into the rulebook as verified, the primary page must be read.
+
+**Update, same day:** the workspace network now allows `www.sbp.org.pk`, `archive.sbp.org.pk` and `openrouter.ai` (environment "SBP-Islamic-Banking-RegTech"). OpenRouter is reachable. SBP's site still answers 403 from its own Cloudflare bot protection, which blocks automated clients. We will not try to get around a website's bot protection. Instead, the owner downloads the circulars in a normal browser and saves them to `docs/sources/sbp/`, and they are read from there. The priority list is at the end of [05-regulatory-verification.md](05-regulatory-verification.md).
 
 Status words used here are the same as in file 05:
 

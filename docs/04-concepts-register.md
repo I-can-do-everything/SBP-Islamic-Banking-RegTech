@@ -56,7 +56,7 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-032 | Islamic banking principles | No interest (riba). Returns come from trade, leasing or partnership, and profit and loss is shared. A Shariah board approves products. | Domain basis | In code |
 | CON-033 | Islamic financing products | Murabaha (cost plus sale), Ijarah (leasing), Diminishing Musharakah (partnership where the customer gradually buys out the bank), Salam (advance payment for goods delivered later), Istisna (financing goods to be manufactured). | `ratios.py` account codes | In code |
 | CON-034 | CAELS rating | SBP's supervisory rating framework (Capital, Asset quality, Earnings, Liquidity, Sensitivity). It is an assessment framework, not a list of hard limits. | Cited in `ratios.py` | In code |
-| CON-035 | Data Filing System (DFS) submissions | The structured file format banks use to submit data to SBP. Format details to be verified. | `config.DFS_*` | Planned |
+| CON-035 | RCOA, DFS and DAP4 | Banks report to SBP through the Data Acquisition Portal (DAP4). Returns follow the Reporting Chart of Accounts (RCOA), and each return has a Data File Structure (DFS) that fixes its file layout. The layouts are given to banks, not published. | `config.DFS_*`, REG-015 | Planned |
 | CON-036 | Shariah compliance checks | Checks that products and pools follow Shariah rules and SBP's Shariah governance framework. | `ValidationCheckType.SHARIAH` | Planned |
 | CON-037 | Asset classification, days past due and provisioning | Financing is classified by how many days payments are overdue (OAEM, Substandard, Doubtful, Loss), and a provision (expected loss set aside) is required for each class. | `config.DPD_THRESHOLDS`, `PROVISION_RATES` | In code (unused) |
 | CON-038 | Non performing financing (NPF) ratio | Bad financing divided by total financing. The Islamic banking version of the non performing loan ratio. | `calculate_npf_ratio` | In code |
@@ -69,6 +69,8 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-045 | Weighted average gross yield (WAGY) and the 75% rule | Since 1 January 2025, Islamic banks must pay profit on eligible PKR savings deposits at a rate of at least 75% of the weighted average gross yield of their pools (IFPD Circular No. 09 of 2024). | BUG-028, REG-004 | Planned |
 | CON-046 | Mudarabah and Wakala deposits | Mudarabah: the depositor provides money and the bank manages it, sharing profit. Wakala: the bank acts as agent for a fee. | `2150-MUD`, `2150-WAK` | In code |
 | CON-047 | Declared profit rate | The annualised profit rate a bank announces for depositors in a period. | `calculate_pool_ratios` | In code |
+| CON-048 | Mudarib share, weightages and Hiba | The bank's share of pool profit as manager (Mudarib, capped at 50%). Weightages give different deposit types different shares of profit, and are announced before each month. Hiba is a gift the bank may give from its own share. | REG-012 | Planned |
+| CON-049 | Outsourcing and cloud rules for banks | SBP requires banks to keep material workloads with onshore cloud providers unless it approves otherwise. This shapes where the system and its AI may run. | REG-017, DEC-013 | Planned |
 
 ## Tech stack (CON-060 to CON-079)
 
@@ -103,3 +105,19 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-081 | Audit first design | Every number must be explainable: show its formula, inputs, source file hash and regulatory reference, one click away. | In code (`CalculationResult`) |
 | CON-082 | Configuration over code | Bank specific and regulation specific values live in configuration that can be reviewed and versioned, not inside code. | In code (mapping JSON, constants) |
 | CON-083 | Defence in depth | Several independent security layers (validation, authentication, roles, rate limits, audit log, expiring links), so one failure does not expose data. | Planned |
+| CON-084 | Maker checker (four eyes) | One person prepares, a different person approves. The rule is enforced by the software, so nobody can approve their own work. | Planned |
+
+## Architecture patterns (CON-090 onward)
+
+| ID | Concept | Plain explanation | Where used | Status |
+|---|---|---|---|---|
+| CON-090 | Medallion data layout and lakehouse lite | Data moves through layers: raw (as received, never changed), bronze (typed), silver (cleaned), gold (aggregated). Files are kept in open formats (Parquet) in object storage, and a query engine (DuckDB) reads them directly. | DEC-002 | Planned |
+| CON-091 | Transactional outbox | Saving a record and queuing its follow up work in the same database transaction, so one cannot happen without the other. | DEC-003 | Planned |
+| CON-092 | Regulation as code and bitemporal data | Regulatory values are versioned data with "valid from" and "valid to" dates, so a past period is always calculated with the rules of its time. | DEC-005 | Planned |
+| CON-093 | Hash chained audit log | Each log entry includes a fingerprint of the previous one. Any edit or deletion breaks the chain at that point. | DEC-010 | Planned |
+| CON-094 | LLM evaluations | A fixed set of test inputs with expected properties, used to measure an AI model's accuracy before and after a change. | 06 section 9 | Planned |
+| CON-095 | Row level security | Database rules that restrict which rows a session can see (here: only its own bank's rows). | DEC-012 | Planned |
+| CON-096 | Synthetic data generation | Building realistic but fake data from rules and statistics, seeded so it is identical every run. | 07 section 2.3 | Planned |
+| CON-097 | Columnar storage (Parquet) and vectorised engines (DuckDB) | Storing data column by column compresses it well and lets the engine read only the needed columns and process them in batches across all CPU cores. | DEC-002 | Planned |
+| CON-098 | Idempotency | Doing the same request twice has the same effect as doing it once, so retries are safe. | 06 section 8 | Planned |
+| CON-099 | Server Sent Events | A simple one way stream from server to browser for live progress updates. | DEC-011 | Planned |

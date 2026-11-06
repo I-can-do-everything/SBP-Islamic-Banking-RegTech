@@ -32,6 +32,10 @@ All project documentation lives in `docs/`. See `docs/README.md` for the index a
 | `docs/03-fix-log.md` | Every fix (`FIX-###`, same number as its bug), what prompted it, how it was done, how it was verified | A fix is planned, applied or verified |
 | `docs/04-concepts-register.md` | Every topic, concept, tool and design idea used (`CON-###`) | Anything new is used in production |
 | `docs/05-regulatory-verification.md` | Every regulatory fact (`REG-###`), its source and verification status | A regulatory value or reference is added, checked or changed |
+| `docs/06-system-design.md` | System design and decisions (`DEC-###`) | A design decision is made or changed |
+| `docs/07-guidelines-and-data.md` | Official rules map, data plan, AI model choices | Research adds or changes a rule, dataset or model |
+| `docs/08-roadmap.md` | Milestones and what each closes | A milestone starts, finishes or changes |
+| `social-media/` | LinkedIn posts (`LI-##`) and blog articles (`Blog-##`), with screenshots | Each milestone (3 to 4 posts per week of schedule). Synthetic data only, no sensitive information in any image |
 
 Cross reference by ID everywhere (for example "BUG-012 is fixed by FIX-012, concept CON-021"). Never renumber an ID. Closed items stay in the files with their final status.
 

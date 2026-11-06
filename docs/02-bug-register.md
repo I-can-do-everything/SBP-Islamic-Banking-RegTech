@@ -422,7 +422,9 @@ Gaps (planned but not built): GAP-001 to GAP-014, listed at the end.
   - The Islamic Finance Policy Department (IFPD) is a real SBP department in the Islamic Finance Group, set up in December 2022 (REG-001).
   - IFPD Circular No. 09 of 2024 is real, and it is the source of the 75% rule (REG-004). It was later amended by IFPD Circular Letter No. 01 of 2025.
 
-  The same note gives the 75% rule's source as IBD Circular No. 03 of 2012 instead. The settings even contain the correct `SBP_IFPD_URL`. "IFPD Circular 08/2024" and "IBD Circular 02/2019" have not been checked yet.
+  The same note gives the 75% rule's source as IBD Circular No. 03 of 2012 instead. The settings even contain the correct `SBP_IFPD_URL`.
+
+  **Update 2026-11-06 (second research pass):** "IFPD Circular 08/2024" (the Revised Shariah Governance Framework) and "BSD-1 Circular 01/2025" (DFS revisions through DAP4) also appear to be real (REG-008). That makes four of the five "fabricated" references wrong. "IBD Circular 02/2019" is still unchecked.
 - **Impact:** Correct references were deleted and replaced with vaguer ones. Anyone relying on the note would distrust a real circular.
 - **How found:** M4.
 - **Fix:** FIX-036
@@ -432,6 +434,7 @@ Gaps (planned but not built): GAP-001 to GAP-014, listed at the end.
 - **Severity:** Medium
 - **Location:** `config.py` line 340: `DFS_VERSION = "BSD1-01-2025"`
 - **What is wrong:** The verification note says "BSD-1 Circular 01/2025" could not be found, but the constant still uses it. It will be written into every DFS file.
+- **Update 2026-11-06:** The circular appears to be real (BSD-1 C01/2025, revisions to Data File Structures for RCOA returns through DAP4, REG-008 and REG-015). So the note is wrong, not the reference. The remaining problem: a circular number is not a file format version, and the real DFS layouts are not public. They are given to banks through DAP4. The fix becomes a pluggable export adapter, marked "format not certified" (see [07 section 1.5](07-guidelines-and-data.md)).
 - **Fix:** FIX-037
 
 #### BUG-038. Default secret key only gives a warning

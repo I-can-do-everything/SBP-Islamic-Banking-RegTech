@@ -6,6 +6,8 @@ Daleel (Arabic for *evidence* or *proof*) takes a raw core banking export from a
 
 > Portfolio project. The demo runs on synthetic data for a fictional bank, *Example Islamic Bank Ltd*. Results are not certified by SBP or by any compliance, legal or Shariah adviser.
 
+![Daleel landing page: every figure carries its evidence](social-media/assets/screens/00-landing-hero.png)
+
 ![Daleel results with the evidence panel open](social-media/assets/screens/06-evidence-drawer.png)
 
 ## What it does

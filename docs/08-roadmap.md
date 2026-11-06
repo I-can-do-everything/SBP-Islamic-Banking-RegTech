@@ -27,6 +27,7 @@ The project is built in milestones. Each milestone ends with something that work
 |---|---|
 | M0 to M7 | Done: foundations, synthetic data, ingestion, mapping, rulebook and metrics, validation, platform (API, row level security, audit chain), web app |
 | M5 four eyes approval | Done: database enforced maker checker with results fingerprint and locking (DEC-023) |
+| M7 brand and landing page | Done: signal red (#ff2c2c) palette with checked contrast, landing page with competitor comparison (DEC-025); worker lanes so AI waits never block uploads (DEC-026) |
 | M8 reports | Partly: the ideal ingestion workbook is done; the PDF report pack is still to do |
 | M9 AI | Done: grounded breakdown with retrieval; circular watcher still to do |
 | M10 launch | Ready: `npm run setup` then `npm run deploy` (docs/09-deployment.md); needs the owner's free accounts |

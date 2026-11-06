@@ -137,7 +137,7 @@ function BreachRow({ b, canWrite, blocked, onSave, saving }: { b: Review["breach
             placeholder="Why did this happen, and what is being done about it?"
             className="min-h-16 flex-1 rounded-md border border-line bg-surface px-3 py-2 text-sm" />
           <button disabled={text.trim().length < 3 || saving} onClick={() => { onSave(text); setText(""); setEditing(false); }}
-            className="self-start rounded-lg bg-brand px-3 py-2 text-sm font-medium text-panel disabled:opacity-40">Save explanation</button>
+            className="self-start rounded-lg bg-brand-fill px-3 py-2 text-sm font-medium text-on-brand disabled:opacity-40">Save explanation</button>
         </div>
       )}
       {canWrite && b.explanation && !editing && (
@@ -163,7 +163,7 @@ function Decision({ r, onSubmit, onApprove, onReject, busy }: { r: Review; onSub
             className="mt-3 w-full rounded-md border border-line bg-surface px-3 py-2 text-sm" aria-label="Note for the approver" />
           <div className="mt-3 flex flex-wrap items-center gap-3">
             <button disabled={!r.allowed.submit || busy} onClick={() => onSubmit(comment || undefined)}
-              className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel disabled:opacity-40">
+              className="inline-flex items-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand disabled:opacity-40">
               <Send size={15} /> Submit for approval
             </button>
             {r.blocked_reason.submit && <span className="text-sm text-muted">{r.blocked_reason.submit}</span>}
@@ -185,7 +185,7 @@ function Decision({ r, onSubmit, onApprove, onReject, busy }: { r: Review; onSub
           </label>
           <div className="mt-3 flex flex-wrap items-center gap-3">
             <button disabled={!r.allowed.approve || !confirmed || busy} onClick={() => onApprove(comment || undefined)}
-              className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel disabled:opacity-40">
+              className="inline-flex items-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand disabled:opacity-40">
               <ShieldCheck size={15} /> Approve and lock
             </button>
             <button disabled={!r.allowed.reject || comment.trim().length < 3 || busy} onClick={() => onReject(comment)}

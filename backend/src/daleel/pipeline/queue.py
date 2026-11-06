@@ -30,6 +30,12 @@ _handlers: dict[str, Handler] = {}
 
 MAX_ATTEMPTS = 2
 
+# A job still marked running after this long belongs to a worker that died, for
+# example when the free host restarted mid job (BUG-060). It goes back in the
+# queue, or fails if it has used its attempts. Comfortably longer than the
+# slowest AI run (several models, each with its own timeout).
+STALE_AFTER = "15 minutes"
+
 
 def handler(kind: str) -> Callable[[Handler], Handler]:
     def register(fn: Handler) -> Handler:
@@ -49,12 +55,33 @@ def enqueue(conn: psycopg.Connection, kind: str, workspace_id: UUID | str, paylo
     return row["id"]
 
 
-def _claim() -> dict | None:
+# The slow AI step runs in its own lane (BUG-059). A free model can take minutes,
+# and with one shared worker that wait blocked every other upload behind it.
+AI_KINDS = ("narrate",)
+
+
+def _claim(kinds: tuple[str, ...] | None = None, exclude: tuple[str, ...] = ()) -> dict | None:
+    """Lock the oldest ready job. `kinds` limits the lane to those job kinds;
+    `exclude` keeps kinds out of it. Both empty means any job."""
+    where = "status = 'queued' AND run_after <= now()"
+    params: list = []
+    if kinds:
+        where += " AND kind = ANY(%s)"
+        params.append(list(kinds))
+    if exclude:
+        where += " AND NOT (kind = ANY(%s))"
+        params.append(list(exclude))
     with system_tx() as conn:
+        conn.execute(
+            "UPDATE job SET status = CASE WHEN attempts >= %s THEN 'failed' ELSE 'queued' END,"
+            " error = 'Worker stopped while running this job', locked_at = NULL"
+            " WHERE status = 'running' AND locked_at < now() - %s::interval",
+            (MAX_ATTEMPTS, STALE_AFTER),
+        )
         row = conn.execute(
             "SELECT id, kind, workspace_id, payload, attempts FROM job"
-            " WHERE status = 'queued' AND run_after <= now()"
-            " ORDER BY id FOR UPDATE SKIP LOCKED LIMIT 1"
+            f" WHERE {where} ORDER BY id FOR UPDATE SKIP LOCKED LIMIT 1",
+            params,
         ).fetchone()
         if row is None:
             return None
@@ -80,9 +107,9 @@ def _finish(job_id: int, error: str | None, attempts: int) -> None:
             conn.execute("UPDATE job SET status = 'failed', error = %s WHERE id = %s", (error, job_id))
 
 
-def run_one() -> bool:
-    """Process one ready job. Returns False when the queue is empty."""
-    job = _claim()
+def run_one(kinds: tuple[str, ...] | None = None, exclude: tuple[str, ...] = ()) -> bool:
+    """Process one ready job in the given lane. Returns False when the lane is empty."""
+    job = _claim(kinds, exclude)
     if job is None:
         return False
     fn = _handlers.get(job["kind"])
@@ -99,15 +126,21 @@ def run_one() -> bool:
 
 
 class Worker:
-    """Polls the queue in a background thread. Several can run at once safely."""
+    """Polls the queue in a background thread. Several can run at once safely.
 
-    def __init__(self, poll_seconds: float = 0.5):
+    `kinds` and `exclude` choose the lane, as in `_claim`."""
+
+    def __init__(self, poll_seconds: float = 0.5, kinds: tuple[str, ...] | None = None,
+                 exclude: tuple[str, ...] = (), name: str = "daleel-worker"):
         self.poll_seconds = poll_seconds
+        self.kinds = kinds
+        self.exclude = exclude
+        self.name = name
         self._stop = threading.Event()
         self._thread: threading.Thread | None = None
 
     def start(self) -> None:
-        self._thread = threading.Thread(target=self._loop, name="daleel-worker", daemon=True)
+        self._thread = threading.Thread(target=self._loop, name=self.name, daemon=True)
         self._thread.start()
 
     def stop(self) -> None:
@@ -118,9 +151,17 @@ class Worker:
     def _loop(self) -> None:
         while not self._stop.is_set():
             try:
-                busy = run_one()
+                busy = run_one(self.kinds, self.exclude)
             except Exception:
                 log.exception("worker loop error")
                 busy = False
             if not busy:
                 time.sleep(self.poll_seconds)
+
+
+def lanes() -> list[Worker]:
+    """The two workers a process runs: one for ingest and calculation, one for AI."""
+    return [
+        Worker(exclude=AI_KINDS, name="daleel-worker-core"),
+        Worker(kinds=AI_KINDS, name="daleel-worker-ai"),
+    ]

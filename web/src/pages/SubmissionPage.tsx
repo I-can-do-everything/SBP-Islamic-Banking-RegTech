@@ -139,8 +139,8 @@ function Stepper({ events, failed }: { events: ProgressEvent[]; failed: boolean 
         const running = !done && !error && evs.some((e) => e.status === "running");
         return (
           <li key={stage.key} className="flex items-center gap-2">
-            {i > 0 && <span className={`h-px w-6 ${done ? "bg-brand" : "bg-line"}`} aria-hidden />}
-            <span className={`flex items-center gap-1.5 text-xs font-medium ${done ? "text-brand" : error ? "text-fail" : running ? "text-ink" : "text-faint"}`}>
+            {i > 0 && <span className={`h-px w-6 ${done ? "bg-pass" : "bg-line"}`} aria-hidden />}
+            <span className={`flex items-center gap-1.5 text-xs font-medium ${done ? "text-pass" : error ? "text-fail" : running ? "text-ink" : "text-faint"}`}>
               {done ? <CheckCircle2 size={16} /> : error || (failed && running) ? <OctagonX size={16} /> : running ? <Loader2 size={16} className="animate-spin" /> : <Circle size={16} />}
               {stage.label}
             </span>

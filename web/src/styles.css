@@ -14,7 +14,10 @@
   --color-panel: var(--panel);
   --color-line: var(--line);
   --color-brand: var(--brand);
+  --color-brand-fill: var(--brand-fill);
+  --color-on-brand: var(--on-brand);
   --color-brand-soft: var(--brand-soft);
+  --color-signal: var(--signal);
   --color-accent: var(--accent);
   --color-pass: var(--pass);
   --color-pass-soft: var(--pass-soft);
@@ -28,43 +31,59 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Brand: signal red #ff2c2c on warm paper and ink.
+   - signal: the exact brand red, for large marks only (wordmark, rules, big numbers).
+   - brand: a deeper red that passes WCAG AA as text on paper (4.9:1).
+   - brand-fill + on-brand: buttons and the landing page's closing band; white on
+     #d41c1c is 5.3:1 in both themes. White on #ff2c2c is only 3.7:1, so the exact
+     red is never a background for body text.
+   - faint: the quietest text colour, still at least 4.5:1 on every light and dark
+     background it is used on (BUG-062).
+   - fail: a crimson rose, deliberately a different red from the brand, and never
+     shown without its icon and the word "Breach". */
 :root {
-  --surface: #f6f7f5;
+  --surface: #faf7f5;
   --panel: #ffffff;
-  --ink: #12211d;
-  --muted: #4f5f59;
-  --faint: #8a9893;
-  --line: #dde3e0;
-  --brand: #0f3d33;
-  --brand-soft: #e3eeea;
-  --accent: #9a7428;
+  --ink: #1a1412;
+  --muted: #5c514d;
+  --faint: #776b67;
+  --line: #ebe3df;
+  --signal: #ff2c2c;
+  --brand: #d41c1c;
+  --brand-fill: #d41c1c;
+  --on-brand: #ffffff;
+  --brand-soft: #fdeeec;
+  --accent: #d41c1c;
   --pass: #1f7a4d;
-  --pass-soft: #e2f3ea;
+  --pass-soft: #e3f3ea;
   --warn: #9a6100;
   --warn-soft: #fbf0d9;
-  --fail: #b42318;
-  --fail-soft: #fde7e5;
+  --fail: #9f1239;
+  --fail-soft: #fce7ef;
   --info: #35577a;
-  --info-soft: #e5edf6;
+  --info-soft: #e7eef6;
   color-scheme: light;
 }
 
 .dark {
-  --surface: #0b1613;
-  --panel: #111f1b;
-  --ink: #e6eeea;
-  --muted: #a8b8b1;
-  --faint: #6f817a;
-  --line: #22362f;
-  --brand: #7fc8ad;
-  --brand-soft: #16302a;
-  --accent: #d6b25e;
+  --surface: #110d0c;
+  --panel: #1a1413;
+  --ink: #f3ecea;
+  --muted: #b9aca8;
+  --faint: #958884;
+  --line: #2f2523;
+  --signal: #ff2c2c;
+  --brand: #ff5a52;
+  --brand-fill: #d41c1c;
+  --on-brand: #ffffff;
+  --brand-soft: #2b1614;
+  --accent: #ff5a52;
   --pass: #5fc391;
   --pass-soft: #12301f;
   --warn: #e3b04b;
   --warn-soft: #33270f;
-  --fail: #f08a7e;
-  --fail-soft: #3a1714;
+  --fail: #fb7185;
+  --fail-soft: #3b1320;
   --info: #8fb3d9;
   --info-soft: #162536;
   color-scheme: dark;
@@ -74,6 +93,6 @@ html, body { background: var(--surface); color: var(--ink); }
 body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
 .num { font-variant-numeric: tabular-nums; }
 .girih {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%239a7428' stroke-width='1'%3E%3Cpath d='M36 4 L46 26 L68 36 L46 46 L36 68 L26 46 L4 36 L26 26 Z'/%3E%3Ccircle cx='36' cy='36' r='9'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23ff2c2c' stroke-width='1'%3E%3Cpath d='M36 4 L46 26 L68 36 L46 46 L36 68 L26 46 L4 36 L26 26 Z'/%3E%3Ccircle cx='36' cy='36' r='9'/%3E%3C/g%3E%3C/svg%3E");
 }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }

@@ -390,3 +390,21 @@ New issues found while building this round:
 | BUG-056 | Node's readline dropped answers that arrived before a question was asked, so pasted or scripted answers were lost | First scripted wizard run stopped at question two | All input goes through a line queue |
 | BUG-057 | On a re-run, the wizard offered the cloud database address as the local default | Second scripted run | Local and cloud defaults are read from their own files |
 | BUG-058 | The approval screenshot script typed explanations in screen order, so they landed on the wrong breaches (a script error, not an app error) | Reading the screenshot | Each explanation is matched to its breach by label |
+
+### Brand, landing page and worker lanes (2026-11-06, third round)
+
+| Item | Status | Where | Evidence |
+|---|---|---|---|
+| Signal red brand (#ff2c2c) and landing page (DEC-025) | Verified | `web/src/styles.css`, `web/src/pages/Landing.tsx`, `web/src/components/Layout.tsx`, `web/public/favicon.svg` | Contrast ratios computed for every token pair; light, dark and phone widths checked with no sideways scrolling; screenshots `00-landing-*` |
+| Worker lanes and abandoned job recovery (DEC-026) | Verified | `backend/src/daleel/pipeline/queue.py`, `api/app.py`, `cli.py` | `test_lanes_keep_slow_ai_jobs_apart`, `test_stale_running_job_is_requeued_or_failed`; 31 tests pass |
+
+New issues found while building this round:
+
+| ID | What happened | How it was found | Fix |
+|---|---|---|---|
+| BUG-059 | One shared worker ran every job in order, so a slow AI write-up blocked the next upload's ingest job. On a public demo, one visitor's wait would freeze everyone else | The screenshot run timed out waiting for an upload; the job table showed the ingest job queued behind a running AI job | Two worker lanes (DEC-026) |
+| BUG-060 | A job left "running" by a worker that died (for example a host restart) stayed running forever, and its submission never finished | Reading the queue while fixing BUG-059: nothing ever cleared `locked_at` | Jobs running longer than 15 minutes go back in the queue, or fail after their last attempt |
+| BUG-061 | After the palette change, finished steps in the pipeline stepper showed red check marks, which reads as failure | Reviewing the redesigned screens | Finished steps use the pass green; red is never used for success |
+| BUG-062 | Two colour pairs fell below the contrast floor for body text: the faint grey (3.7:1) and white on #ff2c2c in the landing page's closing band (3.7:1) | Computing the WCAG ratio for every token pair before writing DEC-025 | Faint darkened (light) and lightened (dark) to at least 4.5:1 everywhere; the closing band uses the deeper brand red (5.3:1) |
+| BUG-063 | The social image renderer stopped working: it used `require`, but the root `package.json` added for the setup wizard made Node treat every `.js` file as an ES module | Re-rendering the social images in the new palette | Renamed to `render.cjs` (CON-116) |
+

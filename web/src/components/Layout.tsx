@@ -24,9 +24,20 @@ function useTheme() {
   return [dark, setDark] as const;
 }
 
+/** The mark: an eight point star (a common motif in Islamic geometry) around a single point of evidence. */
+export function Mark({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 64 64" className={className} aria-hidden>
+      <path d="M32 6 L41 23 L58 32 L41 41 L32 58 L23 41 L6 32 L23 23 Z" fill="none" stroke="var(--signal)" strokeWidth="5" strokeLinejoin="round" />
+      <circle cx="32" cy="32" r="7" fill="var(--signal)" />
+    </svg>
+  );
+}
+
 export function Wordmark() {
   return (
-    <Link to="/" className="group flex items-baseline gap-2" aria-label="Daleel home">
+    <Link to="/" className="group flex items-center gap-2" aria-label="Daleel home">
+      <Mark className="h-6 w-6" />
       <span className="text-lg font-semibold tracking-tight text-ink">Daleel</span>
       <span className="text-base text-accent" lang="ar" dir="rtl">دليل</span>
     </Link>

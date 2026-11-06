@@ -45,7 +45,7 @@ export function ResultsView({ id }: { id: string }) {
               <li key={m.id}>
                 <button
                   onClick={() => setSelected(m)}
-                  className="grid w-full grid-cols-[1fr_auto] items-center gap-3 px-5 py-3 text-left hover:bg-brand-soft/50 md:grid-cols-[minmax(0,1fr)_200px_120px_20px]"
+                  className="grid w-full grid-cols-[1fr_auto] items-center gap-3 px-5 py-3 text-left hover:bg-surface md:grid-cols-[minmax(0,1fr)_200px_120px_20px]"
                   aria-label={`${m.label}: open evidence`}
                 >
                   <span className="min-w-0">

@@ -106,6 +106,8 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-082 | Configuration over code | Bank specific and regulation specific values live in configuration that can be reviewed and versioned, not inside code. | In code (mapping JSON, constants) |
 | CON-083 | Defence in depth | Several independent security layers (validation, authentication, roles, rate limits, audit log, expiring links), so one failure does not expose data. | Planned |
 | CON-084 | Maker checker (four eyes) | One person prepares, a different person approves. The rule is enforced by the database, so nobody can approve their own work. | In code (DEC-023) |
+| CON-085 | Colour roles and contrast | One brand colour split into roles (mark, text, fill), each checked against the WCAG contrast floor for its size. The exact brand red is kept for large shapes because small text in it would be hard to read (DEC-025). | In code (`web/src/styles.css`) |
+| CON-086 | Show, do not tell (landing page) | The landing page leads with a real traced figure instead of a slogan, and states plainly what is real and what is synthetic. | In code (`web/src/pages/Landing.tsx`) |
 
 ## Architecture patterns (CON-090 onward)
 
@@ -140,3 +142,8 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-111 | Binding an approval to a fingerprint | The approval stores a SHA-256 of the exact results it covers; if the results change, the approval no longer matches | `submission_results_digest()` | In code |
 | CON-112 | Configuration wizard and twelve factor config | All settings live in environment variables; a guided script collects and checks them and writes them to files kept out of git | `scripts/setup.mjs` | In code |
 | CON-113 | Secrets handling in tooling | Hiding typed secrets, owner only file permissions, never printing tokens in errors, and separating secrets from plain variables | `scripts/lib.mjs`, `scripts/deploy-hf.mjs` | In code |
+| CON-114 | Worker lanes | Splitting a job queue so slow work (the AI write-up) cannot hold up fast work (ingest, calculation) | `pipeline/queue.py` (`lanes`) | In code |
+| CON-115 | Abandoned job recovery (lease timeout) | A claimed job carries the time it was locked; if it is still running long after, its worker is assumed dead and the job is retried or failed | `pipeline/queue.py` (`STALE_AFTER`) | In code |
+| CON-116 | ES modules and CommonJS in Node | Node treats `.js` files as ES modules when `package.json` says `"type": "module"`; scripts that use `require` must then be named `.cjs` | `social-media/assets/src/render.cjs` | In code |
+| CON-117 | WCAG contrast ratio | The ratio of the relative luminance of two colours (from 1:1 to 21:1). AA asks 4.5:1 for body text and 3:1 for large text and shapes | `web/src/styles.css`, DEC-025 | In code |
+

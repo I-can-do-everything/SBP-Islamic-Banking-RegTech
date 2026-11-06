@@ -52,7 +52,7 @@ export function HowItWorks() {
         <li>The capital calculation uses a simplified standardised approach; market and operational risk come from the bank's own figures.</li>
         <li>In a real bank, customer level data should stay on premises and the AI should run locally, in line with SBP's cloud outsourcing framework.</li>
       </ul>
-      <Link to="/demo" className="mt-10 inline-flex rounded-lg bg-brand px-5 py-2.5 text-sm font-medium text-panel hover:opacity-90">Try the demo</Link>
+      <Link to="/demo" className="mt-10 inline-flex rounded-lg bg-brand-fill px-5 py-2.5 text-sm font-medium text-on-brand hover:opacity-90">Try the demo</Link>
     </div>
   );
 }

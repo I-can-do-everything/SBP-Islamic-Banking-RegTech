@@ -28,7 +28,7 @@ export function Transformation({ id }: { id: string }) {
         </div>
         <button
           onClick={async () => { window.location.href = await api.templateUrl(id); }}
-          className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel hover:opacity-90"
+          className="inline-flex items-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand hover:opacity-90"
         >
           <Download size={16} /> Download the ideal ingestion document
         </button>

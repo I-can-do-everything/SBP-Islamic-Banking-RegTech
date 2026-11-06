@@ -395,7 +395,7 @@ GET  /health  /ready
 | Keyboard first | Power users can move through tables and approve with the keyboard. A command palette (Ctrl+K) is available |
 | Bilingual ready | English first. Layout and fonts prepared for Urdu (right to left) later |
 
-**Visual identity (draft):**
+**Visual identity (draft, superseded by [DEC-025](#dec-025-signal-red-brand-and-a-landing-page-inside-the-app)):**
 - Base colours: a deep, desaturated green (a nod to Islamic finance without cliché) with slate neutrals. A muted gold accent is used only for the approval state.
 - Light and dark themes.
 - Typography: Inter for the interface and IBM Plex Mono for codes and hashes. Noto Nastaliq Urdu is reserved for future Urdu text.
@@ -558,3 +558,29 @@ The heaviest step of the large bank profile takes seconds, far inside the 15 min
 
 ### DEC-024. Setup wizard
 See [09-deployment.md](09-deployment.md#dec-024-a-setup-wizard-instead-of-a-deployment-manual).
+
+### DEC-025. Signal red brand and a landing page inside the app
+- **Choice:** The owner set the brand colour to #ff2c2c. The interface is built on warm paper and near black ink, with that red as the one strong colour. The red is split into roles, because a single red cannot do every job and stay readable:
+
+  | Token | Light | Dark | Job | Contrast (WCAG 2.2) |
+  |---|---|---|---|---|
+  | `signal` | #ff2c2c | #ff2c2c | The exact brand red, for large marks only: the star mark, the hero underline, top bars, the favicon | 3.7:1 on white, enough for large shapes (3:1), not for small text |
+  | `brand` | #d41c1c | #ff5a52 | Red text and links | 5.3:1 on white, 4.7:1 on its soft tint; 5.9:1 on the dark panel |
+  | `brand-fill` + `on-brand` | #d41c1c with white | same | Buttons and the landing page's closing band | 5.3:1 |
+  | `fail` | #9f1239 | #fb7185 | Breaches, a crimson rose kept visibly different from the brand red | 8.0:1 and 6.8:1 |
+  | `faint` | #776b67 | #958884 | The quietest text (labels, captions) | at least 4.5:1 on every background it sits on |
+
+  Passing steps and approvals stay green, so a red brand never makes success look like failure.
+- **Alternatives:**
+  - #ff2c2c everywhere. Rejected: white text on it is 3.7:1 and red text on white is the same, both below the 4.5:1 floor for body text.
+  - A separate Astro site for the landing page (the plan in DEC-014). Rejected for now: one deployable on a free host is simpler, and the landing page reuses the app's tokens, fonts and components, so the two can never drift apart.
+- **Why:**
+  - **Context relevant design (CON-080):** compliance staff read red as risk. The brand red is therefore used for identity and calls to action, never for data, while breaches use their own rose red with an icon and the word "Breach" (status is never shown by colour alone).
+  - **The landing page has one job:** say plainly what the showcase is, what problem it solves and how it differs from national and international products, with sources. It leads with a real traced figure from the demo (the "evidence card"), because the claim "every figure carries its evidence" is more convincing shown than told.
+- **Competitor comparison:** written from public product pages, linked on the page, with a note that it compares approaches, not feature lists, and that the products named are mature commercial systems.
+
+### DEC-026. Separate worker lanes for slow AI jobs
+- **Choice:** Each process runs two queue workers. One takes every job except the AI write-up (ingest, calculate); the other takes only the AI write-up. Both claim jobs with `FOR UPDATE SKIP LOCKED`, so they never take the same job. A job still marked running after 15 minutes is treated as abandoned and goes back in the queue, or fails if it has used its attempts.
+- **Alternatives:** one worker (what we had: see BUG-059); a thread per job (no limit on load); a separate queue service.
+- **Why:** A free AI model can take minutes. With one worker, one visitor's AI wait stopped every other visitor's upload from being processed. Lanes keep the fast, deterministic work fast. The stale job rule covers a free host restarting mid job (BUG-060).
+

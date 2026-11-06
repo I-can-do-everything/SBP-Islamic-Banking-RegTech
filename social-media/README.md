@@ -38,6 +38,8 @@ Target: 3 to 4 posts per week. The project is being built now, so the drafts can
 | 5 | Thu | LI-18 | From git clone to a live demo with one wizard | M10 | Drafted |
 | 5 | | Blog-03 | Part 3: an AI that is not allowed to write numbers | M9 | Drafted |
 | 5 | Fri | LI-17 | Launch (publish after deployment) | M10 | Drafted |
+| 6 | Mon | LI-19 | A compliance tool in signal red | M7 | Drafted |
+| 6 | Wed | LI-20 | One slow AI call froze every other user | M10 | Drafted |
 | 5 | | Blog-04 | Part 4: lessons from building RegTech end to end | M10 | Planned |
 
 ## Folders

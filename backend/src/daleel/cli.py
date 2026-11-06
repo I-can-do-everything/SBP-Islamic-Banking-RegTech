@@ -31,9 +31,9 @@ def main() -> None:
         uvicorn.run("daleel.api.app:app", host=args.host, port=args.port, proxy_headers=True)
     elif args.command == "worker":
         from daleel.pipeline import jobs  # noqa: F401
-        from daleel.pipeline.queue import Worker
-        worker = Worker()
-        worker.start()
+        from daleel.pipeline.queue import lanes
+        for w in lanes():
+            w.start()
         while True:
             time.sleep(3600)
     elif args.command == "samples":

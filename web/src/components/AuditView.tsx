@@ -16,7 +16,7 @@ export function AuditView() {
             and changing any past event would break every hash after it.
           </p>
         </div>
-        <button onClick={() => verify.mutate()} className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel hover:opacity-90">
+        <button onClick={() => verify.mutate()} className="inline-flex items-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand hover:opacity-90">
           <ShieldCheck size={16} /> Verify the chain
         </button>
       </div>

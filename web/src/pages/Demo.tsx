@@ -48,7 +48,7 @@ export function Demo() {
               <button
                 onClick={() => submit.mutate({ sample: s.name })}
                 disabled={submit.isPending}
-                className="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel hover:opacity-90 disabled:opacity-50"
+                className="inline-flex items-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand hover:opacity-90 disabled:opacity-50"
               >
                 {submit.isPending && submit.variables?.sample === s.name ? <Loader2 size={16} className="animate-spin" /> : <PlayCircle size={16} />}
                 Run this sample
@@ -87,7 +87,7 @@ export function Demo() {
             <button
               onClick={() => submit.mutate({ file })}
               disabled={submit.isPending}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-4 py-2 text-sm font-medium text-panel hover:opacity-90 disabled:opacity-50"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-fill px-4 py-2 text-sm font-medium text-on-brand hover:opacity-90 disabled:opacity-50"
             >
               {submit.isPending ? <Loader2 size={16} className="animate-spin" /> : <FileUp size={16} />} Upload and process
             </button>

@@ -34,7 +34,7 @@ from daleel.core.config import get_settings
 from daleel.core.errors import DaleelError, InvalidInput, NotFound
 from daleel.db.database import migrate, system_tx, workspace_tx
 from daleel.pipeline import jobs
-from daleel.pipeline.queue import Worker, enqueue
+from daleel.pipeline.queue import enqueue, lanes
 from daleel.rulebook.rulebook import load_rulebook
 from daleel.storage import store
 
@@ -74,7 +74,7 @@ def ensure_sources() -> None:
         build_index()
 
 
-worker = Worker()
+workers = lanes()
 
 
 @asynccontextmanager
@@ -84,9 +84,11 @@ async def lifespan(app: FastAPI):
     ensure_sources()
     ensure_samples()
     if get_settings().embedded_worker:
-        worker.start()
+        for w in workers:
+            w.start()
     yield
-    worker.stop()
+    for w in workers:
+        w.stop()
 
 
 app = FastAPI(title="Daleel API", version=__version__, lifespan=lifespan,

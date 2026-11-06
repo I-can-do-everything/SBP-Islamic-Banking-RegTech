@@ -104,6 +104,13 @@ def _load_raw(con: duckdb.DuckDBPyConnection, sheet: Sheet, table: str, workdir:
     sheet.header = header
 
 
+def _skip_reason(sheet: Sheet, meta: dict) -> str:
+    keys = ("INSTITUTION", "PERIOD END", "PERIOD DAYS")
+    if meta and any(any(c.upper() in keys for c in row) for row in sheet.rows[:40]):
+        return "read as report details (institution and reporting period), not as a dataset"
+    return "another sheet supplies the same dataset more completely"
+
+
 def ingest_file(data: bytes, filename: str, out_dir: Path) -> IngestionResult:
     sheets = read_file(data, filename)
     result = IngestionResult(meta=read_meta(sheets))
@@ -119,11 +126,10 @@ def ingest_file(data: bytes, filename: str, out_dir: Path) -> IngestionResult:
             continue
         current = chosen.get(det.schema.kind)
         if current and (current[1].confidence, len(current[1].matches)) >= (det.confidence, len(det.matches)):
-            result.skipped_sheets.append({"sheet": sheet.name, "reason": f"another sheet already supplies {det.schema.kind}"})
+            result.skipped_sheets.append({"sheet": sheet.name, "reason": _skip_reason(sheet, result.meta)})
             continue
         if current:
-            result.skipped_sheets.append({"sheet": current[0].name,
-                                          "reason": f"{sheet.name} supplies {det.schema.kind} more completely"})
+            result.skipped_sheets.append({"sheet": current[0].name, "reason": _skip_reason(current[0], result.meta)})
         chosen[det.schema.kind] = (sheet, det)
     if not chosen:
         raise InvalidInput("no_datasets", "No recognisable dataset was found in this file. "

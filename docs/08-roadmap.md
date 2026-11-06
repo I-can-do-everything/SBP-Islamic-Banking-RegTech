@@ -21,6 +21,17 @@ The project is built in milestones. Each milestone ends with something that work
 | M10. Launch | Public demo | Cloud deployment, observability, load test results, public site and case study, demo walkthrough video script | GAP-011 (rest) | LI-17, Blog-04 |
 | M11. Learn | Teaching folder | `docs/learn/` built from the registers, as CLAUDE.md requires | | |
 
+## Status (2026-11-06)
+
+| Milestone | Status |
+|---|---|
+| M0 to M7 | Done: foundations, synthetic data, ingestion, mapping, rulebook and metrics, validation, platform (API, row level security, audit chain), web app |
+| M5 four eyes approval | Not yet: the submission flow ends at results; maker checker is the next feature |
+| M8 reports | Partly: the ideal ingestion workbook is done; the PDF report pack is still to do |
+| M9 AI | Done: grounded breakdown with retrieval; circular watcher still to do |
+| M10 launch | Ready to deploy (docs/09-deployment.md); needs the owner's Supabase and Hugging Face accounts |
+| M11 learn folder | After launch |
+
 ## How each milestone is run
 
 1. Write or update the design notes for the milestone in the docs.

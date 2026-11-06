@@ -22,21 +22,21 @@ Target: 3 to 4 posts per week. The project is being built now, so the drafts can
 | 1 | Fri | LI-03 | Fact checking regulatory citations | Audit | Drafted |
 | 1 | Sat | LI-04 | System design for bank scale data | Design | Drafted |
 | 1 | | Blog-01 | Part 1: audit, verify, then design | Planning | Drafted |
-| 2 | Mon | LI-05 | Synthetic data that behaves like a real bank | M1 | Planned |
-| 2 | Wed | LI-06 | Exact money: why float is banned | M2 | Planned |
-| 2 | Fri | LI-07 | 150 million rows on a laptop with DuckDB | M2 | Planned |
-| 3 | Mon | LI-08 | Mapping a bank's ledger to SBP codes | M3 | Planned |
-| 3 | Wed | LI-09 | Regulation as code: rules with effective dates | M4 | Planned |
-| 3 | Fri | LI-10 | The 75% rule explained with a worked example | M4 | Planned |
-| 3 | | Blog-02 | Part 2: the calculation engine and lineage | M4 | Planned |
-| 4 | Mon | LI-11 | Four eyes approval in software | M5 | Planned |
-| 4 | Wed | LI-12 | A tamper evident audit log in PostgreSQL | M6 | Planned |
-| 4 | Fri | LI-13 | Designing for compliance officers | M7 | Planned |
-| 4 | Sat | LI-14 | Click any number to see where it came from | M7 | Planned |
-| 5 | Mon | LI-15 | Generating the report pack | M8 | Planned |
-| 5 | Wed | LI-16 | AI that is not allowed to make up numbers | M9 | Planned |
-| 5 | | Blog-03 | Part 3: safe AI in regulated software | M9 | Planned |
-| 5 | Fri | LI-17 | Launch: try the demo | M10 | Planned |
+| 2 | Mon | LI-05 | Synthetic data that behaves like a real bank | M1 | Drafted |
+| 2 | Wed | LI-06 | The 332 rupees my own test data lost | M2 | Drafted |
+| 2 | Fri | LI-07 | 240 million rows in 4 seconds | M2 | Drafted |
+| 3 | Mon | LI-08 | Mapping a bank's ledger without silent guesses | M3 | Drafted |
+| 3 | Wed | LI-09 | Regulation as data, with dates | M4 | Drafted |
+| 3 | Fri | LI-10 | The 75% rule, worked through | M4 | Drafted |
+| 3 | | Blog-02 | Part 2: from a messy export to numbers with evidence | M4 | Drafted |
+| 4 | Mon | LI-11 | Validation before anyone signs | M5 | Drafted |
+| 4 | Wed | LI-12 | An audit log you cannot quietly edit | M6 | Drafted |
+| 4 | Fri | LI-13 | Designing for the person who signs the return | M7 | Drafted |
+| 4 | Sat | LI-14 | Click any number | M7 | Drafted |
+| 5 | Mon | LI-15 | Giving the bank its data back, cleaner | M8 | Drafted |
+| 5 | Wed | LI-16 | An AI that is not allowed to write numbers | M9 | Drafted |
+| 5 | | Blog-03 | Part 3: an AI that is not allowed to write numbers | M9 | Drafted |
+| 5 | Fri | LI-17 | Launch (publish after deployment) | M10 | Drafted |
 | 5 | | Blog-04 | Part 4: lessons from building RegTech end to end | M10 | Planned |
 
 ## Folders

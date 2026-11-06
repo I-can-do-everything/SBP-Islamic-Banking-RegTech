@@ -16,6 +16,7 @@ from uuid import UUID
 from fastapi import Depends, FastAPI, File, Form, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
+from fastapi.staticfiles import StaticFiles
 
 from daleel import __version__
 from daleel.api.security import (
@@ -346,10 +347,10 @@ def audit_verify(ws: UUID = WorkspaceDep) -> dict:
     with workspace_tx(ws) as conn:
         rows = conn.execute("""
             SELECT id, hash, prev_hash,
-                   encode(digest(coalesce(prev_hash, 'GENESIS') || '|' || workspace_id::text || '|' ||
+                   encode(sha256(convert_to(coalesce(prev_hash, 'GENESIS') || '|' || workspace_id::text || '|' ||
                      to_char(occurred_at AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US') || '|' ||
                      actor || '|' || action || '|' || coalesce(resource, '') || '|' || details::text,
-                     'sha256'), 'hex') AS recomputed
+                     'UTF8')), 'hex') AS recomputed
             FROM audit_event ORDER BY id""").fetchall()
     previous = None
     for r in rows:
@@ -357,3 +358,18 @@ def audit_verify(ws: UUID = WorkspaceDep) -> dict:
             return {"valid": False, "events": len(rows), "broken_at": r["id"]}
         previous = r["hash"]
     return {"valid": True, "events": len(rows), "head": previous}
+
+
+# --------------------------------------------------------------------- web app (single container deploys)
+
+_dist = get_settings().web_dist
+if (_dist / "index.html").exists():
+    app.mount("/assets", StaticFiles(directory=_dist / "assets"), name="assets")
+
+    @app.get("/{path:path}", include_in_schema=False)
+    def spa(path: str) -> FileResponse:
+        """Serve the React app; unknown paths return index.html so client side routes work."""
+        candidate = (_dist / path).resolve()
+        if path and _dist.resolve() in candidate.parents and candidate.is_file():
+            return FileResponse(candidate)
+        return FileResponse(_dist / "index.html")

@@ -121,3 +121,18 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-097 | Columnar storage (Parquet) and vectorised engines (DuckDB) | Storing data column by column compresses it well and lets the engine read only the needed columns and process them in batches across all CPU cores. | DEC-002 | Planned |
 | CON-098 | Idempotency | Doing the same request twice has the same effect as doing it once, so retries are safe. | 06 section 8 | Planned |
 | CON-099 | Server Sent Events | A simple one way stream from server to browser for live progress updates. | DEC-011 | Planned |
+
+## Added during the build (CON-100 onward)
+
+| ID | Concept | Plain explanation | Where used | Status |
+|---|---|---|---|---|
+| CON-100 | Placeholder grounding | The AI writes `{F3}` instead of a number; the application inserts the verified value. The model cannot misstate what it never writes. | `ai/narrative.py` | In code |
+| CON-101 | Output validation for LLMs | Checking an AI reply against rules (no digits, valid citations, matching status words) before showing it, with a retry and a safe fallback | `ai/narrative.py` | In code |
+| CON-102 | Lexical retrieval (full text search, BM25 family ranking) | Finding passages by the words they contain, ranked by how well they match, using PostgreSQL `tsvector` and `ts_rank_cd` | `ai/sources.py` | In code |
+| CON-103 | Property based testing (Hypothesis) | Instead of a few examples, the test states a rule ("apportionment always adds back to the total") and the library tries hundreds of generated inputs to break it | `backend/tests` | In code |
+| CON-104 | SQL macros in DuckDB | Reusable SQL functions (such as `d_money`) so the same cleaning rule runs on millions of cells in one vectorised query | `ingestion/clean.py` | In code |
+| CON-105 | Topological sort | Ordering tasks so each runs after the ones it depends on; used to run metrics in dependency order | `metrics/engine.py` | In code |
+| CON-106 | JSON Web Tokens for anonymous sessions | A signed token naming the visitor's workspace, checked on every request, with no account needed | `api/security.py` | In code |
+| CON-107 | Single page application served by the API | The built React files are served by FastAPI, with unknown paths returning `index.html` so browser routes work | `api/app.py` | In code |
+| CON-108 | Free tier architecture | Choosing hosts by their free limits (memory, sleep rules, persistence) and designing around them | `docs/09-deployment.md` | In code |
+| CON-109 | End to end screenshots with Playwright | A script drives a real browser through the app and captures images, so the screenshots are reproducible and use only synthetic data | `social-media/assets/screens` | In code |

@@ -109,3 +109,26 @@ SBP's website blocks automated access (Cloudflare), so these are read from copie
 2. BPRD C03/2022 Annexure C: the stage backstop table (REG-011)
 3. BPRD C03/2025 annex: credit risk weights (REG-016)
 4. The Prudential Regulations annexures: provision percentages per category (REG-006)
+
+---
+
+## Primary verification pass (2026-11-06, build day)
+
+The SBP website blocks automated access to its HTML pages, but its PDF files under `/assets/documents/circulars/` could be downloaded directly. They are kept in [sources/sbp/](sources/sbp/), with their extracted text, and are the corpus for Daleel's retrieval. Two were scanned images in Urdu, so they were read visually; an unofficial English translation of IFPD C09/2024 is kept next to the original.
+
+| ID | Fact | Read in | New status |
+|---|---|---|---|
+| REG-004 | 75% of WAGY on PKR savings (excluding FI, PSE, PLC deposits); yield = monthly gross income / monthly average pool assets; SCF and OMO pools excluded; clauses 4.2.3 deleted, 5.2.1 and 5.2.2 amended; effective 1 Jan 2025 | `IFPD-C09-2024-U.pdf` (official Urdu text, dated 26 Nov 2024) | **Verified (primary)** |
+| REG-002 | CET1 6.0%, Tier 1 7.5%, total 10.0%; buffer 2.5% fully phased in by 2019 | `BPRD-C06-2013-Basel-III-Instructions.pdf`, para 2.2 and transition table | **Verified (primary)**. The cut of the buffer to 1.5% (BPRD CL 12 of 2020) remains Secondary |
+| REG-010 | Tier 1 leverage ratio 3% | same, Introduction (iii) | **Verified (primary)** |
+| REG-011 | Stage bands by portfolio (corporate, consumer, housing, SME, agriculture, infrastructure, microfinance); Stage 3 provision is the higher of ECL and the PR requirement | `BPRD-C03-2022-Annex-C.pdf` | **Verified (primary)** |
+| REG-019 | Transitional add back of new Stage 1 and 2 provisions to CET1: 90, 70, 50, 30, 10% | `BPRD-C03-2022-Annex-B.pdf` | **Verified (primary)** |
+| REG-012 | Mudarib share at most 50% of distributable profit (4.1.2); weightages announced at least 3 working days ahead and not changed (4.2.2); special Hiba phased out to 0% by 2015 (5.3) | `IBD-C03-2012-Annex-Pool-Management.pdf` | **Verified (primary)** |
+| REG-023 (new) | PER: monthly contribution at most 2% of pool net income; accumulated PER at most 30% of equity or Islamic Banking Fund; 50% liability and 50% reserve; Mudarib share for managing PER at most 10% (5.1). IRR: contribution up to 1% of depositors' profit after Mudarib share until the bank has its own model; Mudarib share for managing IRR at most 10% (6.1 to 6.3) | same | **Verified (primary)** |
+| REG-024 (new) | Stage 1 and 2 provisions count in Tier 2 up to 1.25% of credit RWA | `BPRD-C03-2022-IFRS9-Instructions.pdf`, para 3.21 | **Verified (primary)** |
+| REG-025 (new) | Without its own LGD model, a bank may use the Foundation IRB LGDs of BSD Circular No. 08 of 2006 | same, para 3.16 | Reference **primary**; the 45% value itself is Secondary (BSD C08/2006 not read) |
+| REG-026 (new) | Demo assumptions: default PDs, the NPF alert level, unmapped materiality, reconciliation tolerance, illustrative risk weights | Daleel rulebook | Assumption: shown, never a breach on its own |
+| REG-020 | Shariah Governance Framework 2024 | `IFPD-C08-2024-Annex-SGF.pdf` | Document held (primary); not yet used for automated checks |
+| (note) | BPRD CL 20 of 2025 updates Annexure C day counts for microfinance banks only | `BPRD-CL20-2025-U.pdf` (Urdu, read visually) | **Verified (primary)**; not relevant to the demo bank |
+
+Still open: the full IFPD CL 01/2025 text (fixed assets now included in pool assets, Secondary), the Prudential Regulations annexures (25%, 50%, 100% provision rates), and the BPRD C03/2025 risk weight annex.

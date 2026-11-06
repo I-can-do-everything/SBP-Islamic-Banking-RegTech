@@ -35,6 +35,7 @@ All project documentation lives in `docs/`. See `docs/README.md` for the index a
 | `docs/06-system-design.md` | System design and decisions (`DEC-###`) | A design decision is made or changed |
 | `docs/07-guidelines-and-data.md` | Official rules map, data plan, AI model choices | Research adds or changes a rule, dataset or model |
 | `docs/08-roadmap.md` | Milestones and what each closes | A milestone starts, finishes or changes |
+| `docs/09-deployment.md` | Free hosting stack and deployment steps | Hosting or configuration changes |
 | `social-media/` | LinkedIn posts (`LI-##`) and blog articles (`Blog-##`), with screenshots | Each milestone (3 to 4 posts per week of schedule). Synthetic data only, no sensitive information in any image |
 
 Cross reference by ID everywhere (for example "BUG-012 is fixed by FIX-012, concept CON-021"). Never renumber an ID. Closed items stay in the files with their final status.

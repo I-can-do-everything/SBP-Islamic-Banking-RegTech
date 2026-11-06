@@ -6,6 +6,10 @@
 
 ---
 
+## Status update (2026-11-06)
+
+All of BUG-001 to BUG-047 are now closed, either fixed with a regression test or made unnecessary by the rebuild. The gaps are closed except GAP-006 (PDF report pack, partly done) and GAP-008 (circular watcher). See the implementation record in [03-fix-log.md](03-fix-log.md#implementation-record-2026-11-06). Seven new issues found during the build (BUG-048 to BUG-054) are recorded there too, with how each was found.
+
 ## How these bugs were found
 
 Four methods were used, in this order. Each bug says which method found it.

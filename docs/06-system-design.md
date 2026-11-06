@@ -489,3 +489,54 @@ The prototype's `backend/app` code is replaced module by module. Each prototype 
 1. Is the working name fine, and is the fictional bank name "Example Islamic Bank Ltd (EXIB)" acceptable?
 2. Demo hosting: Fly.io plus Neon plus Cloudflare (proposed), or another preference?
 3. Should the public demo let visitors upload their own small file, or stay read only? Read only is safer and is proposed.
+
+---
+
+## Decisions taken during the build (2026-11-06)
+
+### DEC-018. Name: Daleel
+"Daleel" (دليل) is Arabic for evidence or proof. In Islamic scholarship a ruling must come with its *daleel*. That matches the product's one idea: every figure carries its evidence. Tagline: "an Islamic bank regulatory compliance tool". The demo bank stays "Example Islamic Bank Ltd (EXIB)", so it cannot be mistaken for a real bank.
+
+### DEC-019. Grounded narrative protocol (hallucination designed out)
+- **Choice:** The model receives facts *without values* and writes placeholders that the app fills with phrases rendered by the engine. Replies are validated for:
+  - digits outside placeholders
+  - placeholder ownership
+  - citation existence and relevance
+  - status wording
+  - label fidelity
+  - breach coverage
+
+  The model gets one retry; after that a deterministic template is used.
+- **Alternatives:**
+  - letting the model see numbers and then checking them: it can still mis-copy or round
+  - fine tuning: costly, and still probabilistic
+  - no AI at all: loses the plain language value
+- **Why:** A model that never receives a digit cannot output a wrong one, so the numeric hallucination risk is removed rather than reduced. The remaining risks are wording risks, and the validator covers them.
+
+### DEC-020. Lexical retrieval, structured first
+- **Choice:** PostgreSQL full text search over primary SBP documents, preferring the exact clause a rule cites (`retrieve_for_rules`).
+- **Alternatives:** an embeddings model plus pgvector.
+- **Why:**
+  - Regulatory text is precise. Lexical search finds "Mudarib share" or "weightages" exactly.
+  - It is free and deterministic, and runs inside the same database.
+  - The rule to clause link is known in advance, so semantic search adds little.
+  - Embeddings remain an easy upgrade.
+
+### DEC-021. One container for the demo
+- **Choice:** The API serves the built web app and runs the worker in a thread (`EMBEDDED_WORKER`), with one image and one URL. See [09-deployment.md](09-deployment.md) (DEC-017) for the free hosting stack.
+- **Why:** Free hosts give one container. Splitting the services later only needs `daleel worker` and a static host for `web/dist`.
+
+### DEC-022. Instant deterministic summary, AI when ready
+- **Choice:** The calculate step stores a template summary at once. The narrate step replaces it with the AI version when the model answers.
+- **Why:** Free models can take minutes. The user should never wait for the AI to see verified results.
+
+### Benchmark: the N1 and N2 scale targets (measured 2026-11-06)
+
+`backend/benchmarks/daily_balances.py` on the build machine: 4 vCPU, 15 GB RAM, DuckDB 2.0.
+
+| Profile | Rows | Write Parquet | Average per account, then per tier |
+|---|---|---|---|
+| 2 million accounts x 30 days | 60 million | 10.3 s (280 MB) | 0.9 s (66 million rows/s) |
+| 8 million accounts x 30 days (large bank, N1) | 240 million | 41.0 s (1.1 GB) | 3.9 s (61 million rows/s) |
+
+The heaviest step of the large bank profile takes seconds, far inside the 15 minute target (N2), using exact `DECIMAL(38,4)`. This supports DEC-002.

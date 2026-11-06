@@ -142,6 +142,22 @@ def _collect_excerpts(metrics: list[dict], checks: list[dict], sheet: FactSheet)
     return excerpts, links
 
 
+def _attach_missing_figures(reply: dict, facts: dict[str, Fact]) -> int:
+    """Deterministic repair: a point that cites a fact but does not show it gets the
+    engine's value appended in brackets. Adding a verified value cannot introduce an
+    error, so this is repaired rather than rejected. Returns the number of repairs."""
+    repairs = 0
+    for p in reply.get("points", []):
+        missing = [f for f in p.get("fact_ids", []) if f in facts
+                   and facts[f].display not in STATUS_WORDS and f"{{{f}}}" not in p.get("text", "")]
+        if missing:
+            text = p["text"].rstrip()
+            end = "." if text.endswith(".") else ""
+            p["text"] = text[: len(text) - len(end)] + " (" + "; ".join(f"{{{f}}}" for f in missing) + ")" + end
+            repairs += len(missing)
+    return repairs
+
+
 def _validate(reply: dict, facts: dict[str, Fact], source_ids: dict[str, str], links: dict[str, list[str]]
               ) -> list[str]:
     problems = []
@@ -175,8 +191,6 @@ def _validate(reply: dict, facts: dict[str, Fact], source_ids: dict[str, str], l
             fact = facts.get(f_id)
             if fact is None:
                 continue
-            if fact.display not in STATUS_WORDS and f"{{{f_id}}}" not in text:
-                problems.append(f"Point {i} cites {f_id} but does not show it; write {{{f_id}}} in the text.")
             keywords = _keywords(fact.label)
             if keywords and not any(k in text.lower() for k in keywords):
                 problems.append(f"Point {i} cites {f_id} ({_model_label(fact.label)}) without naming it; "
@@ -257,7 +271,7 @@ def generate_breakdown(metrics: list[dict], checks: list[dict], use_ai: bool = T
     excerpt_ids = {e.id: e.doc_id for e in excerpts}
     input_hash = hashlib.sha256(json.dumps([f.__dict__ for f in sheet.facts], sort_keys=True,
                                            default=str).encode()).hexdigest()
-    reply, problems, attempts, provider, model, usage = None, [], 0, None, None, {}
+    reply, problems, attempts, provider, model, usage, repairs = None, [], 0, None, None, {}, 0
     error = None
     for attempt in range(2 if use_ai else 0):
         attempts += 1
@@ -268,6 +282,7 @@ def generate_breakdown(metrics: list[dict], checks: list[dict], use_ai: bool = T
             error = str(exc)
             break
         provider, model, usage = result.provider, result.model, result.usage
+        repairs = _attach_missing_figures(result.content, facts)
         problems = _validate(result.content, facts, excerpt_ids, links)
         if not problems:
             reply = result.content
@@ -294,7 +309,9 @@ def generate_breakdown(metrics: list[dict], checks: list[dict], use_ai: bool = T
         "placeholders_filled": sum(len(PLACEHOLDER.findall(p["text"])) for p in final["points"]),
         "fails_total": sum(1 for f in sheet.facts if f.status == "FAIL" and f.kind in ("metric", "check")),
         "fails_added_by_daleel": len(omitted),
-        "rules": ["no digits from the model", "placeholders filled from the engine", "citations checked",
+        "figures_attached_by_daleel": repairs if source == "ai" else 0,
+        "rules": ["no digits from the model", "placeholders filled from the engine", "missing figures attached",
+                  "citations checked",
                   "status wording checked", "every breach covered"],
     }
     return Breakdown(source, headline, points, [f.__dict__ for f in sheet.facts],

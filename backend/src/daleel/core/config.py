@@ -57,6 +57,9 @@ class Settings(BaseSettings):
     ollama_model: str = "qwen3.6:27b"
     ai_timeout_seconds: int = 75
 
+    # Built web app to serve from the same container (one URL, no cross origin setup).
+    web_dist: Path = REPO_DIR / "web" / "dist"
+
     # Run the pipeline worker inside the API process (simplest for the demo).
     embedded_worker: bool = True
 

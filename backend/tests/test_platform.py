@@ -8,7 +8,7 @@ import psycopg
 import pytest
 
 from daleel.ai.facts import Fact
-from daleel.ai.narrative import _validate, generate_breakdown
+from daleel.ai.narrative import _attach_missing_figures, _validate, generate_breakdown
 from daleel.db.database import system_tx, workspace_tx
 
 
@@ -83,3 +83,11 @@ def test_template_covers_every_failure(stressed):
     fail_ids = {f["id"] for f in b.facts if f["status"] == "FAIL" and f["kind"] in ("metric", "check")}
     assert fail_ids <= cited
     assert all("{" not in p["rendered"] for p in b.points)
+
+
+def test_missing_figure_is_attached_not_invented():
+    reply = {"headline": "x", "points": [
+        {"kind": "breach", "text": "The lowest savings tier rate is a breach.", "fact_ids": ["F1"], "source_ids": []}]}
+    assert _attach_missing_figures(reply, FACTS) == 1
+    assert reply["points"][0]["text"] == "The lowest savings tier rate is a breach ({F1})."
+    assert _validate(reply, FACTS, {}, {}) == []

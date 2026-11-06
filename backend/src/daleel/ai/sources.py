@@ -48,21 +48,22 @@ def _chunks(doc_id: str, text: str) -> list[tuple[str, int, str]]:
         section, buffer = "", []
         paragraphs = re.split(r"\n\s*\n", page)
         for para in paragraphs:
-            clean = re.sub(r"[ \t]+", " ", para).strip()
+            # pdftotext breaks lines at the page width; join them back into running text.
+            clean = re.sub(r"\s+", " ", para).strip()
             if not clean:
                 continue
             match = HEADING.match(clean)
             if match and buffer and sum(len(b) for b in buffer) > 300:
-                out.append((section, page_no, "\n".join(buffer)))
+                out.append((section, page_no, "\n\n".join(buffer)))
                 buffer = []
             if match:
                 section = match.group(1)
             buffer.append(clean)
             if sum(len(b) for b in buffer) > CHUNK_CHARS:
-                out.append((section, page_no, "\n".join(buffer)))
+                out.append((section, page_no, "\n\n".join(buffer)))
                 buffer = []
         if buffer:
-            out.append((section, page_no, "\n".join(buffer)))
+            out.append((section, page_no, "\n\n".join(buffer)))
     return out
 
 
@@ -153,8 +154,13 @@ def retrieve_for_rules(rules: list[dict], query: str, limit: int = 2) -> list[Ex
                 if row and all(e.id != row["id"] for e in found):
                     found.append(Excerpt(row["id"], row["doc_id"], row["doc_title"], row["url"], row["section"],
                                          row["page"], row["verification"], row["text"]))
-    if len(found) < limit:
-        for e in retrieve(query, doc_ids_for_rules(rules) or None, limit):
+    # Then keyword search, but only inside the documents the rules name, in the order
+    # they are named. A fact whose rules name no document in the corpus gets no citation:
+    # no citation is better than a loosely related one.
+    for doc_id in doc_ids_for_rules(rules):
+        if len(found) >= limit:
+            break
+        for e in retrieve(query, [doc_id], limit):
             if all(f.id != e.id for f in found):
                 found.append(e)
     return found[:limit]

@@ -1,0 +1,53 @@
+# Runs on every push and pull request: backend lint and tests against a real
+# PostgreSQL (with the non superuser app role, so row level security is really
+# enforced), and a type checked production build of the web app.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: daleel
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 3s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://daleel_app:daleel_local_dev@localhost:5432/daleel
+      AI_PROVIDER: "off"
+      PGPASSWORD: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Create the app role
+        run: psql -h localhost -U postgres -d daleel -f infra/db-init.sql
+      - name: Lint
+        working-directory: backend
+        run: uv run ruff check src tests
+      - name: Test
+        working-directory: backend
+        run: uv run pytest -q
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: web/pnpm-lock.yaml
+      - name: Build
+        working-directory: web
+        run: pnpm install --frozen-lockfile && pnpm build

@@ -4,6 +4,8 @@
 **Commit examined:** `e96988c` (feat(calculations): Add Pool Management Calculations)
 **Branch:** `claude/keen-newton-6bi1jn`
 
+> **Historical document.** This describes the prototype as it was on 2026-11-06, before the rebuild. The prototype code was replaced the same day by Daleel (`backend/src/daleel`, `web/`). For the current system see the [README](../README.md), [06-system-design.md](06-system-design.md) and the implementation record in [03-fix-log.md](03-fix-log.md).
+
 This document describes what the system is meant to be and exactly what exists in the repository at the snapshot date. Bugs are listed separately in [02-bug-register.md](02-bug-register.md). Concepts named here are explained in [04-concepts-register.md](04-concepts-register.md) (look for the `CON-###` tags).
 
 ---

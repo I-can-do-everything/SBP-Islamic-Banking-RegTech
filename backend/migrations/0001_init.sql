@@ -9,7 +9,8 @@
 -- * The job queue is a plain table read with FOR UPDATE SKIP LOCKED (DEC-003).
 -- * source_chunk holds SBP source text for retrieval (RAG) with full text search.
 
-CREATE EXTENSION IF NOT EXISTS pgcrypto;
+-- No extensions needed: gen_random_uuid() and sha256() are built into PostgreSQL 13 and later,
+-- which keeps the schema portable to managed services such as Supabase.
 
 -- The workspace id of the current transaction, or NULL when none is set.
 CREATE OR REPLACE FUNCTION current_workspace() RETURNS uuid
@@ -163,11 +164,11 @@ BEGIN
    WHERE workspace_id = NEW.workspace_id ORDER BY id DESC LIMIT 1;
   NEW.occurred_at := clock_timestamp();
   NEW.prev_hash := last_hash;
-  NEW.hash := encode(digest(
+  NEW.hash := encode(sha256(convert_to(
       coalesce(last_hash, 'GENESIS') || '|' || NEW.workspace_id::text || '|' ||
       to_char(NEW.occurred_at AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS.US') || '|' ||
       NEW.actor || '|' || NEW.action || '|' || coalesce(NEW.resource, '') || '|' ||
-      NEW.details::text, 'sha256'), 'hex');
+      NEW.details::text, 'UTF8')), 'hex');
   RETURN NEW;
 END $$;
 

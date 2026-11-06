@@ -14,6 +14,7 @@ This folder is the written record of the SBP Islamic Banking RegTech system. It 
 | 6 | [06-system-design.md](06-system-design.md) | The production system design, with numbered decisions (`DEC-###`) |
 | 7 | [07-guidelines-and-data.md](07-guidelines-and-data.md) | The official SBP rules the system implements, the synthetic data plan, and the AI model choices |
 | 8 | [08-roadmap.md](08-roadmap.md) | Milestones, what each delivers and which bugs and gaps it closes |
+| 9 | [09-deployment.md](09-deployment.md) | Free hosting stack and step by step deployment |
 | | [evidence/](evidence/) | Scripts and captured output that prove the bugs exist (and later, that the fixes work) |
 
 ## ID scheme

@@ -310,3 +310,67 @@ Tests (GAP-012) are written alongside each phase, not at the end.
 | FIX-G12 | GAP-012 | Test suite, built phase by phase |
 | FIX-G13 | GAP-013 | README and mapping configuration |
 | FIX-G14 | GAP-014 | Provisioning (from classification and days past due) and IFRS 9 ECL |
+
+---
+
+## Implementation record (2026-11-06)
+
+The prototype in `backend/app` was replaced by the `daleel` package (`backend/src/daleel`). Every fix below was either carried into the new code or made unnecessary by the redesign. "Verified" means an automated test in `backend/tests` proves it; the test names are listed. Run them with `cd backend && uv run pytest`.
+
+| Fix | Status | Where it lives now | Evidence |
+|---|---|---|---|
+| FIX-001 | Closed by redesign | All new modules put `from __future__ import annotations` first | `ruff` and import of every module in the test run |
+| FIX-002 | Verified | `ingestion/clean.py` macro `d_money` | `test_money_parsing[100.00 DR]` |
+| FIX-003 | Verified | DuckDB decimal cast understands exponents | `test_money_parsing[1.5E+3]`. While building the sample data, a 7 digit scientific notation cell lost 332.12, and the trial balance check (`integrity.tb_balanced`) caught it. That is the real world version of this bug, and the reason the generator now writes full precision. |
+| FIX-004 | Verified | Unreadable cells give a row level reject with a reason | `test_bug004_unreadable_is_not_zero`, `test_unreadable_row_rejected_with_reason` |
+| FIX-005 | Verified | `ingestion/reader.py` `ENCODINGS` | `test_bug005_to_010_messy_t24_csv` (Windows-1252 file) |
+| FIX-006, FIX-007 | Verified | Column lookup rewritten as SQL over a mapped header | same test: 5 rows in, 5 rows out |
+| FIX-008 | Verified | One schema (`datasets/schemas.py`) for every reader | same test, balances net correctly |
+| FIX-009 | Verified | `d_date` macro, day first formats | `test_rates_and_dates` |
+| FIX-010 | Closed by redesign | One entry point `ingest_file` | end to end tests |
+| FIX-011, FIX-012 | Verified | Exact header matching; XLSX checked for `[Content_Types].xml` and `xl/workbook.xml` | `test_bug011_bug012_xlsx_name_does_not_overwrite_code` |
+| FIX-013 | Verified | Layout detection runs for every sheet type | ingestion result shows T24 and FLEXCUBE layouts |
+| FIX-014 | Closed by redesign | Errors use structured messages | |
+| FIX-015 | Verified | DEC-008: signed debit positive, presented on the normal side (`mapping/mapper.py`) | `test_baseline_golden` (CAR positive, balances on normal side) |
+| FIX-016 | Verified | NUL bytes and broken ZIPs rejected | `test_renamed_binary_is_rejected` |
+| FIX-017 | Closed by redesign | Missing accounts sum to zero in SQL and are visible in lineage | golden tests |
+| FIX-018 | Verified | `re.fullmatch`, overlap report | `test_bug018_full_match_only` |
+| FIX-019 | Verified | Exact shares, remainder to the largest share | `test_bug019_apportionment_conserves_total` (Hypothesis property) |
+| FIX-020 | Verified | Only the configured mapping is loaded, never a silent sample | mapping version recorded on each submission |
+| FIX-021 | Closed by redesign | `mappings/default.yaml` is real and validated on load | |
+| FIX-022 | Verified | Unmapped accounts reported; WARNING, or FAIL above materiality | `test_baseline_golden` (planted unmapped account is a WARNING) |
+| FIX-023 | Closed by redesign | Docstrings rewritten | |
+| FIX-024 to FIX-026 | Closed by redesign | `metrics/engine.py` `MetricResult` is always complete; JSON from typed rows | `test_every_metric_has_lineage` |
+| FIX-027, FIX-028 | Verified | `pool.wagy`, `pool.savings_min_rate`, `pool.savings_lowest_rate` follow IFPD C09/2024, read in its official Urdu text | `test_stressed_detects_every_planted_breach`, `test_wagy_excludes_scf_and_omo` |
+| FIX-029 | Closed by redesign | Mudarib share comes from each pool's data | |
+| FIX-030 | Verified | PER and IRR checks use the primary limits from IBD C03/2012 Annex (2% monthly PER, 30% of equity, 1% IRR) | stressed golden test |
+| FIX-031 | Verified | Annualised with the real period length (365 / days) | lineage formula |
+| FIX-032 | Verified (simplified) | CET1, Tier 1, Tier 2 with the 1.25% cap, CCB, leverage, transitional add back | golden CAR range; CAR inside the buffer is a WARNING in the stressed run |
+| FIX-033 | Verified | DEC-009: gross financing from contracts, reconciled to the GL by mode | `recon.financing` PASS in both scenarios |
+| FIX-034 | Verified | NPF alert is a labelled assumption that can only WARN | engine rule in `metrics/engine.py` |
+| FIX-035 | Verified | Provisioning and ECL implemented (GAP-014) | `test_classification_follows_annexure_c` |
+| FIX-036 | Done | Verification lives in docs/05 and the rulebook; the wrong note is gone with the prototype | |
+| FIX-037 | Done | No DFS version claim; reporting codes labelled illustrative | |
+| FIX-038 | Verified | `Settings` refuses a weak `JWT_SECRET` in production | |
+| FIX-039 | Closed by redesign | No seeded passwords; the demo uses anonymous workspaces | |
+| FIX-040 | Done | `backend/uv.lock`, `web/pnpm-lock.yaml`; Docker installs with `--frozen` | |
+| FIX-041 to FIX-046 | Closed by redesign | Replaced by the new schema and API | |
+| FIX-047 | Done | Complete `.gitignore`; runtime data in `backend/var/` | `git check-ignore` on `backend/.env` |
+| FIX-G01 to FIX-G05 | Done | API, security, pipeline, normalisation, validation | |
+| FIX-G06 | Partly done | Ideal template workbook; the PDF report pack is still to do | |
+| FIX-G07 | Done | Grounded AI breakdown | `test_validator_rejects_digits_and_bad_citations`, `test_template_covers_every_failure` |
+| FIX-G08 | Open | SBP circular watcher | |
+| FIX-G09 to FIX-G13 | Done | Migrations, web app, Docker, tests, README | |
+| FIX-G14 | Done | Provisioning and ECL | |
+
+### New issues found and fixed while building (BUG-048 onward)
+
+| ID | What happened | How it was found | Fix |
+|---|---|---|---|
+| BUG-048 | A dash ("-") in money columns outside the trial balance was read as missing, which wrongly rejected half the deposit rows | First ingestion run showed 15,090 rejected rows, all "missing PROFIT_ACCRUED" on current accounts | A dash or NIL is zero everywhere; only an empty cell can be missing |
+| BUG-049 | The INFO sheet with institution and period was not read | Meta came back empty | Key and value scan over every sheet |
+| BUG-050 | Generated bank had negative equity (liabilities larger than assets) | Accountant review of the first results: CET1 negative | GoP Ijarah Sukuk became the exact balancing asset |
+| BUG-051 | 7 digit scientific notation in the sample export lost 332.12 | `integrity.tb_balanced` failed | Full precision in the generator (and a lesson for the posts) |
+| BUG-052 | OpenRouter rejects fallback lists longer than three models (HTTP 400) | AI breakdown fell back to the template; the error body said so | Models are sent in groups of three |
+| BUG-053 | A weak free model wrote breach points with no figures and renamed IRR as "return of equity contribution" | Reading the screenshot of the AI breakdown | Two new validator rules: each cited fact must appear as its placeholder, and must be named with its own words |
+| BUG-054 | DuckDB `GROUP BY ALL` refused a CASE mixing a grouped column and an aggregate | Binder error on first run | Explicit GROUP BY columns |

@@ -32,14 +32,32 @@ class AIUnavailable(Exception):
     pass
 
 
+OPENROUTER_MAX_MODELS = 3  # OpenRouter accepts at most three models per fallback list
+
+
 def complete_json(system: str, user: str, schema: dict, name: str) -> AIReply:
+    """Try the configured models in groups (OpenRouter takes three per request)."""
+    s = get_settings()
+    if s.ai_provider != "openrouter":
+        return _complete(system, user, schema, name, None)
+    models = s.ai_model_list
+    errors = []
+    for start in range(0, len(models), OPENROUTER_MAX_MODELS):
+        try:
+            return _complete(system, user, schema, name, models[start:start + OPENROUTER_MAX_MODELS])
+        except AIUnavailable as exc:
+            errors.append(str(exc))
+    raise AIUnavailable(" | ".join(errors) or "No models configured.")
+
+
+def _complete(system: str, user: str, schema: dict, name: str, group: list[str] | None) -> AIReply:
     s = get_settings()
     if s.ai_provider == "off":
         raise AIUnavailable("AI is switched off (AI_PROVIDER=off).")
     if s.ai_provider == "openrouter":
         if not s.openrouter_api_key:
             raise AIUnavailable("No OpenRouter API key is configured.")
-        url, key, models = s.openrouter_base_url, s.openrouter_api_key, s.ai_model_list
+        url, key, models = s.openrouter_base_url, s.openrouter_api_key, group or s.ai_model_list[:OPENROUTER_MAX_MODELS]
     else:
         url, key, models = s.ollama_base_url, "ollama", [s.ollama_model]
     body: dict = {

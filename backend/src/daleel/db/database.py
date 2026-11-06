@@ -57,17 +57,15 @@ def close_pool() -> None:
 
 @contextmanager
 def workspace_tx(workspace_id: UUID | str) -> Iterator[psycopg.Connection]:
-    with pool().connection() as conn:
-        with conn.transaction():
-            conn.execute("SELECT set_config('app.workspace_id', %s, true)", (str(workspace_id),))
-            yield conn
+    with pool().connection() as conn, conn.transaction():
+        conn.execute("SELECT set_config('app.workspace_id', %s, true)", (str(workspace_id),))
+        yield conn
 
 
 @contextmanager
 def system_tx() -> Iterator[psycopg.Connection]:
-    with pool().connection() as conn:
-        with conn.transaction():
-            yield conn
+    with pool().connection() as conn, conn.transaction():
+        yield conn
 
 
 def migrate() -> list[str]:

@@ -34,8 +34,12 @@ build-backend = "hatchling.build"
 packages = ["src/daleel"]
 
 [tool.ruff]
-line-length = 100
+line-length = 120
 target-version = "py312"
+
+[tool.ruff.lint]
+# FastAPI declares dependencies with Depends() and File() in defaults; that is its intended style.
+ignore = ["B008"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

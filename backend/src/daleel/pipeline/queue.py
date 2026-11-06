@@ -91,7 +91,7 @@ def run_one() -> bool:
         if fn is None:
             raise RuntimeError(f"No handler for job kind {job['kind']}")
         fn(job["workspace_id"], job["payload"])
-    except Exception as exc:  # noqa: BLE001 (any failure is recorded on the job)
+    except Exception as exc:
         error = f"{type(exc).__name__}: {exc}\n{traceback.format_exc(limit=5)}"
         log.exception("job %s failed", job["id"])
     _finish(job["id"], error, job["attempts"] + 1)
@@ -119,7 +119,7 @@ class Worker:
         while not self._stop.is_set():
             try:
                 busy = run_one()
-            except Exception:  # noqa: BLE001
+            except Exception:
                 log.exception("worker loop error")
                 busy = False
             if not busy:

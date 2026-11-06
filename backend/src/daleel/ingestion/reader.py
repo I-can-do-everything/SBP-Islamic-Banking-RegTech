@@ -18,6 +18,7 @@ import csv
 import io
 import re
 import zipfile
+from contextlib import suppress
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from decimal import Decimal
@@ -67,7 +68,7 @@ def cell_text(value: object) -> str:
         # repr gives the shortest text that reads back as the same float, which is
         # what the person typed into Excel.
         text = repr(value)
-        return text[:-2] if text.endswith(".0") else text
+        return text.removesuffix(".0")
     if isinstance(value, (int, Decimal)):
         return str(value)
     return str(value).strip()
@@ -194,10 +195,8 @@ def read_meta(sheets: list[Sheet]) -> dict:
                 if parsed:
                     meta["period_end"] = parsed
             elif key in ("PERIOD_DAYS", "DAYS_IN_PERIOD"):
-                try:
+                with suppress(ArithmeticError, ValueError):  # a non numeric value is simply ignored
                     meta["period_days"] = int(Decimal(value))
-                except Exception:  # noqa: BLE001
-                    pass
     return meta
 
 

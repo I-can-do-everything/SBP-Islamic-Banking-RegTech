@@ -51,16 +51,17 @@ class Settings(BaseSettings):
     openrouter_api_key: str = ""
     openrouter_base_url: str = "https://openrouter.ai/api/v1"
     # Tried in order. Free models first, because the demo must cost nothing to run.
-    ai_models: str = "nvidia/nemotron-3.5-super-vl:free,openrouter/free"
+    ai_models: str = ("nvidia/nemotron-3.5-super-vl:free,dots-studio/dots-3-note-preview:free,"
+                      "google/gemma-4-31b-it:free,openrouter/free")
     ollama_base_url: str = "http://localhost:11434/v1"
     ollama_model: str = "qwen3.6:27b"
-    ai_timeout_seconds: int = 90
+    ai_timeout_seconds: int = 75
 
     # Run the pipeline worker inside the API process (simplest for the demo).
     embedded_worker: bool = True
 
     @model_validator(mode="after")
-    def _refuse_weak_secret_in_production(self) -> "Settings":
+    def _refuse_weak_secret_in_production(self) -> Settings:
         if self.environment == "production" and (
             self.jwt_secret == _DEV_SECRET or len(self.jwt_secret) < 32
         ):

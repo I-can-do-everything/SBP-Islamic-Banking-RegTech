@@ -16,9 +16,9 @@ from decimal import Decimal
 CONTEXT = decimal.Context(prec=38, rounding=decimal.ROUND_HALF_EVEN)
 decimal.setcontext(CONTEXT)
 
-ZERO = Decimal("0")
-ONE = Decimal("1")
-HUNDRED = Decimal("100")
+ZERO = Decimal(0)
+ONE = Decimal(1)
+HUNDRED = Decimal(100)
 AMOUNT_PLACES = Decimal("0.0001")
 RATIO_PLACES = Decimal("0.000001")
 

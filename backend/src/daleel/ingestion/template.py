@@ -14,7 +14,7 @@ stores numbers as binary floating point, so this workbook is for people.
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from decimal import Decimal
 from pathlib import Path
 
@@ -65,10 +65,10 @@ def write_template(path: Path, summary: dict, parquet_paths: dict[str, str], sou
         ("Period end", meta.get("period_end", "")),
         ("Source file", source.get("filename", "")),
         ("Source SHA-256", source.get("sha256", "")),
-        ("Generated (UTC)", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")),
-        ("How to use", "Send next period's data in this layout: one sheet per dataset, these column "
+        ("Generated (UTC)", datetime.now(UTC).strftime("%Y-%m-%d %H:%M:%S")),
+        ("How to use", ("Send next period's data in this layout: one sheet per dataset, these column "
                        "names, plain numbers (no separators or suffixes), ISO dates (yyyy-mm-dd), "
-                       "rates as fractions (0.025 means 2.5%)."),
+                       "rates as fractions (0.025 means 2.5%).")),
         ("Note", "Synthetic demo data for a fictional bank. Not real."),
     ]
     for i, (k, v) in enumerate(lines):

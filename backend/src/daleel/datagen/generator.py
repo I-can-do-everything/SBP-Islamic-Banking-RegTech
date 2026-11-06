@@ -256,7 +256,7 @@ def _capital(sc: Scenario, bundle: Bundle) -> None:
         {"item": "OPERATIONAL_RISK_RWA", "amount": money(40e9 if sc.stressed else 22e9)},
         {"item": "OFF_BALANCE_EXPOSURE", "amount": money(12e9)},
         {"item": "NEW_STAGE12_PROVISIONS_NET_OF_TAX", "amount": money(0.4e9)},
-        {"item": "ECL_TRANSITION_YEAR", "amount": Decimal("3")},
+        {"item": "ECL_TRANSITION_YEAR", "amount": Decimal(3)},
     ]
 
 

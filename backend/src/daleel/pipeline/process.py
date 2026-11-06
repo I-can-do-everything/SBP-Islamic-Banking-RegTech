@@ -12,7 +12,7 @@ from pathlib import Path
 
 import duckdb
 
-import daleel.metrics.definitions  # noqa: F401  (registers the metrics)
+import daleel.metrics.definitions
 from daleel.mapping.mapper import MappingReport, build_gold, load_mapping
 from daleel.metrics.credit import enrich_contracts
 from daleel.metrics.engine import Context, MetricResult, run_all

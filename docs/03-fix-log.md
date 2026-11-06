@@ -374,3 +374,19 @@ The prototype in `backend/app` was replaced by the `daleel` package (`backend/sr
 | BUG-052 | OpenRouter rejects fallback lists longer than three models (HTTP 400) | AI breakdown fell back to the template; the error body said so | Models are sent in groups of three |
 | BUG-053 | A weak free model wrote breach points with no figures and renamed IRR as "return of equity contribution" | Reading the screenshot of the AI breakdown | Two new validator rules: each cited fact must appear as its placeholder, and must be named with its own words |
 | BUG-054 | DuckDB `GROUP BY ALL` refused a CASE mixing a grouped column and an aggregate | Binder error on first run | Explicit GROUP BY columns |
+
+### Four eyes approval and the setup wizard (2026-11-06, second round)
+
+| Item | Status | Where | Evidence |
+|---|---|---|---|
+| Four eyes approval (roadmap M5, was planned under GAP-003) | Verified | `migrations/0003_four_eyes.sql` (database triggers), `api/review.py`, `web/src/components/ReviewView.tsx` | `test_database_enforces_four_eyes`, `test_approved_submission_is_locked_and_history_is_append_only`, `test_review_journey_through_the_api`; browser walkthrough screenshots 12 to 16 |
+| Setup wizard and deploy | Tested with scripted answers; live Hugging Face calls untested | `scripts/setup.mjs`, `scripts/deploy-hf.mjs` | Scripted end to end run; wrong key rejected; dry run packed 109 files |
+
+New issues found while building this round:
+
+| ID | What happened | How it was found | Fix |
+|---|---|---|---|
+| BUG-055 | Deleting an expired workspace would be blocked by the new "locked" trigger when the workspace held an approved submission | Reading the cascade order while writing the trigger | Deletes are allowed when the workspace row itself is already gone |
+| BUG-056 | Node's readline dropped answers that arrived before a question was asked, so pasted or scripted answers were lost | First scripted wizard run stopped at question two | All input goes through a line queue |
+| BUG-057 | On a re-run, the wizard offered the cloud database address as the local default | Second scripted run | Local and cloud defaults are read from their own files |
+| BUG-058 | The approval screenshot script typed explanations in screen order, so they landed on the wrong breaches (a script error, not an app error) | Reading the screenshot | Each explanation is matched to its breach by label |

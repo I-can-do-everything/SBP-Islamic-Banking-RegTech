@@ -2,6 +2,11 @@
 
 from __future__ import annotations
 
+import os
+
+# Tests never call a real AI provider; the deterministic summary is used instead.
+os.environ.setdefault("AI_PROVIDER", "off")
+
 from datetime import date
 from pathlib import Path
 

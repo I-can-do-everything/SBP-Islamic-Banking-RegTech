@@ -32,3 +32,8 @@ Captured at 2x by a Playwright script driving the real app (local run, 2026-11-0
 | `09-citation.png` | SBP excerpt quoted word for word | Blog-03 |
 | `10-audit.png` | Audit chain verified | LI-12 |
 | `11-rulebook.png` | Rulebook with source status | LI-09 |
+| `12-review-draft.png` | Review tab before explanations: eight breaches need explaining | LI-11 |
+| `13-review-submitted-preparer.png` | Submitted; the preparer cannot approve their own work | LI-11 |
+| `14-review-approver.png` | The Head of Compliance reviewing explanations before approving | LI-11 |
+| `15-review-approved.png` | Approved and locked, bound to the results fingerprint | LI-11 |
+| `16-audit-after-approval.png` | Audit chain verified after the approval | LI-12 |

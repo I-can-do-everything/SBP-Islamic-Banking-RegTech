@@ -1,6 +1,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet } from "react-router";
+import { PersonSwitcher } from "./PersonSwitcher";
 
 function useTheme() {
   const [dark, setDark] = useState(() => {
@@ -49,7 +50,8 @@ export function Layout() {
             </nav>
           </div>
           <div className="flex items-center gap-2">
-            <span className="hidden rounded border border-line px-2 py-0.5 text-xs text-muted md:inline">Synthetic demo data</span>
+            <span className="hidden rounded border border-line px-2 py-0.5 text-xs text-muted lg:inline">Synthetic demo data</span>
+            <PersonSwitcher />
             <button
               onClick={() => setDark(!dark)}
               className="rounded-md p-2 text-muted hover:bg-brand-soft hover:text-ink"

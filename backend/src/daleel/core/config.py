@@ -40,8 +40,16 @@ class Settings(BaseSettings):
     jwt_secret: str = _DEV_SECRET
     session_hours: int = 12
 
-    # Upload limits.
+    # Upload limits. ALLOW_UPLOADS=false keeps the public demo to the built in samples.
     max_upload_mb: int = 50
+    allow_uploads: bool = True
+
+    # Demo mode: one visitor may switch between the preparer and the approver to try
+    # four eyes approval. Turn off when real people sign in separately.
+    demo_personas: bool = True
+
+    # Public address of the deployed app (used in links and as the AI request referrer).
+    public_url: str = ""
 
     # Browser origins allowed to call the API.
     cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"

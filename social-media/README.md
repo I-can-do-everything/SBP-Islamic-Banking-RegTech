@@ -29,12 +29,13 @@ Target: 3 to 4 posts per week. The project is being built now, so the drafts can
 | 3 | Wed | LI-09 | Regulation as data, with dates | M4 | Drafted |
 | 3 | Fri | LI-10 | The 75% rule, worked through | M4 | Drafted |
 | 3 | | Blog-02 | Part 2: from a messy export to numbers with evidence | M4 | Drafted |
-| 4 | Mon | LI-11 | Validation before anyone signs | M5 | Drafted |
+| 4 | Mon | LI-11 | Four eyes, enforced by the database | M5 | Drafted |
 | 4 | Wed | LI-12 | An audit log you cannot quietly edit | M6 | Drafted |
 | 4 | Fri | LI-13 | Designing for the person who signs the return | M7 | Drafted |
 | 4 | Sat | LI-14 | Click any number | M7 | Drafted |
 | 5 | Mon | LI-15 | Giving the bank its data back, cleaner | M8 | Drafted |
 | 5 | Wed | LI-16 | An AI that is not allowed to write numbers | M9 | Drafted |
+| 5 | Thu | LI-18 | From git clone to a live demo with one wizard | M10 | Drafted |
 | 5 | | Blog-03 | Part 3: an AI that is not allowed to write numbers | M9 | Drafted |
 | 5 | Fri | LI-17 | Launch (publish after deployment) | M10 | Drafted |
 | 5 | | Blog-04 | Part 4: lessons from building RegTech end to end | M10 | Planned |

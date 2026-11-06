@@ -26,10 +26,10 @@ The project is built in milestones. Each milestone ends with something that work
 | Milestone | Status |
 |---|---|
 | M0 to M7 | Done: foundations, synthetic data, ingestion, mapping, rulebook and metrics, validation, platform (API, row level security, audit chain), web app |
-| M5 four eyes approval | Not yet: the submission flow ends at results; maker checker is the next feature |
+| M5 four eyes approval | Done: database enforced maker checker with results fingerprint and locking (DEC-023) |
 | M8 reports | Partly: the ideal ingestion workbook is done; the PDF report pack is still to do |
 | M9 AI | Done: grounded breakdown with retrieval; circular watcher still to do |
-| M10 launch | Ready to deploy (docs/09-deployment.md); needs the owner's Supabase and Hugging Face accounts |
+| M10 launch | Ready: `npm run setup` then `npm run deploy` (docs/09-deployment.md); needs the owner's free accounts |
 | M11 learn folder | After launch |
 
 ## How each milestone is run

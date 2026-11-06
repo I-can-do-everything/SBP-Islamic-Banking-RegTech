@@ -5,6 +5,7 @@ import { useParams, useSearchParams } from "react-router";
 import { AuditView } from "../components/AuditView";
 import { BreakdownView } from "../components/BreakdownView";
 import { ResultsView } from "../components/ResultsView";
+import { ReviewView, WorkflowBadge } from "../components/ReviewView";
 import { Transformation } from "../components/Transformation";
 import { api } from "../lib/api";
 import { dateLabel, shortHash } from "../lib/format";
@@ -22,6 +23,7 @@ const TABS = [
   { key: "transform", label: "Transformation" },
   { key: "results", label: "Results" },
   { key: "breakdown", label: "AI breakdown" },
+  { key: "review", label: "Review and approval" },
   { key: "audit", label: "Audit trail" },
 ] as const;
 
@@ -70,7 +72,9 @@ export function SubmissionPage() {
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="text-sm text-faint">Submission</p>
-          <h1 className="text-2xl font-semibold tracking-tight">{s?.institution ?? "Loading…"}</h1>
+          <h1 className="flex flex-wrap items-center gap-3 text-2xl font-semibold tracking-tight">
+            {s?.institution ?? "Loading…"} {ready && <WorkflowBadge status={s?.workflow_status} locked={s?.locked} />}
+          </h1>
           <p className="mt-1 text-sm text-muted">
             {s?.period_end ? `Period ended ${dateLabel(s.period_end)}` : "Reading the reporting date…"}
             {s?.filename && <> · <span className="font-mono text-xs">{s.filename}</span></>}
@@ -113,6 +117,7 @@ export function SubmissionPage() {
         {tab === "transform" && ingested && <Transformation id={id} />}
         {tab === "results" && ready && <ResultsView id={id} />}
         {tab === "breakdown" && ready && <BreakdownView id={id} />}
+        {tab === "review" && ready && <ReviewView id={id} />}
         {tab === "audit" && <AuditView />}
         {!ingested && s?.status !== "FAILED" && (
           <div className="flex items-center gap-3 rounded-lg border border-line bg-panel p-6 text-sm text-muted">

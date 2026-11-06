@@ -105,7 +105,7 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-081 | Audit first design | Every number must be explainable: show its formula, inputs, source file hash and regulatory reference, one click away. | In code (`CalculationResult`) |
 | CON-082 | Configuration over code | Bank specific and regulation specific values live in configuration that can be reviewed and versioned, not inside code. | In code (mapping JSON, constants) |
 | CON-083 | Defence in depth | Several independent security layers (validation, authentication, roles, rate limits, audit log, expiring links), so one failure does not expose data. | Planned |
-| CON-084 | Maker checker (four eyes) | One person prepares, a different person approves. The rule is enforced by the software, so nobody can approve their own work. | Planned |
+| CON-084 | Maker checker (four eyes) | One person prepares, a different person approves. The rule is enforced by the database, so nobody can approve their own work. | In code (DEC-023) |
 
 ## Architecture patterns (CON-090 onward)
 
@@ -136,3 +136,7 @@ ID ranges: 001 to 019 software engineering, 020 to 029 accounting, 030 to 049 re
 | CON-107 | Single page application served by the API | The built React files are served by FastAPI, with unknown paths returning `index.html` so browser routes work | `api/app.py` | In code |
 | CON-108 | Free tier architecture | Choosing hosts by their free limits (memory, sleep rules, persistence) and designing around them | `docs/09-deployment.md` | In code |
 | CON-109 | End to end screenshots with Playwright | A script drives a real browser through the app and captures images, so the screenshots are reproducible and use only synthetic data | `social-media/assets/screens` | In code |
+| CON-110 | Business rules in database triggers | Rules checked by the database before it accepts a row, so no application path can skip them | `migrations/0003_four_eyes.sql` | In code |
+| CON-111 | Binding an approval to a fingerprint | The approval stores a SHA-256 of the exact results it covers; if the results change, the approval no longer matches | `submission_results_digest()` | In code |
+| CON-112 | Configuration wizard and twelve factor config | All settings live in environment variables; a guided script collects and checks them and writes them to files kept out of git | `scripts/setup.mjs` | In code |
+| CON-113 | Secrets handling in tooling | Hiding typed secrets, owner only file permissions, never printing tokens in errors, and separating secrets from plain variables | `scripts/lib.mjs`, `scripts/deploy-hf.mjs` | In code |

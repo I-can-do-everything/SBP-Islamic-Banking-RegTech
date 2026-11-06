@@ -7,6 +7,8 @@ import { api } from "../lib/api";
 export function Demo() {
   const navigate = useNavigate();
   const samples = useQuery({ queryKey: ["samples"], queryFn: api.samples });
+  const health = useQuery({ queryKey: ["health"], queryFn: api.health });
+  const uploadsAllowed = health.data?.allow_uploads ?? true;
   const [file, setFile] = useState<File | null>(null);
   const [periodEnd, setPeriodEnd] = useState("");
   const [drag, setDrag] = useState(false);
@@ -60,6 +62,7 @@ export function Demo() {
         {samples.isLoading && <p className="text-sm text-muted">Loading samples…</p>}
       </div>
 
+      {uploadsAllowed && <>
       <h2 className="mt-10 text-sm font-semibold uppercase tracking-wider text-faint">Or upload a file</h2>
       <div
         onDragOver={(e) => { e.preventDefault(); setDrag(true); }}
@@ -91,6 +94,7 @@ export function Demo() {
           </div>
         )}
       </div>
+      </>}
       {submit.isError && <p role="alert" className="mt-4 rounded-md bg-fail-soft px-3 py-2 text-sm text-fail">{(submit.error as Error).message}</p>}
     </div>
   );

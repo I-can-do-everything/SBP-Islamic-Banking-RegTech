@@ -540,3 +540,21 @@ The prototype's `backend/app` code is replaced module by module. Each prototype 
 | 8 million accounts x 30 days (large bank, N1) | 240 million | 41.0 s (1.1 GB) | 3.9 s (61 million rows/s) |
 
 The heaviest step of the large bank profile takes seconds, far inside the 15 minute target (N2), using exact `DECIMAL(38,4)`. This supports DEC-002.
+
+### DEC-023. Four eyes approval enforced by the database
+- **Choice:** Submission, approval and rejection are rows in an append only `approval` table. A trigger checks every rule before a row is accepted:
+  - roles
+  - every breach explained before submission
+  - nobody decides on a submission they uploaded or submitted
+  - a rejection needs a reason
+  - an approval must match the SHA-256 fingerprint of the results taken at submission
+
+  Approval locks the submission, and triggers then refuse any change to its results, data or upload.
+- **Alternatives:** checking the rules in the API only; a workflow engine.
+- **Why:**
+  - Maker checker is a control auditors test. A control that lives only in application code can be bypassed by a bug or a direct database change; a trigger cannot.
+  - Binding the approval to a fingerprint means the approver provably approved exactly what was submitted.
+- **Demo:** Each workspace has three people (preparer, approver, and an administrator who can do either, but never both on one submission). A visitor can switch between them (`DEMO_PERSONAS`). In production each person signs in separately and the switch is off.
+
+### DEC-024. Setup wizard
+See [09-deployment.md](09-deployment.md#dec-024-a-setup-wizard-instead-of-a-deployment-manual).

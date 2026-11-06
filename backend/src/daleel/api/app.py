@@ -19,10 +19,14 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
 from daleel import __version__
+from daleel.api.review import router as review_router
 from daleel.api.security import (
+    Session,
+    SessionDep,
     WorkspaceDep,
     create_workspace,
     session_limit,
+    switch_member,
     token_from_query,
     upload_limit,
 )
@@ -115,13 +119,31 @@ def health() -> dict:
         conn.execute("SELECT 1")
     s = get_settings()
     return {"status": "ok", "version": __version__, "ai_provider": s.ai_provider,
-            "ai_configured": s.ai_provider == "ollama" or bool(s.openrouter_api_key)}
+            "ai_configured": s.ai_provider == "ollama" or bool(s.openrouter_api_key),
+            "allow_uploads": s.allow_uploads, "demo_personas": s.demo_personas}
 
 
 @app.post("/api/v1/session", dependencies=[Depends(session_limit)])
 def start_session() -> dict:
     ws, token, expires = create_workspace()
     return {"token": token, "workspace_id": str(ws), "expires_at": expires.isoformat()}
+
+
+@app.get("/api/v1/me")
+def me(session: Session = SessionDep) -> dict:
+    """Who is acting, and the other people in this workspace (for the demo person switcher)."""
+    with workspace_tx(session.workspace_id) as conn:
+        members = conn.execute("SELECT id, display_name, title, role FROM workspace_member ORDER BY created_at, role"
+                               ).fetchall()
+    return {"member_id": str(session.member_id), "name": session.name, "role": session.role,
+            "demo_personas": get_settings().demo_personas,
+            "members": [{**m, "id": str(m["id"])} for m in members]}
+
+
+@app.post("/api/v1/session/switch")
+def switch_person(body: dict, session: Session = SessionDep) -> dict:
+    token, member = switch_member(session, UUID(str(body.get("member_id"))))
+    return {"token": token, "member": {**member, "id": str(member["id"])}}
 
 
 # --------------------------------------------------------------------- samples
@@ -141,7 +163,8 @@ def download_sample(name: str) -> FileResponse:
 
 # --------------------------------------------------------------------- submissions
 
-def _create_submission(ws: UUID, filename: str, data: bytes, period_end: str | None) -> dict:
+def _create_submission(session: Session, filename: str, data: bytes, period_end: str | None) -> dict:
+    ws = session.workspace_id
     settings = get_settings()
     if len(data) > settings.max_upload_mb * 1024 * 1024:
         raise InvalidInput("too_large", f"Files up to {settings.max_upload_mb} MB are accepted in the demo.")
@@ -150,14 +173,14 @@ def _create_submission(ws: UUID, filename: str, data: bytes, period_end: str | N
     safe_name = Path(filename).name[:120] or "upload"
     with workspace_tx(ws) as conn:
         sub = conn.execute(
-            "INSERT INTO submission (workspace_id, institution, period_end) VALUES (%s, %s, %s) RETURNING id",
-            (ws, "Unknown institution", period_end or None)).fetchone()["id"]
+            "INSERT INTO submission (workspace_id, institution, period_end, created_by) VALUES (%s, %s, %s, %s)"
+            " RETURNING id", (ws, "Unknown institution", period_end or None, session.member_id)).fetchone()["id"]
         key = f"{ws}/{sub}/raw/{safe_name}"
         sha = store.put_bytes(key, data, immutable=True)
         conn.execute("INSERT INTO upload (workspace_id, submission_id, filename, sha256, size_bytes, storage_key)"
                      " VALUES (%s,%s,%s,%s,%s,%s)", (ws, sub, safe_name, sha, len(data), key))
         jobs.event(conn, ws, sub, "upload", "done", f"Received {safe_name}", {"sha256": sha, "bytes": len(data)})
-        jobs.audit(conn, ws, "visitor", "upload.received", f"submission/{sub}",
+        jobs.audit(conn, ws, session.name, "upload.received", f"submission/{sub}",
                    {"filename": safe_name, "sha256": sha, "bytes": len(data)})
         enqueue(conn, "ingest", ws, {"submission_id": str(sub)})
     return {"id": str(sub), "sha256": sha, "filename": safe_name}
@@ -165,16 +188,18 @@ def _create_submission(ws: UUID, filename: str, data: bytes, period_end: str | N
 
 @app.post("/api/v1/submissions", dependencies=[Depends(upload_limit)])
 async def create_submission(file: UploadFile | None = File(default=None), sample: str | None = Form(default=None),
-                            period_end: str | None = Form(default=None), ws: UUID = WorkspaceDep) -> dict:
+                            period_end: str | None = Form(default=None), session: Session = SessionDep) -> dict:
     if sample:
         if sample not in SAMPLES:
             raise InvalidInput("no_sample", "Unknown sample.")
         path = sample_path(sample)
-        return _create_submission(ws, path.name, path.read_bytes(), period_end)
+        return _create_submission(session, path.name, path.read_bytes(), period_end)
     if file is None:
         raise InvalidInput("no_file", "Choose a file or a sample.")
+    if not get_settings().allow_uploads:
+        raise InvalidInput("uploads_off", "This demo only runs the built in samples.")
     data = await file.read(get_settings().max_upload_mb * 1024 * 1024 + 1)
-    return _create_submission(ws, file.filename or "upload", data, period_end)
+    return _create_submission(session, file.filename or "upload", data, period_end)
 
 
 def _submission(conn, sub: UUID) -> dict:
@@ -191,7 +216,8 @@ def _sub_json(row: dict) -> dict:
             "period_days": row["period_days"], "status": row["status"], "stage": row["stage"],
             "error": row["error"], "filename": row.get("filename"), "sha256": row.get("sha256"),
             "size_bytes": row.get("size_bytes"), "created_at": row["created_at"].isoformat(),
-            "updated_at": row["updated_at"].isoformat()}
+            "updated_at": row["updated_at"].isoformat(), "workflow_status": row.get("workflow_status"),
+            "locked": row.get("locked", False)}
 
 
 @app.get("/api/v1/submissions")
@@ -358,6 +384,11 @@ def audit_verify(ws: UUID = WorkspaceDep) -> dict:
             return {"valid": False, "events": len(rows), "broken_at": r["id"]}
         previous = r["hash"]
     return {"valid": True, "events": len(rows), "head": previous}
+
+
+# --------------------------------------------------------------------- review and approval (four eyes)
+
+app.include_router(review_router)
 
 
 # --------------------------------------------------------------------- web app (single container deploys)

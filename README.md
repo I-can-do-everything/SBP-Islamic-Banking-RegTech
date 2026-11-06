@@ -18,7 +18,8 @@ Daleel (Arabic for *evidence* or *proof*) takes a raw core banking export from a
    - pool rules: the 75% savings profit rule (IFPD Circular No. 09 of 2024), the Mudarib share cap, and the PER, IRR and weightage notice limits
    - Shariah checks
 4. **Explain.** A grounded AI breakdown cites SBP excerpts word for word. A grounding report shows what was checked.
-5. **Audit.** Every step lands in a hash chained, append only audit log that can be verified in one click.
+5. **Approve with four eyes.** The preparer must explain every breach before submitting. A different person approves or returns it. The approval is bound to a fingerprint of the exact results, and approved results are locked. The database itself enforces all of this.
+6. **Audit.** Every step lands in a hash chained, append only audit log that can be verified in one click.
 
 ## How hallucination is designed out
 
@@ -49,6 +50,20 @@ The calculation engine is deterministic; the AI computes nothing. Then:
 | Web | React 19, TypeScript, TanStack Query, Tailwind CSS v4, Server Sent Events | Live progress, dense and accessible screens, light and dark themes |
 
 Design decisions are recorded with alternatives in [docs/06-system-design.md](docs/06-system-design.md) (DEC-001 onward).
+
+## Set it up in one command
+
+```bash
+npm run setup
+```
+
+The wizard explains each free account to create (OpenRouter, Supabase, Hugging Face), takes your keys (hidden while you type) and checks them. It asks which features to turn on and writes `backend/.env` and `.env.deploy`. Then:
+
+```bash
+npm run deploy
+```
+
+That publishes the demo to your Hugging Face Space. See [docs/09-deployment.md](docs/09-deployment.md) for details.
 
 ## Run it locally
 

@@ -20,6 +20,34 @@ export interface Submission {
   sha256: string | null;
   size_bytes: number | null;
   created_at: string;
+  workflow_status?: WorkflowStatus;
+  locked?: boolean;
+}
+
+export type WorkflowStatus = "DRAFT" | "SUBMITTED" | "APPROVED" | "REJECTED";
+export type Role = "PREPARER" | "APPROVER" | "ADMIN";
+
+export interface Member { id: string; display_name: string; title: string; role: Role }
+export interface Me { member_id: string; name: string; role: Role; demo_personas: boolean; members: Member[] }
+export interface Person { id: string; name: string; role: Role }
+
+export interface Review {
+  workflow_status: WorkflowStatus;
+  locked: boolean;
+  results_ready: boolean;
+  created_by: Person | null;
+  submitted_by: Person | null;
+  submitted_at: string | null;
+  decided_by: Person | null;
+  decided_at: string | null;
+  results_digest: string;
+  submitted_digest: string | null;
+  you: Person;
+  breaches: { id: string; label: string; category: string; kind: string; explanation: { body: string; author: Person; at: string } | null }[];
+  notes: { id: string; item_id: string | null; kind: "explanation" | "comment"; body: string; author: Person; at: string }[];
+  history: { id: number; action: "SUBMIT" | "APPROVE" | "REJECT"; actor: Person; comment: string | null; results_digest: string; at: string }[];
+  allowed: { submit: boolean; approve: boolean; reject: boolean; note: boolean };
+  blocked_reason: { submit: string | null; approve: string | null; reject: string | null; note: string | null };
 }
 
 export interface Sample { name: string; title: string; description: string; filename: string }
@@ -216,7 +244,23 @@ async function request<T>(path: string, init: RequestInit = {}, retry = true): P
   return (await res.json()) as T;
 }
 
+async function post<T>(path: string, body: unknown): Promise<T> {
+  return request<T>(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+}
+
 export const api = {
+  me: () => request<Me>("/api/v1/me"),
+  switchPerson: async (memberId: string) => {
+    const res = await post<{ token: string; member: Member }>("/api/v1/session/switch", { member_id: memberId });
+    writeToken(res.token);
+    return res.member;
+  },
+  review: (id: string) => request<Review>(`/api/v1/submissions/${id}/review`),
+  addNote: (id: string, body: { kind: "explanation" | "comment"; item_id?: string | null; body: string }) =>
+    post<{ id: string }>(`/api/v1/submissions/${id}/notes`, body),
+  submitForApproval: (id: string, comment?: string) => post<{ ok: boolean }>(`/api/v1/submissions/${id}/submit`, { comment }),
+  approve: (id: string, comment?: string) => post<{ ok: boolean }>(`/api/v1/submissions/${id}/approve`, { confirm: true, comment }),
+  reject: (id: string, comment: string) => post<{ ok: boolean }>(`/api/v1/submissions/${id}/reject`, { comment }),
   samples: () => fetch(`${BASE}/api/v1/samples`).then((r) => r.json() as Promise<Sample[]>),
   sampleUrl: (name: string) => `${BASE}/api/v1/samples/${name}/download`,
   submit: (form: FormData) => request<{ id: string; sha256: string }>("/api/v1/submissions", { method: "POST", body: form }),
@@ -232,5 +276,5 @@ export const api = {
   source: (id: string) => fetch(`${BASE}/api/v1/sources/${encodeURIComponent(id)}`).then((r) => r.json() as Promise<Excerpt>),
   templateUrl: async (id: string) => `${BASE}/api/v1/submissions/${id}/template.xlsx?token=${encodeURIComponent(await token())}`,
   eventsUrl: async (id: string) => `${BASE}/api/v1/submissions/${id}/events?token=${encodeURIComponent(await token())}`,
-  health: () => fetch(`${BASE}/health`).then((r) => r.json() as Promise<{ ai_provider: string; ai_configured: boolean }>),
+  health: () => fetch(`${BASE}/health`).then((r) => r.json() as Promise<{ ai_provider: string; ai_configured: boolean; allow_uploads: boolean; demo_personas: boolean }>),
 };

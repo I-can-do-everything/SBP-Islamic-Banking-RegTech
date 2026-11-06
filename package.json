@@ -1,0 +1,14 @@
+{
+  "name": "daleel",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Daleel: an Islamic bank regulatory compliance tool",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "setup:check": "node scripts/setup.mjs --check",
+    "deploy": "node scripts/deploy-hf.mjs",
+    "deploy:dry-run": "node scripts/deploy-hf.mjs --dry-run"
+  }
+}

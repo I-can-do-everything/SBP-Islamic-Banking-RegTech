@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css"><style>
+h1{position:absolute;left:56px;top:44px;font-size:34px;font-weight:700}
+.sub{position:absolute;left:56px;top:94px;font-size:17px;color:var(--muted)}
+.big{position:absolute;left:56px;top:150px;font-size:150px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.biglbl{position:absolute;left:62px;top:310px;font-size:18px;color:var(--muted)}
+.rows{position:absolute;left:56px;top:370px;width:470px}
+.row{display:flex;align-items:center;gap:14px;margin-bottom:14px;font-size:16px}
+.row .n{width:34px;text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+.bar{height:14px;border-radius:4px}
+.card{position:absolute;left:600px;top:150px;width:544px;height:400px;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:26px 28px}
+.card .tag{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card h2{font-size:22px;margin:8px 0 18px}
+.eq{font-size:15px;line-height:2}
+.eq .bad{color:var(--fail);font-weight:700}.eq .good{color:var(--ok);font-weight:700}
+.card p{margin-top:16px;font-size:15px;color:var(--muted);line-height:1.5}
+</style></head><body><div class="pattern"></div>
+<h1>Auditing my own prototype</h1><div class="sub">Every function probed with realistic inputs before any rebuild</div>
+<div class="big">47</div><div class="biglbl">bugs recorded, each with file, line and evidence</div>
+<div class="rows">
+<div class="row"><span class="n">10</span><span class="bar" style="width:100px;background:var(--fail)"></span><span>&#9632; Critical</span></div>
+<div class="row"><span class="n">12</span><span class="bar" style="width:120px;background:var(--warn)"></span><span>&#9650; High</span></div>
+<div class="row"><span class="n">17</span><span class="bar" style="width:170px;background:#8fb3c9"></span><span>&#9679; Medium</span></div>
+<div class="row"><span class="n">8</span><span class="bar" style="width:80px;background:var(--muted)"></span><span>&#9675; Low</span></div>
+</div>
+<div class="card"><span class="tag">The bug that taught the most</span><h2>One sign, one wrong ratio</h2>
+<div class="eq mono">capital as credit balance &#8594; <span class="bad">-115</span><br>ratio code expects &#8594; <span class="good">+115</span><br>capital adequacy ratio &#8594; <span class="bad">-11.5%</span> instead of <span class="good">11.5%</span></div>
+<p>No crash, no warning, just a wrong number that looked like a number. Fix: one sign convention, applied once, at one layer.</p></div>
+<div class="foot"><span>Daleel . portfolio project . synthetic examples</span><span class="mono">docs/02-bug-register.md</span></div>
+</body></html>

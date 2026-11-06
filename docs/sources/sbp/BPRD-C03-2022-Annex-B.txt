@@ -1,0 +1,47 @@
+                                                                                              Annexure B
+
+                          Guideline for absorption of ECL for CAR Purposes
+
+The introduction of IFRS 9 is an important development; at the same time, the capital impact of the move
+will be significant for some Financial Institutions (FIs). Some of the FIs would suffer in terms of reduced
+regulatory capital, which is likely to reduce their lending capacity and ability to support their clients. In
+order to mitigate the impact of expected credit loss (ECL) models on capital, especially after COVID-19,
+The SBP has determined that it may be appropriate for the FIs to introduce a transitional arrangement for
+the impact on regulatory capital from the application of ECL accounting. FIs applying a transitional
+arrangement must implement such an arrangement as follows:
+
+   I.   The transitional arrangement must apply only to provisions that are “new” under an ECL
+        accounting model. “New” provisions are Stage 1 and Stage 2 provisions, which do not exist under
+        accounting approaches applied prior to the adoption of IFRS 9.
+
+  II.   The transitional arrangement must adjust CET1 capital. Where there is a reduction in CET1 capital
+        due to new provisions, net of tax effect, upon adoption of an ECL accounting model, the decline
+        in CET1 capital (the “transitional adjustment amount”) must be partially included (i.e. added back)
+        to CET1 capital over the “transition period” of five years.
+
+ III.   FIs must add-back the transitional adjustment amount in CET1 capital starting at 90%, falling to
+        10% in the final year throughout the transition period by recalculating it periodically to reflect the
+        evolution of an FI’s ECL provisions within the transition period.
+                                   Year            New Stage 1 & 2 Provisions
+                                                     add back to CET1 Capital
+                                    1                           90%
+                                    2                           70%
+                                    3                           50%
+                                    4                           30%
+                                    5                           10%
+
+ IV.    The transitional adjustment amount included in CET1 capital each year during the transition
+        period must be taken through to other measures of capital as appropriate (e.g. Tier 1 capital and
+        total capital), and hence to the calculation of the leverage ratio and of large exposures limits.
+
+  V.    Any deferred tax asset (DTA) arising from a temporary difference associated with a non-deducted
+        provision amount must be disregarded for regulatory purposes during the transitional period. This
+        means that such DTA amount must not be considered for CET1 capital, and in return must not be
+        subject to deduction from CET1 capital and must not be subject to risk weighting, as applicable.
+
+ VI.    FIs that choose to implement a transitional arrangement must disclose in their interim and annual
+        financial statements
+              Whether a transitional arrangement is applied; and
+              The impact on an FI’s regulatory capital and leverage ratios compared to the FI’s “fully
+                 loaded” capital and leverage ratios had the transitional arrangement not been applied.
+

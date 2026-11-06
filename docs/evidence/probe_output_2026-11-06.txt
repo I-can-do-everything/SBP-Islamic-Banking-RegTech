@@ -1,0 +1,29 @@
+[control: plain] OK -> 1234.50
+[control: brackets] OK -> -500.00
+[control: CR suffix] OK -> -100.00
+[BUG-002 DR suffix] TypeError: can't multiply sequence by non-int of type 'builtin_function_or_method'
+[BUG-003 scientific 1.5E+3] OK -> 1.53
+[BUG-004 unreadable 'abc'] OK -> 0
+[control: compute_hash('abc')] OK -> ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
+[BUG-012 detect real XLSX] ValueError: File claims to be XLSX but is not a valid Excel file
+[BUG-011 read XLSX directly] OK -> [{'account_code': 'Murabaha', 'debit_balance': Decimal('1000'), 'credit_balance': Decimal('0'), 'balance': Decimal('1000')}]
+[control: detect T24 CSV] OK -> (<CBSFormat.T24: 'T24'>, ['GL_ACCOUNT_CODE', 'ACCOUNT_DESC', 'DR_BAL', 'CR_BAL', 'PERIOD'])
+[BUG-010 read_file on CSV] TypeError: _read_csv() missing 1 required positional argument: 'format'
+[BUG-005 _read_csv] LookupError: unknown encoding: utr-8-sig
+[BUG-006 T24 CSV after BUG-005 patch] OK -> []
+[BUG-006 generic CSV after BUG-005 patch] OK -> []
+[BUG-017 get_balance missing account] OK -> <class 'decimal.Decimal'>
+[BUG-017 sum of two missing accounts] TypeError: unsupported operand type(s) for +: 'int' and 'type'
+[BUG-018 '3590-MUR' matches '3590-MUR-NPF-001'] OK -> True
+[BUG-019 split 100.00 into thirds, total] OK -> 99.990000
+[BUG-021 RCOAMapper.load('MEEZ')] JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[BUG-024 NPF ratio] TypeError: CalculationResult.__init__() missing 4 required positional arguments: 'ratio_value', 'numerator', 'denominator', and 'formula_applied'
+[BUG-025/026 CAR to_dict] OK -> {'retio_name': 'CAR', 'ratio_value': '11.50000000', 'numerator': '115', 'denominator': '1000', 'formula_applied': 'Tier1(115) + Tier2(0) / RWA(1000) × 100', 'input_accounts': ['1100-PUC', '1200-SR', '1300-RE', '1400-SUKUK', '1500-GP', '3590-MUR', '3590-IJA', '3590-DM', '3590-SAL', '3590-IST'], 'regulatory_minimum': '11.5', 'regulatory_maximum': 'None', 'breach_flag': False, 'sbp_circular_reference': 'SBP BPRD Basel III Capital Adequacy framework'}
+[BUG-027 pool ratios (name, value, breach)] OK -> [('PER_RATIO', '5.00000000', False), ('IRR_RATIO', '4.00000000', False), ('DEPOSITOR_SHARE_RATIO', '55.00000000', True), ('DECLARED_PROFIT_RATE', '61.38000000', False)]
+[BUG-015 CAR with capital as credit (negative)] OK -> -11.50000000
+[BUG-017 CAR with Salam/Istisna missing] TypeError: unsupported operand type(s) for +: 'decimal.Decimal' and 'type'
+[BUG-043 26 character passphrase] ValidationError: 1 validation error for UserCreate
+password
+  String should have at most 15 characters [type=string_too_long, input_value='a-very-long-passphrase-123', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_too_long
+[BUG-041 RawSubmission(id='1').to_dict()] AttributeError: 'RawSubmission' object has no attribute 'institution_code'

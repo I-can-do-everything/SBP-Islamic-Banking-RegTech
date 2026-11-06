@@ -1,0 +1,138 @@
+                                                                                                               Annexure-C
+
+
+
+
+                                                               Stage Allocation
+   Particular           Classification**        Days Due*                          Provisions to be made
+                                                                 under IFRS 9
+                  Performing                        1-59           Stage 1
+                                                                                As per IFRS 9 ECL Modelling
+  PRUDENTIAL      Underperforming                  60-89           Stage 2
+ REGULATIONS      Non-performing                      -                -                       -
+FOR CORPORATE           Subtandard                 90-179                       whichever is higher
+ /COMMERCIAL            Doubtful                180 or more                     (a) IFRS 9 ECL OR
+                                                                   Stage 3
+   BANKING                Loss                one year or more                  (b) PR's Requirements
+                                Trade Bills       180 days
+                  Credit Card Advances
+                  Performing                        1-59            Stage 1
+                                                                                 As per IFRS 9 ECL Modelling
+                  Underperforming                  60-89            stage 2
+                                                                                 whichever is higher
+                  Non-Performing                  90-179
+                                                                    Stage 3      (a) IFRS 9 ECL OR
+                                                                                 (b) PR's Requirements
+                          Loss                  180 or more
+                  Auto Loans
+  PRUDENTIAL      Performing                        1-59            Stage 1
+                                                                                 As per IFRS 9 ECL Modelling
+ REGULATIONS      Underperforming                  60-89            stage 2
+      FOR         Non-performing                      -                -                        -
+  CONSUMER              Subtandard                 90-179                        whichever is higher
+   FINANCING            Doubtful                180 or more         Stage 3      (a) IFRS 9 ECL OR
+                        Loss                  one year or more                   (b) PR's Requirements
+                  Personal Loans
+                  Performing                       1-59             Stage 1
+                                                                                 As per IFRS 9 ECL Modelling
+                  Underperforming                 60-89             stage 2
+                  Non-performing                     -                 -                        -
+                        Substandard               90-179                         whichever is higher
+                                                                    Stage 3      (a) IFRS 9 ECL OR
+                        Loss                    180 or more                      (b) PR's Requirements
+                  Performing                       1-29             Stage 1
+                                                                                 As per IFRS 9 ECL Modelling
+ PRUDENTIAL       Underperforming (OAEM)           30-59            Stage 2
+REGULATIONS
+                  Non-performing                     -                 -                        -
+    FOR
+                       Substandard                60-89                          whichever is higher
+MICROFINANCE
+                       Doubtful                   90-179                         (a) IFRS 9 ECL OR
+   BANKS                                                            Stage 3
+                                                                                 (b) PR's Requirements
+                        Loss                    180 or more
+
+                  Performing                        1-59            Stage 1
+                  Underperforming                  60-89                         As per IFRS 9 ECL Modelling
+                                                                    Stage 2
+                        OAEM                       90-179
+Housing Finance
+                  Non-performing                      -                -                      -
+  Prudential
+                        Substandard             180 or more
+  Regulations                                                                      whichever is higher
+                        Doubtful              one year or more
+                                                                    Stage 3        (a) IFRS 9 ECL OR
+                                                Two years or
+                        Loss                                                       (b) PR's Requirements
+                                                    more
+                                                                                                                                                  Annexure-C
+
+
+
+
+                           Small Enterprise Financing
+                           Performing                                    1-59                  Stage 1
+                                                                                                                        As per IFRS 9 ECL
+                           Underperforming                              60-89                  Stage 2                     Modelling
+
+                           Non-performing                                  -                        -                             -
+                                   OAEM                                90-179
+   Prudential                      Substandard                     180 or more                                      whichever is higher
+   Regulations                     Doubtful                       1 year or more               Stage 3              (a) IFRS 9 ECL OR
+   for Small &                       Loss                         18 Months or                                      (b) PR's Requirements
+Medium Enterprises                                                    more
+    Financing                           Trade Bills                  180 days
+                           Medium Enterprise Financing
+                           Performing                        1-59                              Stage 1
+                                                                                                                 As per IFRS 9 ECL Modelling
+                           Underperforming                  60-89                              Stage 2
+                           Non-performing FA                   -                                  -                             -
+                                 Substandard               90-179                                                whichever is higher
+                                 Doubtful               180 or more                                              (a) IFRS 9 ECL OR
+                                                                                               Stage 3
+                                   Loss               one year or more                                           (b) PR's Requirements
+                                        Trade Bills       180 days
+                           Performing                        1-59                              Stage 1
+                           Underperforming                  60-89                                                As per IFRS 9 ECL Modelling
+                                                                                               Stage 2
+                                   OAEM                    90 -364
+                           Non-performing                      -                                    -                             -
+                                 Substandard          one year or more
+    PRUDENTIAL                   Doubtful
+   REGULATIONS                          Production/Working
+                                        Capital Loan           18 months or more
+ FOR AGRICULTURE
+                                        Development/Term                                                            whichever is higher
+     FINANCING                                                    2 years or more
+                                        Finance                                                Stage 3              (a) IFRS 9 ECL OR
+                                   Loss                                                                             (b) PR's Requirements***
+                                        Production/Working
+                                        Capital Loan              2 years or more
+                                        Development/Term
+                                        Finance                   3 years or more
+                           Performing                                    1-59                  Stage 1
+                           Underperforming                              60-89                                    As per IFRS 9 ECL Modelling
+                                                                                               Stage 2
+     Prudential                    OAEM                                90 - 179
+   Regulations for         Non-performing                                  -                        -                             -
+   Infrastructure
+                                                                                                                    whichever is higher
+  Project Financing                Substandard                      180-364
+                                                                                               Stage 3              (a) IFRS 9 ECL OR
+                                   Doubtful                      365 to 2 years
+                                                                                                                    (b) PR's Requirements
+                                     Loss                       More than 2 years
+
+
+This annexure needs to be read in line with the instructions given in para 3.4, 3.5 and 3.13.
+
+* Where mark-up/interest or principal is overdue by the specified days or more from the due date. Where Trade Bills (Import/Export or Inland
+Bills) are not paid/adjusted within specified days of the due date.
+** The classification will be applicable on all Financial assets that came under the scope of impairment under IFRS 9
+***The DPD criteria can be relaxed accordingly against the relaxations provided to FI's agri loans under R-5 of "PR for Agriculture Financing".
+Disclaimer: The stage allocations against days past due (DPD) indicator is to be considered only as a backstop for the rebuttable presumption
+allowed under IFRS 9 for DPD. The FIs are advised to devise their own DPD criteria for portfolios having shared credit characteristics (as
+described under IFRS 9) rather than facility wise.
+

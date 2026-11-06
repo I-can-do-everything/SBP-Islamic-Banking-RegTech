@@ -1,0 +1,231 @@
+# Daleel rulebook (DEC-005): regulation as data.
+#
+# Every regulatory number Daleel uses lives here, with:
+#   effective_from / effective_to : the dates the value applies (a calculation for
+#                                    period end D uses the version in force on D)
+#   source.ref                    : the entry in docs/05-regulatory-verification.md
+#   source.doc / source.section   : where the text says it
+#   source.verification           : primary    = read in the SBP document itself
+#                                   secondary  = SBP page snippet, news or bank disclosure
+#                                   assumption = Daleel demo assumption, not an SBP number
+# Values are strings so they load as exact decimals. Percentages are written as
+# percentages (11.5 means 11.5%).
+#
+# Rules marked "assumption" never produce a FAIL on their own: the engine caps
+# their status at WARNING and labels them in the interface (FIX-030, FIX-034).
+
+rules:
+  # ---------------------------------------------------------------- capital
+  - id: capital.cet1_min
+    title: Minimum Common Equity Tier 1 ratio
+    value: "6.0"
+    unit: percent
+    effective_from: 2015-12-31
+    source: {ref: REG-002, doc: BPRD Circular No. 06 of 2013, section: "Instructions para 2.2 (i) and transition table", verification: primary}
+
+  - id: capital.tier1_min
+    title: Minimum Tier 1 ratio
+    value: "7.5"
+    unit: percent
+    effective_from: 2015-12-31
+    source: {ref: REG-002, doc: BPRD Circular No. 06 of 2013, section: "para 2.2 (ii)", verification: primary}
+
+  - id: capital.total_min_ex_buffer
+    title: Minimum total capital ratio before buffer
+    value: "10.0"
+    unit: percent
+    effective_from: 2013-12-31
+    source: {ref: REG-002, doc: BPRD Circular No. 06 of 2013, section: "transition table", verification: primary}
+
+  - id: capital.ccb
+    title: Capital conservation buffer (in CET1)
+    versions:
+      - {value: "2.5", effective_from: 2019-12-31, effective_to: 2020-03-25,
+         source: {ref: REG-002, doc: BPRD Circular No. 06 of 2013, section: "transition table, 2019 column", verification: primary}}
+      - {value: "1.5", effective_from: 2020-03-26,
+         source: {ref: REG-002, doc: BPRD Circular Letter No. 12 of 2020, section: "COVID relief, until further instructions", verification: secondary}}
+    unit: percent
+
+  - id: capital.leverage_min
+    title: Minimum Tier 1 leverage ratio
+    value: "3.0"
+    unit: percent
+    effective_from: 2013-12-31
+    source: {ref: REG-010, doc: BPRD Circular No. 06 of 2013, section: "Introduction (iii) Leverage Ratio", verification: primary}
+
+  - id: capital.tier2_provision_cap
+    title: Stage 1 and 2 provisions admissible in Tier 2, as a share of credit RWA
+    value: "1.25"
+    unit: percent
+    effective_from: 2024-01-01
+    source: {ref: REG-024, doc: BPRD Circular No. 03 of 2022 (IFRS 9 Application Instructions), section: "para 3.21", verification: primary}
+
+  - id: capital.ecl_transition_addback
+    title: Share of new Stage 1 and 2 provisions added back to CET1, by transition year
+    table: {"1": "90", "2": "70", "3": "50", "4": "30", "5": "10"}
+    unit: percent
+    effective_from: 2024-01-01
+    source: {ref: REG-019, doc: BPRD Circular No. 03 of 2022, section: "Annexure B (III)", verification: primary}
+
+  - id: capital.risk_weights
+    title: Credit risk weights by counterparty type (standardised approach)
+    table:
+      SOVEREIGN_PKR: "0"
+      BANK: "20"
+      CORPORATE: "100"
+      SME: "75"
+      RETAIL: "75"
+      MORTGAGE: "35"
+      PAST_DUE: "100"
+      CASH: "0"
+      FIXED_ASSET: "100"
+      OTHER_ASSET: "100"
+    unit: percent
+    effective_from: 2013-12-31
+    source: {ref: REG-016, doc: "BPRD Circular No. 03 of 2025 (revised standardised approach); annex not yet read", section: "0% for PKR claims on GoP and SBP is secondary; other weights are Daleel demo assumptions in the usual Basel ranges", verification: assumption}
+
+  # ------------------------------------------------------- asset quality
+  - id: asset_quality.classification
+    title: Classification and IFRS 9 stage by days past due, per portfolio
+    # Each band: [from_days, to_days or null, classification, stage]
+    table:
+      CORPORATE:     [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, SUBSTANDARD, 3], [180, 364, DOUBTFUL, 3], [365, null, LOSS, 3]]
+      CONSUMER_AUTO: [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, SUBSTANDARD, 3], [180, 364, DOUBTFUL, 3], [365, null, LOSS, 3]]
+      CONSUMER_PERSONAL: [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, SUBSTANDARD, 3], [180, null, LOSS, 3]]
+      CREDIT_CARD:   [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, NON_PERFORMING, 3], [180, null, LOSS, 3]]
+      HOUSING:       [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, OAEM, 2], [180, 364, SUBSTANDARD, 3], [365, 729, DOUBTFUL, 3], [730, null, LOSS, 3]]
+      SME_SMALL:     [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, OAEM, 2], [180, 364, SUBSTANDARD, 3], [365, 547, DOUBTFUL, 3], [548, null, LOSS, 3]]
+      SME_MEDIUM:    [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, SUBSTANDARD, 3], [180, 364, DOUBTFUL, 3], [365, null, LOSS, 3]]
+      AGRI_PRODUCTION: [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 364, OAEM, 2], [365, 547, SUBSTANDARD, 3], [548, 729, DOUBTFUL, 3], [730, null, LOSS, 3]]
+      AGRI_DEVELOPMENT: [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 364, OAEM, 2], [365, 729, SUBSTANDARD, 3], [730, 1094, DOUBTFUL, 3], [1095, null, LOSS, 3]]
+      INFRASTRUCTURE: [[0, 59, PERFORMING, 1], [60, 89, UNDERPERFORMING, 2], [90, 179, OAEM, 2], [180, 364, SUBSTANDARD, 3], [365, 729, DOUBTFUL, 3], [730, null, LOSS, 3]]
+    unit: days
+    effective_from: 2024-01-01
+    source: {ref: REG-011, doc: BPRD Circular No. 03 of 2022, section: "Annexure C, Stage Allocation", verification: primary}
+    notes: >-
+      Agriculture Doubtful and Loss bands use the Annexure C split between
+      production or working capital and development or term finance.
+
+  - id: asset_quality.pr_provision_rate
+    title: Minimum Prudential Regulations provision, by classification, on outstanding less forced sale value
+    table: {PERFORMING: "0", UNDERPERFORMING: "0", OAEM: "0", SUBSTANDARD: "25", NON_PERFORMING: "25", DOUBTFUL: "50", LOSS: "100"}
+    unit: percent
+    effective_from: 2005-01-01
+    source: {ref: REG-006, doc: "Prudential Regulations for Corporate / Commercial Banking, R-8 and annexure (applied to all portfolios in the demo)", section: "25% substandard is secondary; 50% and 100% are unverified", verification: secondary}
+
+  - id: asset_quality.stage3_floor
+    title: Stage 3 provision is the higher of IFRS 9 ECL and the Prudential Regulations requirement
+    value: "1"
+    unit: flag
+    effective_from: 2024-01-01
+    source: {ref: REG-011, doc: BPRD Circular No. 03 of 2022, section: "Annexure C, Provisions to be made", verification: primary}
+
+  - id: asset_quality.default_lgd
+    title: LGD used when a contract has none (Foundation IRB senior unsecured)
+    value: "45"
+    unit: percent
+    effective_from: 2024-01-01
+    source: {ref: REG-025, doc: "BPRD Circular No. 03 of 2022 para 3.16 points to F-IRB LGDs in BSD Circular No. 08 of 2006", section: "45% is the F-IRB senior unsecured LGD (BSD C08/2006 not yet read)", verification: secondary}
+
+  - id: asset_quality.default_pd
+    title: Default PDs by stage when a contract has none
+    table: {"1": "1.5", "2": "18", "3": "100"}
+    unit: percent
+    effective_from: 2024-01-01
+    source: {ref: REG-026, doc: Daleel demo assumption, section: "Used only when the bank supplies no PD; flagged on screen", verification: assumption}
+
+  - id: asset_quality.npf_alert
+    title: Internal alert level for the NPF ratio (not an SBP limit)
+    value: "5.0"
+    unit: percent
+    effective_from: 2000-01-01
+    source: {ref: REG-003, doc: Daleel demo assumption, section: "No binding SBP NPF maximum was found", verification: assumption}
+
+  # ---------------------------------------------------------------- pools
+  - id: pools.savings_min_share_of_wagy
+    title: Minimum profit rate on PKR savings deposits as a share of the weighted average gross yield of all pools
+    value: "75"
+    unit: percent
+    effective_from: 2025-01-01
+    source: {ref: REG-004, doc: IFPD Circular No. 09 of 2024 (26 Nov 2024), section: "para 1 (official Urdu text read)", verification: primary}
+
+  - id: pools.wagy_excluded_pool_types
+    title: Pools left out of the weighted average gross yield
+    list: [SCF, OMO]
+    unit: list
+    effective_from: 2025-01-01
+    source: {ref: REG-004, doc: IFPD Circular No. 09 of 2024, section: "para 2 (Shariah compliant standing ceiling facility and OMO pools)", verification: primary}
+
+  - id: pools.wagy_excludes_fixed_assets
+    title: Whether fixed assets are removed from average pool assets for gross yield
+    versions:
+      - {value: "1", effective_from: 2025-01-01, effective_to: 2025-01-20,
+         source: {ref: REG-004, doc: IFPD Circular No. 09 of 2024, section: "para 2", verification: primary}}
+      - {value: "0", effective_from: 2025-01-21,
+         source: {ref: REG-013, doc: IFPD Circular Letter No. 01 of 2025, section: "deletes (excluding fixed assets)", verification: secondary}}
+    unit: flag
+
+  - id: pools.excluded_depositor_types
+    title: Depositor types outside the 75% rule
+    list: [FI, PSE, PLC]
+    unit: list
+    effective_from: 2025-01-01
+    source: {ref: REG-004, doc: IFPD Circular No. 09 of 2024, section: "para 1", verification: primary}
+
+  - id: pools.mudarib_share_max
+    title: Maximum Mudarib share of distributable profit
+    value: "50"
+    unit: percent
+    effective_from: 2012-11-19
+    source: {ref: REG-012, doc: IBD Circular No. 03 of 2012, Annex, section: "4.1.2", verification: primary}
+
+  - id: pools.per_monthly_contribution_max
+    title: Maximum monthly contribution to PER, as a share of pool net income
+    value: "2"
+    unit: percent
+    effective_from: 2012-11-19
+    source: {ref: REG-023, doc: IBD Circular No. 03 of 2012, Annex, section: "5.1.2", verification: primary}
+
+  - id: pools.per_balance_max_of_equity
+    title: Maximum accumulated PER, as a share of the Islamic bank's equity
+    value: "30"
+    unit: percent
+    effective_from: 2012-11-19
+    source: {ref: REG-023, doc: IBD Circular No. 03 of 2012, Annex, section: "5.1.2", verification: primary}
+
+  - id: pools.irr_contribution_max
+    title: Maximum IRR contribution, as a share of depositors' profit after Mudarib share
+    value: "1"
+    unit: percent
+    effective_from: 2012-11-19
+    source: {ref: REG-023, doc: IBD Circular No. 03 of 2012, Annex, section: "6.1 (until the bank develops its own model)", verification: primary}
+
+  - id: pools.weightage_notice_working_days
+    title: Weightages announced at least this many working days before the period
+    value: "3"
+    unit: days
+    effective_from: 2012-11-19
+    source: {ref: REG-012, doc: IBD Circular No. 03 of 2012, Annex, section: "4.2.2", verification: primary}
+
+  # ------------------------------------------------------------- shariah
+  - id: shariah.charity_not_income
+    title: Charity collected on Islamic products is not recognised as income
+    value: "1"
+    unit: flag
+    effective_from: 2025-01-22
+    source: {ref: REG-014, doc: BPRD Circular Letter No. 01 of 2025, section: "IFRS 9 clarifications", verification: secondary}
+
+  # --------------------------------------------------- data integrity
+  - id: integrity.unmapped_material_share
+    title: Unmapped balances above this share of total assets fail the submission
+    value: "0.5"
+    unit: percent
+    effective_from: 2000-01-01
+    source: {ref: REG-026, doc: Daleel demo assumption, section: "materiality level for unmapped accounts", verification: assumption}
+
+  - id: integrity.reconciliation_tolerance
+    title: Allowed difference when reconciling detail data to the general ledger (PKR)
+    value: "1.00"
+    unit: pkr
+    effective_from: 2000-01-01
+    source: {ref: REG-026, doc: Daleel demo assumption, section: "one rupee rounding tolerance", verification: assumption}

@@ -1,0 +1,41 @@
+# Registry of SBP source documents used for retrieval (RAG) and citations.
+# Every document here was downloaded from www.sbp.org.pk on 2026-11-06 and its text
+# extracted with pdftotext, except where noted. Daleel quotes these excerpts
+# word for word; the AI may only point at them, never rewrite them as fact.
+
+documents:
+  - id: IFPD-C09-2024
+    file: IFPD-C09-2024-U.en.txt
+    title: "IFPD Circular No. 09 of 2024: Profit on savings deposits of IBIs (unofficial English translation of the official Urdu text)"
+    url: https://www.sbp.org.pk/assets/documents/circulars/ifpd/2024/C9-U.pdf
+    verification: primary (translated)
+  - id: IBD-C03-2012
+    file: IBD-C03-2012-Annex-Pool-Management.txt
+    title: "IBD Circular No. 03 of 2012, Annex: Instructions for Profit and Loss Distribution and Pool Management for IBIs"
+    url: https://www.sbp.org.pk/assets/documents/circulars/ibd/2012/C3-Annex.pdf
+    verification: primary
+  - id: BPRD-C03-2022
+    file: BPRD-C03-2022-IFRS9-Instructions.txt
+    title: "BPRD Circular No. 03 of 2022: IFRS 9 Application Instructions"
+    url: https://www.sbp.org.pk/assets/documents/circulars/bprd/2022/C3-IFRS-9.pdf
+    verification: primary
+  - id: BPRD-C03-2022-ANNEX-B
+    file: BPRD-C03-2022-Annex-B.txt
+    title: "BPRD Circular No. 03 of 2022, Annexure B: Absorption of ECL for CAR purposes"
+    url: https://www.sbp.org.pk/assets/documents/circulars/bprd/2022/C3-Annex-B.pdf
+    verification: primary
+  - id: BPRD-C03-2022-ANNEX-C
+    file: BPRD-C03-2022-Annex-C.txt
+    title: "BPRD Circular No. 03 of 2022, Annexure C: Stage allocation by days past due"
+    url: https://www.sbp.org.pk/assets/documents/circulars/bprd/2022/C3-Annex-C.pdf
+    verification: primary
+  - id: BPRD-C06-2013
+    file: BPRD-C06-2013-Basel-III-Instructions.txt
+    title: "BPRD Circular No. 06 of 2013: Instructions for Basel III Implementation in Pakistan"
+    url: https://www.sbp.org.pk/assets/documents/circulars/bprd/2013/Basel_III_instructions.pdf
+    verification: primary
+  - id: IFPD-C08-2024
+    file: IFPD-C08-2024-Annex-SGF.txt
+    title: "IFPD Circular No. 08 of 2024, Annex: Shariah Governance Framework for IBIs"
+    url: https://www.sbp.org.pk/assets/documents/circulars/ifpd/2024/C8-Annex.pdf
+    verification: primary

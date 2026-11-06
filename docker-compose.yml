@@ -1,0 +1,22 @@
+# Local run: `docker compose up --build`, then open http://localhost:7860
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: daleel
+    volumes: [pgdata:/var/lib/postgresql/data, ./infra/db-init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro]
+    healthcheck: {test: ["CMD", "pg_isready", "-U", "postgres"], interval: 3s, retries: 20}
+  app:
+    build: .
+    depends_on: {db: {condition: service_healthy}}
+    ports: ["7860:7860"]
+    environment:
+      DATABASE_URL: postgresql://daleel_app:daleel_local_dev@db:5432/daleel
+      JWT_SECRET: ${JWT_SECRET:-local-compose-secret-change-me-local-compose-secret}
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+      AI_PROVIDER: ${AI_PROVIDER:-openrouter}
+      CORS_ORIGINS: http://localhost:7860
+volumes:
+  pgdata:

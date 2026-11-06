@@ -1,0 +1,546 @@
+ IFRS 9 FINANCIAL INSTRUMENTS
+    APPLICATION INSTRUCTIONS
+
+
+
+
+BANKING POLICY & REGULATIONS DEPARTMENT
+      STATE BANK OF PAKISTAN
+                                                                                 IFRS 9 Application Instructions
+
+                                                 Chapter – 1: Preamble
+1.1       Introduction: The Financial Institutions (FIs) are required to prepare their financial statements in
+          accordance with approved accounting standards as applicable in Pakistan. The application of new
+          accounting requirements under IFRS 9 obliges FIs to establish provisions for expected credit losses,
+          which requires banking industry to develop and establish new systems and models to evaluate financial
+          assets and calculate ECL accordingly.
+          In this regard, these instructions are being issued to regulate the FIs' application of IFRS 9. These
+          application instructions are not intended to prescribe methodologies, action plans, standardized
+          systems and models for all FIs.
+1.2       Scope of Application: The following instructions apply on all FIs at standalone as well as at
+          consolidated financial statements level. However, the financial statements of overseas branches,
+          subsidiaries and associates that are prepared for the purpose of consolidation at FI level should be
+          based on their respective host country’s regulatory accounting practices till one year from the effective
+          date of IFRS 9 implementation. Afterwards, FIs will be required to comply with the requirements of
+          these application instructions for consolidated financial statements. The application of these
+          instructions will not apply on the standalone statutory financial statements of FIs’ associates,
+          subsidiaries and overseas branches that shall be prepared according to their rules and regulations
+          applicable to them. The SBP’s instructions / regulations that will be superseded by the application of
+          these instructions are attached at Annexure-A.
+
+
+                     Chapter – 2: Classification of Financial Assets and Liabilities
+
+2.1       Classification and Measurement Requirements for Debt Securities
+
+2.1.1     Initial Measurement: The financial instruments will be initially measured at fair value plus or minus
+          transaction costs that are directly attributable to the acquisition or issue of financial instruments.
+          However, transaction costs in relation to Financial Assets measured at Fair Value through Profit and
+          Loss, should be recognized as an expense when incurred.
+
+2.1.2     Initial Classification: Financial assets under IFRS 9 will be classified into one of the three main
+          classification categories:
+               i.    Amortised Cost
+              ii.    Fair Value through Other Comprehensive Income (FVTOCI)
+             iii.    Fair Value through Profit and Loss (FVTPL)
+
+          The financial assets have to meet the following tests in order to be subsequently measured at either
+          amortized cost or fair value:
+              i.   The Business Model Test.
+             ii.   The Contractual Cash Flow Characteristics Test
+
+2.1.3     Business Model Test: In order to classify the financial assets, the FIs will have to analyze the nature
+          of their key operating units. This will be accomplished by reviewing how groups of financial assets
+          are managed together in order to achieve a particular business objective. The FIs will apply the
+          business model test at a level that is consistent with the practices used to manage their assets.
+          Eventually, the financial assets will fall under either of the following three business models:
+               i.   Hold to Collect Business Model: Holding assets in order to collect contractual cash flows
+              ii.   Hold to Collect and Sell Business Model: Collecting contractual cash flows and selling
+                    financial assets
+             iii.   Other Business Models: Resulting in fair value through profit or loss classification,
+                    “FVTPL Business Model”
+
+
+        State Bank of Pakistan                                                                          Page|1
+                                                                                                IFRS 9 Application Instructions
+
+        2.1.3.1 Hold-to-Collect (HTC) Business Model: The ‘hold-to-collect’ business model does not require
+                that financial assets are always held until their maturity. The FIs’ business model can still be “to
+                hold financial assets to collect contractual cash flows” even if sales of financial assets occur.
+                However, if more than infrequent number of sales or sale of significant value is made out of a
+                portfolio, the FI will assess how sales are consistent with ‘hold-to-collect’ objective. This
+                assessment should include reason(s) for sales, expected frequency of sales, and holding period
+                relative to contractual maturity. Following are the examples1 of sales that would not contradict
+                holding financial assets to collect contractual cash flows:
+                    i. Selling of financial asset to realize cash to deal with an unforeseen need for liquidity
+                   ii. Selling of financial asset due to significant internal restructuring/business combinations
+                  iii. Selling of financial asset close to its maturity and proceeds from sales approximate the
+                       collection of remaining contractual cash flows
+                  iv. Selling of financial asset due to increase in credit risk or to manage credit concentration risk
+                   v. Selling of financial asset in ‘stress case’ scenario
+
+                  SBP expects that sales of financial assets held under HTC business model will be rare and will
+                  happen in exceptional circumstances. FIs should have approved policy from the board or its sub-
+                  committee for the sales under HTC Business Model.
+
+        2.1.3.2 Hold-to-Collect & Sell (HTC&S) Business Model: Under this model, the intention of FIs is to
+                hold asset to collect its contractual cash flows and to sell financial asset. The FIs will need to
+                exercise judgement in determining whether they have a business model whose objective is
+                achieved by both collecting contractual cash flows and selling financial assets. As selling financial
+                assets can be an integral to achieve the FIs’ business objectives. Following are some of the
+                objectives consistent with this type of business model:
+                    i. To manage everyday liquidity needs
+                   ii. To maintain a particular interest yield profile
+                  iii. To match duration of the financial assets and liabilities funding those assets
+
+        2.1.3.3 Other Business Models: Financial assets are measured at FVTPL if they do not fall in either HTC
+                or HTC&S business models. Following are some of the examples of such business models:
+                   i. FI manages financial assets with the objective of realizing cash flows through the sale of the
+                      assets (Held-for-Trading)
+                  ii. FI manages and evaluates a portfolio of financial assets on a fair value basis
+
+        2.1.3.4 The business models including objective criteria of their determination shall be approved by the
+                board. The FI’s business model for managing financial assets is a matter of fact and not merely an
+                assertion. It is typically observable through activities that the FI undertakes to achieve the
+                objective of the business model. The FIs must consider all relevant evidence that is available at
+                the time of assessment. Such evidence may include:
+                    i. How the financial assets held within a particular business model are evaluated and reported
+                       to the entity’s key management personnel.
+                   ii. The risks that affect the financial assets held within a business model and management of
+                       the risks thereof.
+                  iii. How managers of the business are compensated (e.g., whether the compensation is based
+                       on the fair value of the assets managed or on the contractual cash flows collected).
+                The FI may hold the same type of instrument, such as government bonds, in all three classification
+                categories (Amortised Cost, FVTOCI and FVTPL) depending on its intention and model for
+                managing the assets.
+
+    2.1.4     Contractual Cash Flow Characteristics Test: This test is to be done at the asset level and seeks to
+              establish whether contractual cash flows of an asset are based “solely on payments of principal and
+              interest” (SPPI). Only assets that meet this criterion can qualify for Amortised Cost and FVTOCI
+
+1
+    These examples are just an indicative list and does not provide the only cases, where sales can occur under HTC business model.
+            State Bank of Pakistan                                                                                        Page|2
+                                                                                                   IFRS 9 Application Instructions
+
+              classification treatment. The minimum standard for meeting SPPI determination is that the contractual
+              cash flows compensate the holder for (a) the time value of money plus (b) credit risk plus (c) other
+              allowable components such as liquidity risk. As such, for the contractual cash flows of an asset to
+              qualify as SPPI, they must be consistent with a basic lending arrangement. The contractual features
+              that are unrelated to a basic lending arrangement such as exposure to changes in equity or commodity
+              prices via a structured note security, would not pass the SPPI assessment. The SPPI determination
+              should only be performed once for each individual type of asset. This should not be a recurring,
+              periodic test. However, the FIs will need to establish procedures to ensure that newly purchased or
+              originated assets are tested.
+
+              The Islamic Banking Institutions (IBIs) may consider the international practices for the application of
+              SPPI test for similar kind of instruments in the classification of their financial assets, while assessing
+              their contractual cash flow test under IFRS 9. The IBIs may also refer to the published guidance /
+              accounting literature by the AAOIFI in this regard.
+
+    2.1.5     Investments and Other Assets:
+
+          2.1.5.1 Quoted Securities: Government Securities, Term Finance Certificates (TFCs), Participation
+                  Term Certificate (PTCs,) Sukuk will be classified as per the criteria prescribed under 2.1.2 and in
+                  case, if they are classified as FVTOCI or FVTPL, then the government instruments shall be valued
+                  at PKRV (Reuter Page) and the TFCs, PTCs, Sukuk shall be measured at their fair value.
+
+          2.1.5.2 Unquoted Securities: PTCs, TFCs and Sukuk shall be classified in accordance with criteria
+                  prescribed under section 2.1.2 and ECL shall be calculated as required for debt instruments
+                  measured as amortised cost or FVTOCI.
+
+          2.1.5.3 Other Assets: The financial assets falling within “Other Assets” shall also be classified in
+                  accordance with the criteria described in section 2.1.2.
+
+    2.1.6     Use of Fair Value Option: FIs may designate, at initial recognition, a financial asset as measured at
+              FVTPL if it eliminates or significantly reduces any ‘accounting mismatch’ arising from measuring
+              assets or liabilities on different basis. Financial assets designated at FVTPL are not subject to the
+              reclassification requirements of IFRS 9.
+
+              The FIs may apply Fair Value Option under this criterion if: (a) it is consistent with a documented risk
+              management strategy and eliminates or significantly reduces2 measurement or recognition
+              inconsistency of measuring financial assets or liabilities on a different basis, and (b) fair values are
+              reliable at inception and throughout life of the instrument. Nonetheless, this option should be avoided,
+              where the fair value option is applied for financial instruments that are categorized as Level 3 in terms
+              of the IFRS 13 hierarchy.
+
+    2.1.7     Financial Liabilities: Financial liabilities will be measured at amortised cost except those classified
+              as held for trading and FIs opt to measure them at fair value. The FIs will apply Fair Value Option
+              only if: (a) institution has a documented risk management strategy to manage the group of financial
+              instruments together on a fair value basis and can demonstrate that significant financial risks are
+              eliminated or significantly reduced, and (b) fair values are reliable at inception and throughout the life
+              of the instrument. The FIs are required to disclose liabilities resulting in their measurement at fair
+              value.
+
+    2.2       Classification and Measurement Requirements for Equity Securities
+
+    2.2.1     Classification of Equity Investments: Investments in equity securities will be measured at fair value
+              and will not be subject to impairment testing. The equity securities that are traded in an active market
+
+2
+    “Significantly reduce” is to be determined by the FIs and will be subject to internal and external audit review.
+            State Bank of Pakistan                                                                                     Page|3
+                                                                                 IFRS 9 Application Instructions
+
+          can be categorized for held for trading purposes and will be classified as FVTPL. The equity securities
+          that are not categorized as held for trading may be classified as FVTOCI (irrevocable option). The
+          decision can be made on instrument basis at the time of its purchase and should be properly
+          documented. The FIs may categorize the equity securities of a same company as FVTOCI and FVTPL
+          depending on its business model.
+
+2.2.2     Unquoted Equity Securities: FIs are advised to measure investment in unquoted equity securities at
+          lower of cost or breakup value till December 31, 2023. In case where the breakup value of such
+          securities is less than the cost, the difference of the cost and the breakup value will be classified as
+          loss and provided for by charging it to the Profit and Loss account.
+
+          Afterwards, all FIs are required to measure unquoted equity instruments at fair value, as IFRS 9 does
+          not allow for the recognition of unquoted equity securities at cost, though it acknowledges that in rare
+          circumstances, cost of an instrument may be an appropriate estimate of fair value. The FIs are advised
+          to be prudent in carrying out the fair valuation of unquoted equity securities based on relevant
+          information and meticulously adhere to the valuation disclosure requirements of IFRS 13 for such
+          cases. Further, details of the outstanding investments in unquoted equity instruments including their
+          cost, fair value and basis of fair value should be disclosed in the statutory financial statements.
+          Moreover, the details of inputs, evidence, and methods used to arrive at fair value should be disclosed
+          in the statutory financial statements.
+
+2.2.3     Investments in Subsidiaries and Associates: The investments in subsidiaries and associates shall be
+          valued at cost in FIs standalone financial statements and these investments will be subject to testing
+          for impairment under IAS-36. However, the investments in associates will be measured using equity
+          method of accounting in their consolidated financial statements.
+
+2.3       Re-Classification
+          The FIs are allowed to reclassify financial assets only when, they change their business model for
+          managing financial assets. Reclassification of financial assets will only be made in exceptional cases
+          as they will only occur when an entity significantly changes the way it does business. The
+          reclassification of financial assets managed under different business models should be made in
+          accordance with the board approved policy. FIs need to document rationale for change in the business
+          model that has led to the reclassification. Following changes in circumstances will not be considered
+          as change in business model for the purposes of reclassification:
+             i. A change in intention related to a particular financial assets
+            ii. A temporary disappearance of a particular market for financial assets
+           iii. Transfer of financial assets between parts of entity with different business models
+
+          Changes to the classification should be clearly disclosed in the statutory financial statements, where
+          material. For investments, 5% change in the total portfolio of an existing business model will be
+          considered material. Following information must be disclosed in financial statements for
+          reclassification:
+             i. Circumstances for change in Business Model
+            ii. Time duration in previous classification category
+           iii. Description of accounting consequences
+           iv. Impact on financial statements
+            v. Impact on regulatory ratios
+
+
+
+
+        State Bank of Pakistan                                                                         Page|4
+                                                                                   IFRS 9 Application Instructions
+
+                                 Chapter – 3: Expected Credit Loss (ECL)
+
+3.1.      The FIs are expected to be prudent while exercising judgment in the application of ECL requirements.
+          The management judgement should be based on reasonable and supportable assumptions.
+
+3.2.      The credit exposure (in local currency) that have been guaranteed by the Government and Government
+          Securities are exempted from the application of ECL Framework.
+
+3.3.      The following are the general provisions (3.3.1 to 3.3.5) that will be considered by the FIs for the
+          application of ECL accounting framework.
+
+3.3.1     Application of Proportionality, Materiality and Symmetry: FIs are advised to comply with the
+          application of ECL in a manner that is appropriate to their size, nature, scope and complexity of their
+          activities and portfolios. The use of properly designed ECL Framework enable FIs to adopt sound
+          provision methodologies commensurate with the size, complexity, structure, economic significance,
+          risk profile, etc. of a bank and its group (if any).
+
+          FIs should also give due consideration to the application of the principle of materiality. However, this
+          should not result in individual exposures or portfolios being considered immaterial if, cumulatively,
+          these represent a material exposure to the FI. In addition, materiality should not be assessed only on
+          the basis of the potential impact on the profit or loss statement at the reporting date. For instance, large
+          portfolio(s) of high-quality credit exposures should be considered material even if they are highly
+          collateralized. However, for individually most significant exposures (to be decided by FIs), the FIs
+          may assess their cash flows individually. Further, it must be ensured that bias is not being introduced
+          in the design of an ECL methodology and its implementation.
+
+          The objective of ECL application is the timely recognition of provisions, so that the recognition of
+          credit deterioration is not delayed. Nevertheless, SBP recognizes that the IFRS 9 ECL framework is
+          symmetrical in the way that subsequent changes (both deteriorations and its reversals) in the credit
+          risk profile of an obligor should be considered in the measurement of the provisions.
+
+3.3.2     Reasonable and Supportable Information: FIs are required to consider a wide range of information
+          when applying ECL accounting models. Information should be relevant to the assessment and
+          measurement of credit risk and should include information about past events, current conditions and
+          forecasts of future economic conditions. The information will be considered as reasonable and
+          supportable, if it is based on relevant facts and sound judgment.
+
+3.3.3     Consideration of Forward-Looking Information: ECL accounting framework should consider
+          forward-looking information, including macroeconomic factors, for timely recognition of ECL. FIs
+          will have to employ sound judgment consistent with generally accepted methods for economic analysis
+          and forecasting supported by sufficient data.
+
+          FIs should apply prudent credit judgment to consider future scenarios and take into account potential
+          consequences of future events and their impact on the ECL. To avoid biasness in ECL measurement,
+          the FIs should use forward looking information from credible external available sources. A single set
+          of forward looking information may not be suitable for entire portfolio and FIs shall identify the
+          relationship of forward looking information to key ECL drivers of a given portfolio segmented for the
+          purpose of ECL calculations. FIs may consider a minimum of three economic scenarios while
+          developing ECL forecast namely: a base, an upside and a downside case scenarios. The FIs should
+          develop internal controls, systems and mechanisms to periodically assess sensitivity of ECL to each
+          forward-looking parameter applied. For weightages of the macroeconomic scenarios, FIs may use
+          recognized statistical methodologies.
+          Information should not be excluded from the process simply because an event has a low likelihood of
+          occurring or its impact on the ECL is uncertain. Given that these circumstances would be exceptional
+
+        State Bank of Pakistan                                                                             Page|5
+                                                                                   IFRS 9 Application Instructions
+
+          in nature, FIs should provide a clearly documented, robust justification for such circumstances.
+
+3.3.4     Data Requirements: To enable the calculation of ECL, FIs will have to gather historic data and
+          develop forward-looking capabilities in their credit risk management. FIs are required to develop
+          Probability of Default (PD), Loss Given Default (LGD) and Exposure At Default (EAD) models based
+          on forward-looking assumptions. In order to assess significant deterioration in credit quality, FIs are
+          required to use life time PD / internal / external credit ratings as the relevant measure for credit risk.
+          This requires FIs to develop capability to determine forward-looking PDs for 12-months period and
+          life of a credit exposure. In addition to calculating forward-looking ECL, PDs are required to be
+          adjusted keeping in view the impact of economic factors.
+
+          FIs, whose IFRS 9 effective implementation date is January 1, 2023, should have a minimum of 5
+          years data till December 31, 2022, whereas for all other FIs this requirement will be applicable from
+          December 31, 2023. Going forward every year, one more year’s data would be added until the FIs
+          would at least have 10 years of data. The FIs should ensure that requisite data is readily available for
+          preparation of all such models.
+
+          If the historical data is not available for a 5-year period, the FI should disclose this fact together with
+          the alternative methodology or data used in its statutory financial statements. This will be applicable
+          only for newly build portfolios where the considerable history of defaults is not available and / or
+          recoverability benchmarking with other portfolios are not possible, such as greenfield projects.
+
+3.3.5     Alignment with Risk Management: The information related to credit risk directly affects the level
+          of ECL impairment. FIs are advised to review the interaction between credit risk and financial
+          reporting departments and align processes, policies, and procedures to ensure coordination between
+          the two departments and alignment of approaches to deliver a successful transition and ongoing
+          reporting under IFRS 9 after its effective implementation.
+
+3.4.      SBP’s Instructions on Classification and Provision Determination: The directives set out by
+          State Bank of Pakistan in respective Prudential Regulations (that have not been superseded by these
+          instructions) on the portfolios of specific credit facility classification, provision determinations,
+          collateral/security benefits, rescheduling restructuring instructions will be read in conjunction with
+          these instructions.
+
+3.5.      It is expected that provisioning as per IFRS 9 requirements would generally be higher than that under
+          Prudential Regulations. However, from a supervisory perspective, an inefficient model, could lead to
+          substantial under-provisioning for impairment. Therefore, in the initial stages, until there is
+          supervisory comfort with the models being used by FIs and the implementation of IFRS 9 has
+          stabilized, a two-track approach analogous to the present regulations is required. The same is reflected
+          in the Annexure-C of the application instructions.
+
+3.6.      Low Credit Risk Assets: FIs are required to develop policies to determine assets that can be
+          considered as ‘low credit risk’. The financial assets classified as having ‘low credit risk’ will be
+          required to book 12- month ECL provisions. The financial instruments are not considered to have low
+          credit risk simply because of the value of collateral have a lower risk of default than the entity’s other
+          financial instruments. The assets with low credit risks include:
+             i.     Investments (debt instruments) having rating AA and above from an external rating agency at
+                    the reporting date.
+                ii. All exposures on multilateral development agencies.
+               iii. Sovereign exposures (in foreign currency) having rating BBB and above from an external
+                    rating agency at the reporting date.
+
+          FIs should assess whether there has been a significant increase in credit risk on exposure classified as
+          low credit risk. If so, they should recognize lifetime ECL.
+
+        State Bank of Pakistan                                                                            Page|6
+                                                                                   IFRS 9 Application Instructions
+
+3.7.      Significant Increase in Credit Risk (SICR): The FIs are advised to devise their own assessment
+          criteria for the SICR in line with the IFRS 9. FIs are required to sufficiently document and consider
+          all other relevant information that indicate a significant increase in credit risk. They are expected to
+          have a clear view of the relation between macroeconomic factors and obligor/facility attributes, and
+          the level of credit risk in a portfolio.
+
+3.8.      For the definition of default, regulatory requirements should be considered as minimum, while the FIs
+          can consider stringent default criteria. Additionally, FIs are advised to use other expedients like ‘days
+          past due’ and ‘investment grade rating’ to identify transition from one stage to the other (i.e. From
+          Stage 1 to Stage 2, Stage 2 to 3, or vice versa). In using quantitative elements, FIs should consider the
+          change in PD or internal/ external rating by comparing them with the ones initially recognized. The
+          Board should approve criteria for relative quantitative increases in PD or ratings indicative of SICR.
+
+          The assessment should, among others, consider changes in credit risk at counter party level, obligor
+          credit level and also product/facility level (e.g. retail exposures). Generally, the qualitative factors
+          indicative of SICR are reflected in PD or credit risk models and, therefore, are included in the
+          quantitative assessment. However, where it is not possible to include all current information about
+          qualitative factors in the quantitative assessment, FIs should recalibrate PDs or adjust estimates when
+          assessing SICR or calculating ECL. In addition to above, the FIs should consider qualitative factors
+          relevant to their portfolio including those given in IFRS 9. The following factors for assessing changes
+          in credit risk may also be considered:
+               i. Classification of borrower on the overdue exposure reported by other FIs as per Credit
+                  Information Bureau (eCIB) Report
+              ii. Unavailable/inadequate financial information/financial statements
+             iii. Expectation of forbearance (restructuring/rescheduling)
+             iv. Qualified report by external auditors
+              v. Significant contingent liabilities
+             vi. Pending litigation
+            vii. Loss of key staff and frequent changes in senior management
+           viii. Increase in operational risk and higher occurrence of fraudulent activities
+             ix. Continued delay and non-cooperation by a borrower in providing relevant documentation(s)
+              x. Borrower is subject to litigation by third parties
+             xi. Intra-group transfer of funds without underlying transactions
+            xii. Deferment/delay in the date for commencement of commercial operations by more than one
+                  year
+
+          In case FI sets its transfer threshold (such as rating or past due days) for groups of financial assets, it
+          is important that all financial instruments in that portfolio must have similar credit risk characteristics
+          at initial recognition of contract(s). FIs should consider both counterparty and individual exposures of
+          the obligor(s) (including syndicate loans) in determining SICR. Further, the impact of multiple
+          exposures to the same obligor originated at different periods needs to be considered in compliance
+          with IFRS 9.
+
+3.9.      The credit ratings used for ECL computations should be:
+            i. Reviewed with sufficient frequency (at least annually or earlier whenever objective evidence
+               exist for SICR)
+           ii. Reflective of the lifetime risk of default
+
+3.10.     Transfer From Stage 2 to Stage 1: Where there is evidence that there is significant reduction in credit
+          risk, the FIs would continue to monitor such financial instruments / credit exposures for a probationary
+          period (as decided by the FIs) to confirm if the risk of default has decreased sufficiently before
+          upgrading such exposure from Lifetime ECL (Stage 2) to 12-months ECL (Stage 1).
+
+3.11.     Transfer Out of Stage 3: An exposure cannot be upgraded from Stage 3 to 1 directly and should be
+          upgraded to Stage 2 initially. For the purpose of reversal of provisions, the PRs requirements will be
+        State Bank of Pakistan                                                                            Page|7
+                                                                                   IFRS 9 Application Instructions
+
+          followed for the Stage 3/classified assets.
+
+3.12.     The FIs are advised to recognize income on impaired assets (loans classified under PRs i.e. OAEM
+          and Stage 3 loans) on a receipt basis in accordance with the requirements of Prudential Regulations
+          issued by SBP.
+
+3.13.     Rebuttable Presumptions: The transfers between stages are based on relative movement in credit
+          risk since origination instead of absolute level of risk. Moreover, IFRS 9 includes a rebuttable
+          presumption that a default does not occur later than 90 days past due and it also presumes that there is
+          SICR if credit exposure is more than 30 days past due. In order to bring consistency, the backstop to
+          the rebuttable presumption of days past due of credit portfolio against a specific credit facility and its
+          stage allocation under IFRS 9 is mentioned in Annexure-C. However, FIs are free to choose more
+          stringent days past due criteria.
+
+          The FIs are advised not to rely solely on the days past due presumption, but to incorporate reasonable
+          and supportable forward-looking information. The days past due presumption can only be applied if
+          the forward-looking information is not available without undue cost or effort.
+
+3.14.     Mapping of Internal Ratings to External Rating: FIs should map their internal credit risk rating
+          models to credit definitions by well-established independent rating agencies as far as possible. In cases
+          where both external and internal ratings of a particular financial asset are available, the FIs are advised
+          to use the more conservative risk rating in this respect.
+
+3.15.     Probability of Default: In order to derive forward-looking PD information, FIs are required to overlay
+          specific macroeconomic information to the PD information. This can be achieved, for example, by
+          adjusting the PD information for its sensitivity to changes of certain macroeconomic factors.
+
+          FIs will be required to perform their own analysis to assess the impact of such macroeconomic factors
+          on their credit exposures and determine forward-looking PD information to be used for ECL
+          calculations.
+
+3.16.     Loss Given Default (LGD): LGD determines the amount of loss that will arise if the borrower
+          defaults. The FIs are advised to work on development of LGD models based on historical data,
+          historical experience of cash recovery from defaults (including settlements), cost and time of
+          recoveries and recovery projection. FIs are required to gather all relevant and supportable information
+          to enable them to arrive at accurate information for the purpose of LGD calculation FIs credit risk
+          model for ECL should have the capability to calculate ECL based on seasonality of the exposure as
+          LGD and EAD are reduced during off-season. Nevertheless, the FIs, whose effective date of IFRS 9
+          implementation is January 1, 2023, are advised to develop their own LGD model till December 31,
+          2022, whereas rest of FIs are advised to develop the same till December 31, 2023.
+
+          In the absence of LGD model during the aforesaid period, the FIs can use the LGD percentages
+          prescribed under Basel Foundation – Internal Rating Based (F-IRB) approach to determine ECL under
+          BSD Circular No. 08 dated June27, 2006.
+
+3.17.     Exposure at Default (EAD): EAD represents the amount of potential exposure that is at risk. Since
+          ECL is a forward-looking measure, EAD input will be forward-looking as well as based on the time-
+          period when the default is likely to occur. Therefore, it includes all outstanding exposure and off
+          balance sheet exposures after adjustment with contractual cash flows to reflect the exposure expected
+          when default occurs. For closed-end loans, the EAD of the facilities will be capped at the maximum
+          contractual period over which the entity is exposed to credit risk. For revolving products (such as
+          overdrafts, running finance and credit cards), the FIs are advised to not limit its exposure to credit
+          losses to the contractual notice period and calculate expected credit losses over a period longer than
+          the actual contractual period. The FIs are advised to clearly document such a longer period over which
+          expected losses would be estimated and the information that supports such a decision in the financial
+        State Bank of Pakistan                                                                            Page|8
+                                                                                 IFRS 9 Application Instructions
+
+          statements.
+
+3.18.     Credit Conversion Factor (CCF): The FIs are advised to estimate expected portion of a commitment
+          that will be drawn down over the expected life of a commitment on the basis of its past experience and
+          forward-looking information. If not possible, FIs may use the CCF for the calculation of EAD for off
+          balance sheet exposures as defined under BSD Circular No. 08 of 2006 dated June 27, 2006.
+          Nonetheless, FIs, whose effective date of IFRS 9 implementation is January 1, 2023, are advised to
+          develop their own CCF model till December 31, 2022, whereas rest of FIs are advised to develop the
+          same till December 31, 2023.
+
+3.19.     Treatment of Collateral Realization: Due to the complexities involved regarding non-liquid
+          collateral realization, the FIs are advised not to consider recoveries from the realization of non-liquid
+          collateral(s) for credit exposures in Stage 1 and Stage 2.
+
+3.20.     Eligible Collateral: The FIs are advised to consider only those collaterals as eligible collateral, which
+          have following characteristics;
+               i. Legal certainty and enforceability
+              ii. History of enforceability and recovery
+
+3.21.     Impact of Provisions on Regulatory Capital: Under the existing Basel regulatory capital framework,
+          the treatment of impairment is primarily dependent on the approach that an FI adopts for computing
+          its regulatory capital for credit risk. Under the Standardized Approach, the exposures are measured net
+          of specific provisions and gross of general provisions for calculating capital requirements. The FIs are
+          allowed to include provisions for Stage 1 and Stage 2 in Tier 2 capital up to a limit of 1.25% of total
+          credit risk-weighted assets (CRWAs).
+
+          In order to mitigate the impact of expected credit loss (ECL) provisioning on capital, a transitional
+          arrangement is allowed to the FIs to absorb the impact on regulatory capital. Accordingly, FIs, which
+          choose to apply transitional arrangement, may implement this arrangement in accordance with the
+          guidelines given at Annexure B.
+
+3.22.     ECL Model Governance & Validation of Models: IFRS 9 requires robust credit risk models that
+          can predict PDs, LGDs and EADs. In order to avoid "black box risk", it is important to use such models
+          for business decision-making purpose alongside IFRS 9 impairment requirements. FIs should set up a
+          robust model governance mechanism including three lines of defense:
+                  i. Model validation including data quality review, back testing of assumptions, performance,
+                     sensitivity analysis and comparisons of alternative methods should be carried out with
+                     sufficient regularity so that these models remain current and relevant.
+                 ii. It should be ensured that independent teams are responsible for model build and model
+                     validation review
+                iii. The Internal Audit of the FI should be sufficiently skilled and should carry out periodic
+                     review of IFRS methodology and Impacts calculated by the Management.
+
+          FIs are advised to desist from making changes in the parameters, assumptions and other aspects of
+          their ECL model for the purposes of profit smoothening. The rationale and justification for any change
+          in the ECL model should be documented by the Chief Risk Officer and approved by the board / sub-
+          committee of the board.
+
+3.23.     Capacity Building: The FIs are advised to invest in the capacity building and training of relevant
+          human resource to facilitate transition and implementation of IFRS 9.
+
+3.24.     Impact of COVID-19: The FIs are advised to consider the guidance provided by the International
+          Accounting Standard Board and Basel Committee on Banking Supervision on the impact of COVID-
+          19 on the credit exposure and keeping in view the relief packages provided by SBP.
+
+        State Bank of Pakistan                                                                          Page|9
+                                                                             IFRS 9 Application Instructions
+
+
+3.25.     Verification by the Auditors: The external auditors shall verify compliance of application
+          instructions during the course of statutory audit. The SBP inspection team shall also check the
+          adequacy of compliance during the on-site inspection.
+
+                            Chapter – 4: Derivatives and Hedge Accounting
+
+          Derivatives: Derivative financial instruments under IFRS 9 are required to be carried at FVTPL. In
+          case derivative is designated into a hedging relationship, then hedge accounting rules are applied.
+
+
+                                            ----------* * * ----------
+
+
+
+
+        State Bank of Pakistan                                                                     P a g e | 10
+

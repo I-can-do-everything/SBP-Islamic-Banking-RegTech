@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import logging
+import threading
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -17,6 +18,7 @@ from fastapi import Depends, FastAPI, File, Form, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.concurrency import run_in_threadpool
 
 from daleel import __version__
 from daleel.api.review import router as review_router
@@ -55,14 +57,28 @@ def sample_path(name: str) -> Path:
     return get_settings().data_dir / "samples" / f"EXIB_regulatory_extract_2026-09_{name}.xlsx"
 
 
-def ensure_samples() -> None:
+_sample_lock = threading.Lock()
+
+
+def sample_file(name: str) -> Path:
+    """The sample workbook, built first if it is missing (BUG-064).
+
+    Startup normally builds both samples, but a request can arrive before that
+    (tests, or a host that cleared its disk). The lock stops two requests
+    building the same file at once and one reading it half written."""
     from daleel.datagen.export import build_sample
     from daleel.datagen.generator import Scenario
 
-    for name in SAMPLES:
-        path = sample_path(name)
+    path = sample_path(name)
+    with _sample_lock:
         if not path.exists():
             build_sample(Scenario(name=name), path)
+    return path
+
+
+def ensure_samples() -> None:
+    for name in SAMPLES:
+        sample_file(name)
 
 
 def ensure_sources() -> None:
@@ -159,7 +175,8 @@ def samples() -> list[dict]:
 def download_sample(name: str) -> FileResponse:
     if name not in SAMPLES:
         raise NotFound("no_sample", "Unknown sample.")
-    return FileResponse(sample_path(name), filename=sample_path(name).name,
+    path = sample_file(name)
+    return FileResponse(path, filename=path.name,
                         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 
@@ -194,7 +211,7 @@ async def create_submission(file: UploadFile | None = File(default=None), sample
     if sample:
         if sample not in SAMPLES:
             raise InvalidInput("no_sample", "Unknown sample.")
-        path = sample_path(sample)
+        path = await run_in_threadpool(sample_file, sample)
         return _create_submission(session, path.name, path.read_bytes(), period_end)
     if file is None:
         raise InvalidInput("no_file", "Choose a file or a sample.")
